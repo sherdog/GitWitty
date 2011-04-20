@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://www.joomla.org/xml/dtd/1.5/component-install.dtd">
+<install version="1.5" type="component">
+	<name>NoNumber!-installer - UNINSTALL ME!</name>
+	<description>NONUMBER_INSTALLER_DESC</description>
+	<version>2.2.2</version>
+	<creationDate>February 2011</creationDate>
+	<author>NoNumber! (Peter van Westen)</author>
+	<authorEmail>peter@nonumber.nl</authorEmail>
+	<authorUrl>http://www.nonumber.nl</authorUrl>
+	<copyright>Copyright © 2011 NoNumber! All Rights Reserved</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+
+	<!-- Installation -->
+	<installfile>installer.php</installfile>
+
+	<!-- Administration Files -->
+	<administration>
+		<files>
+			<filename>installer.xml</filename>
+			<filename>extensions.php</filename>
+			<filename>index.html</filename>
+			<folder>files</folder>
+		</files>
+
+		<!-- Administration Language Files -->
+		<languages folder="language">
+			<language tag="ar-SA">ar-SA.com_nonumber-installer-uninstallme.ini</language>
+			<language tag="cs-CZ">cs-CZ.com_nonumber-installer-uninstallme.ini</language>
+			<language tag="de-DE">de-DE.com_nonumber-installer-uninstallme.ini</language>
+			<language tag="en-GB">en-GB.com_nonumber-installer-uninstallme.ini</language>
+			<language tag="es-ES">es-ES.com_nonumber-installer-uninstallme.ini</language>
+			<language tag="fr-FR">fr-FR.com_nonumber-installer-uninstallme.ini</language>
+			<language tag="it-IT">it-IT.com_nonumber-installer-uninstallme.ini</language>
+			<language tag="ja-JP">ja-JP.com_nonumber-installer-uninstallme.ini</language>
+			<language tag="lv-LV">lv-LV.com_nonumber-installer-uninstallme.ini</language>
+			<language tag="nb-NO">nb-NO.com_nonumber-installer-uninstallme.ini</language>
+			<language tag="nl-NL">nl-NL.com_nonumber-installer-uninstallme.ini</language>
+			<language tag="pl-PL">pl-PL.com_nonumber-installer-uninstallme.ini</language>
+			<language tag="pt-BR">pl-PL.com_nonumber-installer-uninstallme.ini</language>
+			<language tag="ru-RU">ru-RU.com_nonumber-installer-uninstallme.ini</language>
+			<language tag="sv-SE">sv-SE.com_nonumber-installer-uninstallme.ini</language>
+			<language tag="uk-UA">uk-UA.com_nonumber-installer-uninstallme.ini</language>
+			<language tag="zh-CN">zh-CN.com_nonumber-installer-uninstallme.ini</language>
+			<language tag="zh-TW">zh-TW.com_nonumber-installer-uninstallme.ini</language>
+		</languages>
+	</administration>
+</install>

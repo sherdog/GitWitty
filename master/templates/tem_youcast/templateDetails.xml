@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="template" version="1.0.x">
+	<name>tem_youcast</name>
+	<creationDate>24 April 06</creationDate>
+	<author>cmslounge</author>
+	<copyright>cmslounge</copyright>
+	<authorEmail>info@cmslounge.com</authorEmail>
+	<authorUrl>www.cmslounge.com</authorUrl>
+	<version>1.0</version>
+	<description>Commercial template by CMS Lounge.</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+	</files>
+	<images>
+		<filename>images/arrow.png</filename>
+		<filename>images/bgheader.jpg</filename>
+		<filename>images/indent1.png</filename>
+		<filename>images/logo.jpg</filename>
+		<filename>images/menu-hover.jpg</filename>
+		<filename>images/rightbg.jpg</filename>
+		<filename>images/thinkbig.jpg</filename>
+		<filename>template_thumbnail.png</filename>
+	</images>
+	<css>
+		<filename>css/editor_content.css</filename>
+		<filename>css/template_css.css</filename>
+	</css>
+</mosinstall>

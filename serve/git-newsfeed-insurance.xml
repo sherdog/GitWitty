@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<rss version="2.0" xmlns:media="http://search.gitwitty.com" xmlns:ynews="http://news.gitwitty.com/rss/">
+<channel>
+<title>GitWitty News</title>
+<copyright>Copyright (c) 2011 GitWitty! Inc. All rights reserved.</copyright>
+<link>http://gitwitty.com/newsroom</link>
+<category>insurance</category>
+<description>News</description>
+<language>en-us</language> 
+<lastBuildDate>Thu, 24 Feb 2011 04:47:39 GMT</lastBuildDate>
+
+<ttl>5</ttl> 
+<item>
+<title>Give your agency a new identity</title>
+ <link>http://www.gitwitty.com</link>
+ <guid isPermaLink="false">http://www.gitwitty.com</guid>
+<source>GitWitty News</source>
+<category>Insurance</category>
+<pubDate>Thur, 24 Feb 2011 18:51:25 GMT</pubDate>
+<description>To be successful selling insurance, your customers need to trust you. What better way to reinforce that trust than with a professional logo that stands out in the crowd. Our insurance agent logo program makes it easy and affordable to update your image. It's easy - simply select the logo you like, answer a few short questions, and we'll take care of the rest.  </description>
+</item>
+
+<item>
+<title>Introducing Search Engine Optimization Services from GitWitty
+</title>
+ <link>http://www.gitwitty.com</link>
+ <guid isPermaLink="false">http://www.gitwitty.com</guid>
+<source>GitWitty News</source>
+<category>Insurance</category>
+<pubDate>Mon, 07 Feb 2011 13:21:40 GMT</pubDate>
+<description>We all know that prospects are going to search engines to learn about insurance-related products. We also know how hard it can be to get found. Our Search Engine Optimization Services will make sure your site is found by your prospects. The result is many more opportunities for your agency to generate new leads and sales. </description>
+</item>
+</channel>
+</rss>
+<!-- server api3.sub.news.mud.yahoo.com -->

@@ -1,0 +1,8 @@
+#rok-audit ul {margin:15px 0 0;padding:0;list-style:none;}
+#rok-audit li {padding:5px;margin:0;background: #f9f9f9;margin-bottom:2px;}
+#rok-audit .rok-audit-user {display:block;float:right;line-height:20px;height:20px;}
+#rok-audit .rok-audit-user img {vertical-align: middle;margin-left:4px;}
+#rok-audit .rok-audit-date {display:block;line-height:20px;height:20px;color:#999;}
+#rok-audit .rok-audit-details {display:block;padding-top:5px;font-size:12px;}
+#rok-audit .rok-more {margin-top:10px;overflow:hidden;}
+#rok-audit .rok-more .mc-button {float:right;}

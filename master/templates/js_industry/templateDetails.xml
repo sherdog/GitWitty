@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="template" version="1.0.x">
+	<name>js_industry</name>
+	<creationDate></creationDate>
+	<author>Joomlashack.com</author>
+	<copyright>(C) JoomlaShack 2007</copyright>
+	<authorEmail>team@joomlashack.com</authorEmail>
+	<authorUrl>www.joomlashack.com</authorUrl>
+	<version>1.0</version>
+	<description>Another great free template from Joomlashack.</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>js/iehover.js</filename>
+		<filename>js/matching_columns.js</filename>
+		<filename>js/template.css.php</filename>
+		<filename>js/styleswitcher.js</filename>
+		<filename>templateDetails.xml</filename>
+	</files>
+	<images>
+		<filename>images/content_heading_icon.png</filename>
+		<filename>images/content_image.png</filename>
+		<filename>images/dotted_border.png</filename>
+		<filename>images/emailButton.png</filename>
+		<filename>images/footer_stripe.png</filename>
+		<filename>images/h3_icon.png</filename>
+		<filename>images/larger.png</filename>
+		<filename>images/list_bullet_orange.png</filename>
+		<filename>images/list_bullet_white.png</filename>
+		<filename>images/logo.png</filename>
+		<filename>images/main_content_shadow.jpg</filename>
+		<filename>images/nav_bg.png</filename>
+		<filename>images/parent_menu_arrow.png</filename>
+		<filename>images/pdf_button.png</filename>
+		<filename>images/printButton.png</filename>
+		<filename>images/readon.png</filename>
+		<filename>images/reset.png</filename>
+		<filename>images/smaller.png</filename>
+		<filename>images/top_tabs.png</filename>
+		<filename>template_thumbnail.png</filename>
+	</images>
+	<css>
+		<filename>css/forms.css</filename>
+		<filename>css/joomla_styles.css</filename>
+		<filename>css/link_styles.css</filename>
+		<filename>css/menus.css</filename>
+		<filename>css/module_styles.css</filename>
+		<filename>css/template_css.css</filename>
+		<filename>css/text_styles.css</filename>
+	</css>
+</mosinstall>

@@ -1,0 +1,230 @@
+@charset "utf-8";
+/* CSS Document © Copyright 2010, All rights reserved */
+/*------ Default HTML Styles ------*/
+body{
+color:#999999;
+background:#222222;
+}
+a{
+color:#838AAF;
+/*text-decoration:none;
+border-bottom:1px dashed #004276;
+*/
+}
+a:hover{
+color:#FFFFFF;
+}
+.contentheading, .componentheading, .contentdescription, h1, h2, h3, h4, h5, h6 {
+color:#FFFFFF;
+}
+/*------ Layout Styles ------*/
+#header{
+background:#222222;
+color:#FFFFFF;
+}
+#header a{
+color:#FFFFFF;
+}
+#logo{
+background:url(../images/theme2/logo.png) no-repeat 0 0;
+}
+#search .inputbox{
+background:#FFFFFF url(../images/theme2/search.png) no-repeat 99% 50%;
+border:1px solid #111111;
+}
+#mainmenu-outer{
+background:#333333 url(../images/theme2/mainmenu-outer_bg.png) repeat-x 0 0;
+}
+
+.red #mainmenu{background:url(../images/theme2/mainmenu/red_bg.png) no-repeat 50% 0;color:#FFFFFF;}
+.red #mainmenu ul.menu li a,.red #mainmenu ul#mainlevel-nav li a{color:#FFFFFF;border-right:1px solid #990000;}
+.red #mainmenu ul.menu li a:hover,.red #mainmenu ul#mainlevel-nav li a:hover{background:#8D0000;}
+.red #mainmenu ul.pm_dropdown ul{background:#B30000;}
+.red #mainmenu ul.pm_dropdown ul a:hover{background:#8D0000 !important;}
+
+
+.gray #mainmenu{background:url(../images/theme2/mainmenu/gray_bg.png) no-repeat 50% 0;color:#FFFFFF;}
+.gray #mainmenu ul.menu li a,.gray #mainmenu ul#mainlevel-nav li a{color:#FFFFFF; border-right:1px solid #111111;}
+.gray #mainmenu ul.menu li a:hover,.gray #mainmenu ul#mainlevel-nav li a:hover{background:#333333 url(../images/theme2/mainmenu/gray_hover.png) repeat-x 0 0;}
+.gray #mainmenu ul.pm_dropdown ul{background:#222222;}
+.gray #mainmenu ul.pm_dropdown ul a:hover{background:#111111 !important;}
+
+.green #mainmenu{background:url(../images/theme2/mainmenu/green_bg.png) no-repeat 50% 0;color:#FFFFFF;}
+.green #mainmenu ul.menu li a,.green #mainmenu ul#mainlevel-nav li a{color:#FFFFFF; border-right:1px solid #336600;}
+.green #mainmenu ul.menu li a:hover,.green #mainmenu ul#mainlevel-nav li a:hover{background:#52A400 url(../images/theme2/mainmenu/green_hover.png) repeat-x 0 0;}
+.green #mainmenu ul.pm_dropdown ul{background:#52A400;}
+.green #mainmenu ul.pm_dropdown ul a:hover{background:#336600 !important;}
+
+.blue #mainmenu{background:url(../images/theme2/mainmenu/blue_bg.png) no-repeat 50% 0;color:#FFFFFF;}
+.blue #mainmenu ul.menu li a,.blue #mainmenu ul#mainlevel-nav li a{color:#FFFFFF; border-right:1px solid #214F8D;}
+.blue #mainmenu ul.menu li a:hover,.blue #mainmenu ul#mainlevel-nav li a:hover{background:#3A7AD1 url(../images/theme2/mainmenu/blue_hover.png) repeat-x 0 0;}
+.blue #mainmenu ul.pm_dropdown ul{background:#3A7AD1;}
+.blue #mainmenu ul.pm_dropdown ul a:hover{background:#214F8D !important;}
+
+.purple #mainmenu{background:url(../images/theme2/mainmenu/purple_bg.png) no-repeat 50% 0;color:#FFFFFF;}
+.purple #mainmenu ul.menu li a,.purple #mainmenu ul#mainlevel-nav li a{color:#FFFFFF; border-right:1px solid #67587E;}
+.purple #mainmenu ul.menu li a:hover,.purple #mainmenu ul#mainlevel-nav li a:hover{background:#522E8F;}
+.purple #mainmenu ul.pm_dropdown ul{background:#522E8F;}
+.purple #mainmenu ul.pm_dropdown ul a:hover{background:#3E226F !important;}
+
+.yellow #mainmenu{background:url(../images/theme2/mainmenu/yellow_bg.png) no-repeat 50% 0;color:#000;}
+.yellow #mainmenu ul.menu li a,.yellow #mainmenu ul#mainlevel-nav li a{color:#000; border-right:1px solid #8F8201;}
+.yellow #mainmenu ul.menu li a:hover,.yellow #mainmenu ul#mainlevel-nav li a:hover{background:#DFAE1B;}
+.yellow #mainmenu ul.pm_dropdown ul{background:#FFC418;}
+.yellow #mainmenu ul.pm_dropdown ul a:hover{background:#DFAE1B !important;}
+
+.orange #mainmenu{background:url(../images/theme2/mainmenu/orange_bg.png) no-repeat 50% 0;color:#FFFFFF;}
+.orange #mainmenu ul.menu li a,.orange #mainmenu ul#mainlevel-nav li a{color:#FFFFFF; border-right:1px solid #B46C16;}
+.orange #mainmenu ul.menu li a:hover,.orange #mainmenu ul#mainlevel-nav li a:hover{background:#C55301;}
+.orange #mainmenu ul.pm_dropdown ul{background:#C55301;}
+.orange #mainmenu ul.pm_dropdown ul a:hover{background:#9F4300 !important;}
+
+#banner{
+background:#333333;
+}
+#container{
+background:#333333;
+}
+#pathway{
+background:#333333;
+}
+#mainbody{
+border:1px solid #111111;
+background:url(../images/theme2/seperator.png) repeat-y 0 0;
+}
+.elements{
+background:#333333;
+border-bottom:1px solid #111111;
+}
+.elements1{
+border-right:1px solid #111111;
+}
+#footer {
+border-top:1px solid #111111;
+background:#222222;
+}
+/*------ Content Styles ------*/
+.small, .createdate, .modifydate {
+color:#666666;
+}
+.inputbox, .validate-email{
+background:#FFFFFF url(../images/gradient.png) repeat-x 0 0;
+border:1px solid #222222;
+}
+.button, .validate, .adminform button, button, .readon, .readmore{
+background:#222222 url(../images/gradient.png) repeat-x 0 0;
+border:1px solid #222222;
+color:#FFFFFF;
+}
+.blog_more{
+background:#222222 url(../images/gradient.png) repeat-x 0 0;
+border:1px solid #222222;
+}
+.contentpane li{
+border-bottom:1px dotted #222222;
+}
+td.sectiontableheader{
+background:#222222 url(../images/gradient.png) repeat-x 0 0;
+border-top:1px solid #111111;
+}
+tr.sectiontableentry1 td{
+border-bottom:1px dotted #222222;
+}
+tr.sectiontableentry2 td{
+border-bottom:1px dotted #222222;
+}
+#limit{
+margin:10px 0;
+}
+.contenttoc{
+border-top:1px solid #222222;
+border-left:1px solid #222222;
+border-right:1px solid #222222;
+}
+.contenttoc th{
+border-bottom:1px solid #222222;
+background:#111111 url(../images/gradient.png) repeat-x 0 0;
+}
+.contenttoc td a{
+border-bottom:1px solid #222222;
+}
+.contenttoc td a.active{
+color:#990000;
+background:#222222;
+}
+.searchintro{
+background:#222222 url(../images/gradient.png) repeat-x 0 0;
+border:1px solid #111111;
+color:#FFFFFF;
+}
+.searchintro b{
+color:#FF0000;
+}
+.highlight{
+color:#FF0000;
+background:#FFFF00;
+}
+.contentpaneopen fieldset{
+margin:10px 0;
+border-bottom:1px dotted #111111;
+}
+#com-form-login a{
+border-bottom:1px dotted #111111;
+}
+#com-form-login a:hover{
+
+}
+.button2-left .readmore{
+border:none;
+padding:0;
+}
+.adminform{
+border:1px solid #111111;
+}
+#jformcatid, #jformtitle, #jformurl, #jformdescription{
+width:400px;
+margin:0 0 10px 0;
+}
+.paramlist{
+margin:10px 0;
+}
+.paramlist .inputbox{
+margin:0 0 10px 0;
+}
+/*------ Default Module Styles ------*/
+#sidebar2 .module, #sidebar2 .module_text, #sidebar2 .module_menu{
+background:#222222 url(../images/theme2/tl.png) no-repeat 0 0;
+}
+#sidebar2 .module div, #sidebar2 .module_text div, #sidebar2 .module_menu div{
+background:url(../images/theme2/tr.png) no-repeat 100% 0;
+}
+#sidebar2 .module div div, #sidebar2 .module_text div div, #sidebar2 .module_menu div div{
+background:url(../images/theme2/bl.png) no-repeat 0 100%;
+}
+#sidebar2 .module div div div, #sidebar2 .module_text div div div, #sidebar2 .module_menu div div div{
+background:url(../images/theme2/br.png) no-repeat 100% 100%;
+}
+#sidebar2 .module div div div div, #sidebar2 .module_text div div div div, #sidebar2 .module_menu div div div div{
+background:none;
+}
+#sidebar .moduletable, #sidebar .moduletable_menu, #sidebar .moduletable_text{
+border-bottom:1px solid #111111;
+}
+#sidebar .moduletable h3, #sidebar .moduletable_menu h3, #sidebar .moduletable_text h3{
+background:#222222 url(../images/gradient.png) repeat-x 0 0;
+border-bottom:1px solid #111111;
+}
+#sidebar .moduletable li a, #sidebar .moduletable_menu li a{
+border-bottom:1px dotted #000000;
+color:#838AAF;
+}
+#sidebar .moduletable li.active a, #sidebar .moduletable_menu li.active a{
+color:#FFFFFF;
+}
+/*------ Praise Slides ------*/
+body .mod_praiseslides_container_top,
+body .mod_praiseslides_container_bottom {border:1px solid #111 !important;}
+body .mod_praiseslides_sidebar_top{border-bottom:1px solid #111 !important;background:transparent !important;}
+body .mod_praiseslides_sidebar_bottom{border-top:1px solid #111 !important;background:transparent !important;}
+body .mod_praiseslides_title_top a,
+body .mod_praiseslides_title_bottom a{border-right:1px solid #111 !important;}

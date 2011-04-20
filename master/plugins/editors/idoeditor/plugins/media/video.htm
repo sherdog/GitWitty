@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>{#media_dlg.video_title}</title>
+	<meta http-equiv="content-type" content="text/html; charset=windows-1251" />
+	<script type="text/javascript" src="../../tinymce_popup.js?ver=3211"></script>
+	<script type="text/javascript" src="../../utils/mctabs.js?ver=3211"></script>
+	<script type="text/javascript" src="../../utils/form_utils.js?ver=3211"></script>
+	<script type="text/javascript" src="../../utils/validate.js?ver=3211"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/ajaxfileupload.js"></script>
+	<script type="text/javascript" src="js/video.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/image.css">
+	<link rel="stylesheet" type="text/css" href="css/form.css">
+	<base target="_self" />
+</head>
+<body>
+<script>
+function fswitch(id){
+	var dfile = document.getElementById("insertFile");
+	var dlink = document.getElementById("insertLink");
+	if (id==1){
+		dfile.style.display = "none";
+		dlink.style.display = "block";
+	} else {
+		dfile.style.display = "block";
+		dlink.style.display = "none";
+	}
+}
+</script>
+<a href="javascript:fswitch(1)"><span>{#media_dlg.insert_video_code}</span></a>
+<a href="javascript:fswitch(2)"><span>{#media_dlg.insert_video_file}</span></a>
+<div id="insertLink" style="display:none">
+<p>
+<small>
+{#media_dlg.insert_video_code_help}
+</small>
+</p>
+
+<p>
+	{#media_dlg.code}<br>
+	<textarea id="code" class="text" style="width:300px;height:100px;" name="code"></textarea>
+</p>
+
+<p>
+	<input type="button" value="{#insert}" id="insert" name="insert" onclick="insertLink();">
+	<input type="button" value="{#cancel}" onclick="tinyMCEPopup.close();" id="cancel">
+</p>
+</div>
+
+<div id="insertFile" style="display:block">
+<form method="POST" enctype="multipart/form-data">
+	<br/>
+	<div id="preview" style="width:300px">{#media_dlg.upload_file}</div>
+	<div id="loading"><img src="../../themes/advanced/img/bar.gif"></div>
+	<p>
+		<input type="file" name="file" id="file" onchange="ajaxFileUpload();">
+	</p>
+	<hr/>
+	<p>{#advanced_dlg.you_can_upload_ext} <span id="exts" style="font-weight:bold"></span></p>
+	
+	<p>
+		<input type="hidden" name="width" value="17">
+		<input type="hidden" name="height" value="17">
+		<input type="hidden" name="flash_play" value="true">
+		<input type="hidden" name="flash_loop" value="true">
+		<input type="hidden" name="flash_menu" value="true">
+		<input type="hidden" name="flash_swliveconnect" value="false">
+		<input type="hidden" name="flash_quality" value="best">
+		<input type="hidden" name="flash_scale" value="noscale">
+		<input type="hidden" name="flash_salign" value="">
+		<input type="hidden" id="flash_flashvars" name="flash_flashvars"/>
+		<input type="hidden" id="flash_flashvars" name="flash_flashvars" value="" />
+		<input type="hidden" id="flash_wmode" name="flash_wmode" value="" />
+		<input type="hidden" id="flash_base" name="flash_base" value="" />
+		<input type="hidden" id="src" name="src" value="" />
+		<input type="hidden" id="id" name="id" value="" />
+		<input type="button" value="{#insert}" id="insert" name="insert" onclick="insertVideo();">
+		<input type="button" value="{#cancel}" onclick="removeFile();" id="cancel">
+	</p>
+	
+</form>
+</div>
+
+</body>
+</html>

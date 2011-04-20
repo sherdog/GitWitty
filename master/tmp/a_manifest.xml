@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.10" method="upgrade">
+	<name>Mission Control</name>
+	<creationDate>December 6, 2010</creationDate>
+	<author>RocketTheme, LLC</author>
+	<authorEmail>support@rockettheme.com</authorEmail>
+	<authorUrl>http://www.rockettheme.com</authorUrl>
+	<copyright>(C) 2005 - 2010 RocketTheme, LLC. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<!--  The version string is recorded in the components table -->
+	<version>0.1.4</version>
+	<!-- The description is optional and defaults to the name -->
+	<description>
+		Rockettheme Mission Control Admin Template for Joomla 1.5
+	</description>
+	<installfile>installer/install.php</installfile>
+	<uninstallfile>installer/uninstall.php</uninstallfile>
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<administration>
+		<files>
+			<folder>installer</folder>
+			<file>install.mysql.utf8.sql</file>
+		</files>
+	</administration>
+	<cogs keepinstaller="false">
+        <module name="mod_rokquicklinks" folder="mod_rokquicklinks" title="Quick Links" published="true" position="dashboard" ordering="1" client="1" access="0" core="false" uninstall="true">RokQuickLinks</module>
+        <module name="mod_rokuserstats" folder="mod_rokuserstats" title="Statistics Overview" published="true" position="sidebar" ordering="1" client="1" access="0" core="false" uninstall="true">RokUserStats</module>
+        <module name="mod_rokuserchart" folder="mod_rokuserchart" title="User Activity Chart" published="true" position="sidebar" ordering="2" client="1" access="0" core="false" uninstall="true">RokUserChart</module>
+        <module name="mod_rokadminaudit" folder="mod_rokadminaudit" title="Admin Audit Trail" published="true" position="sidebar" ordering="3" client="1" access="0" core="false" uninstall="true">RokAdminAudit</module>
+		<plugin name="roktracking" group="system" folder="plg_system_roktracking" published="true" access="0" core="false" uninstall="true">RokTracking System</plugin>
+		<plugin name="missioncontrol" group="system" folder="plg_system_missioncontrol" published="true" access="0" core="false" uninstall="true">Mission Control System</plugin>
+        <template name="rt_missioncontrol_j15" folder="rt_missioncontrol_j15">Mission Control</template>
+	</cogs>
+</install>

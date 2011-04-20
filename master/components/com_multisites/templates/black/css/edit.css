@@ -1,0 +1,134 @@
+/*
+ * @file       edit.css
+ * @brief      Style used by the "edit" rendering.
+ * @version    1.2.20
+ * @author     Edwin CHERONT     (e.cheront@jms2win.com)
+ *             Edwin2Win sprlu   (www.jms2win.com)
+ * @copyright  Joomla Multi Sites
+ *             Single Joomla! 1.5.x installation using multiple configuration (One for each 'slave' sites).
+ *             (C) 2010 Edwin2Win sprlu - all right reserved.
+ * @license    This program is free software; you can redistribute it and/or
+ *             modify it under the terms of the GNU General Public License
+ *             as published by the Free Software Foundation; either version 2
+ *             of the License, or (at your option) any later version.
+ *             This program is distributed in the hope that it will be useful,
+ *             but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *             MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *             GNU General Public License for more details.
+ *             You should have received a copy of the GNU General Public License
+ *             along with this program; if not, write to the Free Software
+ *             Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+ *             A full text version of the GNU GPL version 2 can be found in the LICENSE.php file.
+ * @par History:
+ * - V1.2.20 27-JAN-2010: Initial version
+ *--------------------------------------------------------- */
+
+/* jmsedit */
+#jmsedit {
+	font-family:Arial, Helvetica, sans-serif;
+	padding-top:20px;
+}
+
+/*------------------HEADER---------------------- */
+
+#jmsedit .inputbox:hover { font-size:12px; color:#000; background-color:#fff; border: none; }
+
+#jmsedit div.toolbar .toolbar tbody tr td { background-color:#fff; border:none;}
+
+#jmsedit div.toolbar .toolbar { background-color:#fff; font-size:12px; text-transform:none; color: #646464; text-decoration:none; border-style:none; border-width: 0px;}
+
+#jmsedit div.toolbar .toolbar:hover { color: #000; font-size:12px; text-transform:none; text-decoration:none; border-style:none; border-width: 0px;}
+
+#jmsedit div.header {
+   background-repeat:no-repeat;
+   color:#000;
+   font-size:22px;
+   font-weight:bold;
+   line-height:48px;
+   margin-left:10px;
+   padding-left:55px;
+}
+
+#jmsedit table.toolbar td {
+   color:#000000;
+   text-align:center;
+}
+
+#jmsedit div.toolbar {
+   float:right;
+   padding:0;
+   text-align:right;
+}
+
+#jmsedit table.toolbar {
+  margin:0;
+  padding:0;
+}
+
+#jmsedit .button {
+   background-color:#FFFFFF;
+   background-image:none;
+   border: none;
+}
+
+/*------------------CONTAINER---------------------- */
+
+
+#jmsedit table .multisitesparams {
+	font-family: Arial, Helvetica, sans-serif;
+	background-image:url(../images/jmslistbg.jpg);
+	background-position:top;
+	background-repeat:no-repeat;
+	background-color:#FFF;
+}
+
+#jmsedit .multisitesparams tbody tr {
+	color:#000;
+	font-size:11px;
+	background-image:url(../images/bg.png);
+	background-repeat:repeat;
+}
+
+
+#jmsedit tbody tr {
+	color:#000;
+	font-size:11px;
+	background-image:url(../images/bg.png);
+	background-repeat:repeat;
+}
+
+#jmsedit tbody tr td {
+	color:#000;
+	font-size:11px;
+	background-image:url(../images/bg.png);
+	background-repeat:repeat;
+}
+
+#jmsedit .multisitesparams tbody tr td {
+	vertical-align: middle;
+	padding-top:10px;
+	color:#000;
+	background-image:url(../images/bg.png);
+	background-repeat:repeat;
+}
+
+#jmsedit .multisitesparams .inputbox {
+   border: solid 1px;
+   border-color:#CCCCCC;
+   background:#FFFFFF none repeat scroll 0 0;
+   font-size:11px;
+}
+
+#jmsedit .multisitesparams input, select, textarea, .inputbox {
+   font-family: Arial, Helvetica, sans-serif;
+   font-size:11px;
+   padding:3px 5px;
+}
+
+#jmsedit .multisitesparams .inputbox:hover, .inputbox:focus {
+   border: solid 1px;
+   border-color:#CCCCCC;
+   background:#f2f2f2 none repeat scroll 0 0;
+   font-size:11px;
+}
+

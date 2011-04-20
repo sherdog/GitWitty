@@ -1,0 +1,77 @@
+/**
+ * Add to Menu editor button CSS
+ *
+ * @package     Add to Menu
+ * @version     1.6.0
+ *
+ * @author      Peter van Westen <peter@nonumber.nl>
+ * @link        http://www.nonumber.nl
+ * @copyright   Copyright © 2011 NoNumber! All Rights Reserved
+ * @license     http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ */
+
+#module-status {
+	background-image: none !important;
+}
+#module-status a#addtomenu {
+	margin-right: 10px;
+	float: left;
+}
+#module-status a#addtomenu span {
+	background: transparent url(../images/icon.png) no-repeat 3px 3px;
+	padding-right: 0px;
+	min-height: 16px;
+	cursor: pointer;
+	cursor: hand;
+}
+#module-status a#addtomenu .no_icon {
+	background: none;
+	padding-left: 0px;
+}
+#module-status a#addtomenu .no_text {
+	padding-left: 0px;
+	width: 22px;
+}
+
+#addtomenu_msg,
+#addtomenu_msg.visible {
+	display: none;
+}
+body>#addtomenu_msg {
+	position: fixed;
+	top: 0;
+	right: 0;
+	padding: 5px 20px;
+	width: 100%;
+	height: 16px;
+	text-align: center;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #666666;
+	z-index: 200;
+}
+body>#addtomenu_msg.visible {
+	display: inline;
+}
+body>#addtomenu_msg.success {
+	background-color: #4e8858;
+}
+body>#addtomenu_msg.failure {
+	background-color: #884e4e;
+}
+body>#addtomenu_msg img {
+	vertical-align: sub;
+}
+
+/* APLite template */
+#module-status.ap-status a#addtomenu {
+	float: none;
+	margin-right: 0px;
+}
+#module-status.ap-status a#addtomenu span {
+	display: inline-block;
+	background-position: 0px 0px;
+}
+#module-status.ap-status a#addtomenu .no_text {
+	width: 16px;
+}

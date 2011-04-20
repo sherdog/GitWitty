@@ -1,0 +1,228 @@
+/*
+ * @file       list.css
+ * @brief      Style used by the "list" rendering.
+ * @version    1.2.20
+ * @author     Edwin CHERONT     (e.cheront@jms2win.com)
+ *             Edwin2Win sprlu   (www.jms2win.com)
+ * @copyright  Joomla Multi Sites
+ *             Single Joomla! 1.5.x installation using multiple configuration (One for each 'slave' sites).
+ *             (C) 2010 Edwin2Win sprlu - all right reserved.
+ * @license    This program is free software; you can redistribute it and/or
+ *             modify it under the terms of the GNU General Public License
+ *             as published by the Free Software Foundation; either version 2
+ *             of the License, or (at your option) any later version.
+ *             This program is distributed in the hope that it will be useful,
+ *             but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *             MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *             GNU General Public License for more details.
+ *             You should have received a copy of the GNU General Public License
+ *             along with this program; if not, write to the Free Software
+ *             Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+ *             A full text version of the GNU GPL version 2 can be found in the LICENSE.php file.
+ * @par History:
+ * - V1.2.20 24-JAN-2010: Initial version
+ *--------------------------------------------------------- */
+
+/* jmslist */
+#jmslist {
+	font-family:Arial, Helvetica, sans-serif;
+	background-color:#FFF; 
+	padding-top:20px;
+}
+
+
+#jmslist table tfoot tr.powerby {
+	color:#666666;
+	font-style: italic;
+	font-size:9px;
+	line-height:10px;
+}
+
+#jmslist table tfoot tr.powerby a {
+	color:#666666;
+}
+
+
+#toolbar-box { margin-bottom:10px; background: #fff; }
+
+#jmslist .inputbox	{ 
+    font-family:Arial, Helvetica, sans-serif; 
+	font-size:12px; color:#666; 
+	background-color:#FFF; 
+	-moz-background-clip:border; 
+	-moz-background-inline-policy:continuous; 
+	-moz-background-origin:padding;  
+	background:none repeat scroll 0 0; 
+	border:1px solid #ccc; padding:3px 5px;
+}
+
+#jmslist .inputbox:hover { font-size:12px; color:#000; background-color:#efefef;}
+
+
+
+#jmslist div.header {
+	font-size: 22px; font-weight: bold; color: #000; line-height: 48px;
+	padding-left: 55px;
+	background-repeat: no-repeat;
+	margin-left: 10px;
+}
+
+#jmslist div.toolbar .toolbar { background-color:#fff; font-size:12px; text-transform:none; color: #646464;}
+
+#jmslist .border { margin-bottom:10px; }
+#jmslist .button { background-color: #fff; border: none; background-image:none; color: #000;}
+
+#jmslist .m { background-color: #fff; border: none;}
+
+#jmslist div.toolbar { float: right; text-align: right; padding: 0; }
+
+#jmslist table.toolbar    			 { border-collapse: collapse; padding: 0; margin: 0;	 }
+#jmslist table.toolbar td 			 { padding: 1px 1px 1px 4px; text-align: center; color: #000; height: 48px; }
+#jmslist table.toolbar td.spacer  { width: 10px; }
+#jmslist table.toolbar td.divider { border-right: 1px solid #eee; width: 5px; }
+
+#jmslist table.toolbar span { float: none; width: 32px; margin: 0 auto; display: block; }
+
+#jmslist table.toolbar a {
+    display: block; float: left;
+	white-space: nowrap;
+	border: 1px solid #fbfbfb;
+	padding: 1px 5px;
+	cursor: pointer;
+	background-color: #FC9;
+    text-decoration: none;
+}
+
+#jmslist table.toolbar a:hover {
+	color: #000;
+}
+
+
+#jmslist table.multisiteslist {
+	width:100%;
+    font-size:10px;
+}
+
+#jmslist table.multisiteslist tbody{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:10px;
+	color:#000;
+}
+
+#jmslist table.multisiteslist thead {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#000;
+	text-decoration:none;
+	text-align:center;
+	font-weight:normal;
+    background-image:url(../images/theadbg.jpg);
+	background-repeat:repeat-x;
+	height:30px;
+}
+
+#jmslist table.multisiteslist thead a:link,
+#jmslist table.multisiteslist thead a:visited
+{
+	color:#000;
+	text-decoration:none;
+	font-weight:normal;
+}
+
+#jmslist table.multisiteslist tfoot {
+	height:auto;
+	background-color:#333;
+	color:#FFF;
+	text-align:center;
+}
+
+#jmslist table.multisiteslist tbody tr {
+	height:auto;	
+}
+
+#jmslist table.multisiteslist tbody tr.row0 {
+	background-image:url(../images/row0bg.png);
+	background-repeat:repeat;
+
+}
+
+#jmslist table.multisiteslist {
+	border-color:#000;
+    border-bottom:1px solid;
+	border-top:1px solid;
+	border-left:1px solid;
+	border-right:1px solid;
+}
+
+
+#jmslist table.multisiteslist tfoot .list-footer{
+	margin-left: auto;
+	margin-right:auto;
+	width: 200px;
+	float:none;
+}
+
+#jmslist table.multisiteslist tfoot .list-footer .limit{
+	text-align:center;
+	margin-bottom:10px;
+	color:#CCC;
+	float:none;
+}
+
+#jmslist table.multisiteslist tfoot div.limit {
+	color:#fff;
+}
+
+
+#jmslist table.multisiteslist tbody tr.row1 {
+	background-image:url(../images/row1bg.png);
+	background-repeat:repeat;
+
+}
+
+/* #jmslist table.multisiteslist tbody tr.row0 {
+	background-color: #0F3; 
+}*/
+
+
+#jmslist table.multisiteslist {
+	background-image:url(../images/jmslistbg.jpg);
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+
+#jmslist table.multisiteslist tbody tr td ul li {
+    height:20px;
+	line-height:11px;
+	margin: 0px;
+	height:auto;
+	list-style-type:square;
+	list-style-position:inside;
+	background: none;
+	padding-left: 0px;
+}
+
+#jmslist table.multisiteslist tbody tr td ul{
+	list-style-image:none;
+	list-style-type:square;
+	list-style-position:inside;
+	margin:0px;
+	padding:0px;
+}
+
+#jmslist table.multisiteslist th {
+	padding:3px;
+	clear:both;
+	overflow:hidden;
+	white-space: nowrap;	
+}
+
+
+
+#jmslist table.multisiteslist td{
+	padding:3px;
+	clear:both;
+	overflow:hidden;
+}
+

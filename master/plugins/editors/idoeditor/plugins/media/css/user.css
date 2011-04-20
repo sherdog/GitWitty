@@ -1,0 +1,12 @@
+#list{
+	width:170px;
+	height:16em;
+	max-width:20em;
+	font-size:14px;
+}
+
+#details{
+	width:310px;
+}
+
+#loading{display:none;}

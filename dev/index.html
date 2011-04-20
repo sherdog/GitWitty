@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>GitWitty - Homepage Prototype</title>
+<script language="javascript" src="js/jquery-1.3.2.min.js"></script>
+<script language="javascript" src="js/swfobject.js"></script>
+<style>
+#mediaspace { position:relative; top:149px; margin-left:390px; }
+</style>
+</head>
+
+<body style="background:url(homepage.jpg) no-repeat top center;">
+<div style="height:1830px; width:960px; margin:0px auto;">
+<div id='mediaspace'>&nbsp;</div>
+				<script type='text/javascript'>
+                  var so = new SWFObject('player.swf','ply','560','356','9','#FFFFFF');
+                  so.addParam('allowfullscreen','true');
+                  so.addParam('allowscriptaccess','always');
+                  so.addParam('wmode','opaque');
+				  so.addVariable('skin','modieus');
+                  so.addVariable('file','http://s3.envato.com/files/1505192/preview.flv');
+				  so.addVariable('image','videostill.jpg');
+				  so.addVariable('screencolor','0xFFFFFF');
+                  so.write('mediaspace');
+                </script>
+</div>
+</body>
+</html>

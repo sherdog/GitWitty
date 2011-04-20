@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install version="1.5" type="plugin" group="content">
+	<name>Pages and Items</name>
+	<author>Carsten Engel</author>
+	<creationDate>march 2009</creationDate>
+	<copyright>(C) 2008 Carsten Engel. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>-</authorEmail>
+	<authorUrl>www.pages-and-items.com</authorUrl>
+	<version>1.4.3</version>
+	<description>
+	   plugin for Pages-and-Items. Controls output from different item-types and custom itemtypes in the Pages-and-Items framework. Don't forget to ENABLE this plugin!  
+	</description>   	
+	<files>
+		<filename plugin="pages_and_items">pages_and_items.php</filename>
+	</files>	
+</install>

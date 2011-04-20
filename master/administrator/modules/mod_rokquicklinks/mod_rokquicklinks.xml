@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0" method="upgrade" client="administrator">
+	<name>RokQuickLinks</name>
+	<creationDate>December 6, 2010</creationDate>
+	<author>RocketTheme, LLC</author>
+	<authorEmail>support@rockettheme.com</authorEmail>
+	<authorUrl>http://www.rockettheme.com</authorUrl>
+	<copyright>(C) 2005 - 2010 RocketTheme, LLC. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<version>0.1.3</version>
+	<description>This module provides a configurable quicklink panel</description>
+	<files>
+		<filename module="mod_rokquicklinks">mod_rokquicklinks.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl/</folder>
+	</files>
+	<params>
+		<param name="icon-1" label="Icon 1" type="imagelist" default="newspaper_add" directory="/administrator/modules/mod_rokquicklinks/tmpl/icons/" stripext="1" />
+		<param name="link-1" label="Link 1" type="text" size="70" default="index.php?option=com_content&amp;task=add" />
+		<param name="title-1" label="Title 1" type="text" default="Add Article" />
+		<param type="spacer" />
+		<param name="icon-2" label="Icon 2" type="imagelist" default="images" directory="/administrator/modules/mod_rokquicklinks/tmpl/icons/" stripext="1" />
+		<param name="link-2" label="Link 2" type="text" size="70" default="index.php?option=com_media"  />
+		<param name="title-2" label="Title 2" type="text" default="Media Manager" />
+		<param type="spacer" />
+		<param name="icon-3" label="Icon 3" type="imagelist" default="drawer_open" directory="/administrator/modules/mod_rokquicklinks/tmpl/icons/" stripext="1" />
+		<param name="link-3" label="Link 3" type="text" size="70" default="index.php?option=com_categories&amp;section=com_content"  />
+		<param name="title-3" label="Title 3" type="text" default="Category Manager" />
+		<param type="spacer" />
+		<param name="icon-4" label="Icon 4" type="imagelist" default="cog" directory="/administrator/modules/mod_rokquicklinks/tmpl/icons/" stripext="1" />
+		<param name="link-4" label="Link 4" type="text" size="70" default="index.php?option=com_config"  />
+		<param name="title-4" label="Title 4" type="text" default="Configuration" />
+		<param type="spacer" />
+		<param name="icon-5" label="Icon 5" type="imagelist" default="brick" directory="/administrator/modules/mod_rokquicklinks/tmpl/icons/" stripext="1" />
+		<param name="link-5" label="Link 5" type="text" size="70" default="index.php?option=com_installer"  />
+		<param name="title-5" label="Title 5" type="text" default="Install New" />
+		<param type="spacer" />
+		<param name="icon-6" label="Icon 6" type="imagelist" default="color_management" directory="/administrator/modules/mod_rokquicklinks/tmpl/icons/" stripext="1" />
+		<param name="link-6" label="Link 6" type="text" size="70" default="index.php?option=com_templates"  />
+		<param name="title-6" label="Title 6" type="text" default="Templates" />
+		<param type="spacer" />
+	</params>
+</install>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>Horizontal SlideShow</name>
+	<author>Ümit Kenan Gönüllü</author>
+	<creationDate>October 2009</creationDate>
+	<copyright>Joomla! Türkçe Eğitim ve Destek Sitesi</copyright>
+	<license>GNU/GPL</license>
+	<authorEmail>bilgi@jt.gen.tr</authorEmail>
+	<authorUrl>www.jt.gen.tr</authorUrl>
+	<version>1.8</version>
+	<description>DESCSLIDESHOW</description>
+	<files>
+		<filename module="mod_slideshow">mod_slideshow.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/horizontal.php</filename>
+        <filename>tmpl/index.html</filename>
+        <filename>tmpl/vertical.php</filename>
+		<filename>scripts/index.html</filename>
+		<filename>scripts/horizontal.js</filename>
+		<filename>scripts/vertical.js</filename>
+		<filename>images/index.html</filename>
+		<filename>images/logo.png</filename>
+		<filename>samples/sample01.jpg</filename>
+		<filename>samples/sample02.jpg</filename>
+		<filename>samples/sample03.jpg</filename>
+		<filename>samples/sample04.jpg</filename>
+		<filename>samples/sample05.jpg</filename>
+		<filename>samples/index.html</filename>
+	</files>
+
+	<languages>
+		<language tag="en-GB">en-GB.mod_slideshow.ini</language>
+		<language tag="tr-TR">tr-TR.mod_slideshow.ini</language>
+		<language tag="fr-FR">fr-FR.mod_slideshow.ini</language>
+		<language tag="de-DE">de_DE.mod_slideshow.ini</language>
+	</languages>
+
+	<params>
+		<param name="folder" type="text" size="50" default="modules/mod_slideshow/samples" label="IMAGE FOLDER" description="PARAMIMAGEFOLDER" /> 
+		<param name="showallimages" type="radio" default="0" label="SHOW ALL IMAGES" description="DESCSHOWALLIMAGES">
+			<option value="0">No</option> 
+			<option value="1">Yes</option> 
+		</param>
+		<param name="images" type="textarea" default="sample01.jpg\nsample02.jpg\nsample03.jpg\nsample04.jpg\nsample05.jpg" label="IMAGES" description="PARAMIMAGES" cols="50" rows="4" /> 
+		<param name="titles" type="textarea" default="Sample Title\nSample Title\nSample Title\nSample Title\nSample Title" label="TITLES" description="PARAMTITLES" cols="50" rows="4" /> 
+		<param name="urls" type="textarea" default="www.jt.gen.tr\nwww.ukenan.com\nwww.jt.gen.tr\nwww.ukenan.com\nwww.jt.gen.tr" label="URL" description="PARAMURL" cols="50" rows="4" /> 
+		<param name="linked" type="radio" default="1" label="LINKED URL" description="PARAMLINKEDURL">
+			<option value="0">No</option> 
+			<option value="1">Yes</option> 
+		</param>
+		<param name="target" type="list" default="_blank" label="TARGET" description="DESCTARGET">
+			<option value="_blank">TARGET_BLANK</option> 
+			<option value="_parent">TARGET_PARENT</option> 
+			<option value="_self">TARGET_SELF</option> 
+			<option value="_top">TARGET_TOP</option> 
+		</param>
+		<param name="addhttp" type="radio" default="1" label="ADD HTTP AUTOMATICALLY" description="PARAMADDHTTP">
+			<option value="0">No</option> 
+			<option value="1">Yes</option> 
+		</param>
+	</params>
+
+	<params group="advanced">
+		<param name="layout" type="list" default="horizontal" label="LAYOUT" description="PARAMLAYOUT">
+			<option value="horizontal">PARAMHORIZONTAL</option>
+			<option value="vertical">PARAMVERTICAL</option>
+		</param>
+		<param name="speed" type="text" default="2" label="SPEED" description="PARAMSPEED" /> 
+		<param name="stopslide" type="radio" default="1" label="STOP SLIDESHOW" description="PARAMSTOPSLIDESHOW">
+			<option value="0">No</option> 
+			<option value="1">Yes</option> 
+		</param>
+		<param name="wait" type="text" default="1000" label="WAIT" description="PARAMWAIT" />
+	</params>
+
+	<params group="other">
+		<param name="imagewidth" type="text" size="10" default="auto" label="IMAGE WIDTH" description="PARAMIMAGEWIDTH" /> 
+		<param name="imageheight" type="text" size="10" default="210" label="IMAGE HEIGHT" description="PARAMIMAGEHEIGHT" /> 
+		<param name="sliderbgcolor" type="text" size="10" default="transparent" label="BGCOLOR" description="PARAMBGCOLOR" /> 
+		<param name="sliderwidth" type="text" size="10" default="170" label="SLIDER WIDTH" description="PARAMSLIDERWIDTH" /> 
+		<param name="sliderheight" type="text" size="10" default="210" label="SLIDER HEIGHT" description="PARAMSLIDERHEIGHT" /> 
+		<param name="space" type="text" size="10" default="1" label="SPACE" description="PARAMSPACE" /> 
+		<param name="moduleclass_sfx" type="text" size="10" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+		<param name="slideshowfooter" type="radio" default="1" label="SHOW FOOTER" description="DESCSHOWFOOTER">
+			<option value="0">Hide</option> 
+			<option value="1">Show</option> 
+		</param>
+	</params>
+</install>

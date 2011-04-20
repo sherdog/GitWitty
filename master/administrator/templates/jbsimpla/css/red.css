@@ -1,0 +1,20 @@
+/******** red **********/
+body.red #menu li.node a { background: url(../images/bg-menu-item-red.gif) no-repeat scroll right center; }
+body.red #menu li.node ul li a { background: none; }
+body.red a { color: #A40000; }
+body.red a:hover { color: #5F0606; }
+body.red .shortcut-button span:hover { color:#A40000; }
+body.red a.remove-link { color: #A40000; }
+body.blue ul#submenu li a:hover { color: #A40000; }
+body.red .pagination a.number {
+	background: #5F0606 url('../images/bg-button-red.gif') top left repeat-x !important;
+	border-color: #A40000 !important;
+}
+body.red .next a, body.red .home-page a {
+	background: #5F0606 url('../images/bg-button-red.gif') top left repeat-x !important;
+}
+body.red .pagination a.current { color: #EF7777 !important; }
+body.red button, body.red input[type=submit], body.red input.button {
+	background:#5F0606 url(../images/bg-button-red.gif) repeat-x scroll left top !important;
+	border:1px solid #A40000 !important;
+}

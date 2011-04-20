@@ -1,0 +1,17 @@
+/******** orange **********/
+body.orange #menu li.node a { background: url(../images/bg-menu-item-orange.gif) no-repeat scroll right center; }
+body.orange #menu li.node ul li a { background: none; }
+body.orange a { color: #9d540d; }
+body.orange a:hover { color: #5F2F00; }
+body.orange .shortcut-button span:hover { color:#9d540d; }
+body.orange a.remove-link { color: #9d540d; }
+body.orange .pagination a.number {
+	background: #5F2F00 url('../images/bg-button-orange.gif') top left repeat-x !important;
+	border-color: #9d540d !important;
+}
+body.orange .pagination a.current { color: #CFBBA8 !important; }
+body.orange .next a, body.orange .home-page a { background: #5F2F00 url('../images/bg-button-orange.gif') top left repeat-x !important; }
+body.orange button, body.orange input[type=submit], body.orange input.button {
+	background:#5F2F00 url(../images/bg-button-orange.gif) repeat-x scroll left top !important;
+	border:1px solid #9d540d !important;
+}

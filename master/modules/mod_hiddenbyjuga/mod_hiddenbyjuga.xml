@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>JUGA - Hidden Modules</name>
+	<author>Dioscouri Design</author>
+    <creationDate>04/01/2008</creationDate>
+    <copyright>2008 Dioscouri.com</copyright>
+    <license>GNU General Public License</license>
+	<authorEmail>info@dioscouri.com</authorEmail>
+	<authorUrl>http://anonym.to/?www.dioscouri.com</authorUrl>
+	<version>1.51</version>
+	<description>Displays a module using JUGA Rights and Restrictions. Detailed Instructions: http://www.dioscouri.com/juga/manual/</description>
+
+    <files>
+        <filename module="mod_hiddenbyjuga">mod_hiddenbyjuga.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+    <params>
+		<param name="moduleclass_sfx" type="text" default="hiddenbyjuga" label="Module Class Suffix" description="This suffix will be applied to the css class of the module.  This allows you to style the module as you want.  If you want the module to be invisible (i.e. have no styling), leave this set to \'hiddenbyjuga\'. Your styling for the hidden modules will remain intact.  DO NOT LEAVE THIS BLANK." />
+		<param name="moduleposition" type="text" default="juga" label="Module Position" size="30" description="For hiddenbyjuga to work, place the modules you want controlled by JUGA within this module position.  Ensure that it is 1) an existing module position and 2) not currently used by your template"  />
+		<param name="modulestyle" type="list" default="rounded" label="Module Style" description="Generally, you will want this module to be invisible, so leave this on XHTML.">
+			<option value="table">Table</option>
+			<option value="raw">Raw</option>
+			<option value="xhtml">XHTML</option>
+			<option value="rounded">Extra Divs (Rounded)</option>
+		</param> 
+		<param name="jugagroups" type="text" default="Public Access, Administrator" label="JUGA Groups" size="50" description="The JUGA Groups that may see this module.  Valid entries are a comma-separated list.  Use \'!\' to deny access to a group."  />
+	</params>
+</install>

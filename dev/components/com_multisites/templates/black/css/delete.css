@@ -1,0 +1,89 @@
+/*
+ * @file       delete.css
+ * @brief      Style used by the "delete" rendering.
+ * @version    1.2.20
+ * @author     Edwin CHERONT     (e.cheront@jms2win.com)
+ *             Edwin2Win sprlu   (www.jms2win.com)
+ * @copyright  Joomla Multi Sites
+ *             Single Joomla! 1.5.x installation using multiple configuration (One for each 'slave' sites).
+ *             (C) 2010 Edwin2Win sprlu - all right reserved.
+ * @license    This program is free software; you can redistribute it and/or
+ *             modify it under the terms of the GNU General Public License
+ *             as published by the Free Software Foundation; either version 2
+ *             of the License, or (at your option) any later version.
+ *             This program is distributed in the hope that it will be useful,
+ *             but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *             MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *             GNU General Public License for more details.
+ *             You should have received a copy of the GNU General Public License
+ *             along with this program; if not, write to the Free Software
+ *             Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+ *             A full text version of the GNU GPL version 2 can be found in the LICENSE.php file.
+ * @par History:
+ * - V1.2.20 27-JAN-2010: Initial version
+ *--------------------------------------------------------- */
+
+/* jmsdelete */
+
+#jmsdelete {
+   padding-top:20px;
+}
+
+#jmsdelete div#delnote  {
+	font-family:Arial, Helvetica, sans-serif;
+	background-color:#ececec;
+	color: #504e4e;
+	font-size:11px;
+	border: 1px solid #ab2020;
+	padding: 10px;
+	margin-top: 20px;
+	margin-right: 1px;
+	margin-bottom: 40px;
+	margin-left: 1px;
+}
+
+#jmsdelete table.toolbar {
+   background-color:#FFF;
+}
+
+#jmsdelete div.toolbar table tbody tr td {
+   font-family:Arial, Helvetica, sans-serif;
+   color: #000;
+   font-size:11px;
+   text-align:left;
+   border-style:none;
+   padding:0px;
+   
+}
+
+
+
+#jmsdelete div.toolbar .toolbar tbody tr td { background-color:#fff; border:none;}
+
+#jmsdelete div.toolbar .toolbar { background-color:#fff; font-size:12px; text-transform:none; color: #646464; text-decoration:none; border-style:none; border-width: 0px;}
+
+#jmsdelete div.toolbar .toolbar:hover { color: #000; font-size:12px; text-transform:none; text-decoration:none; border-style:none; border-width: 0px; }
+
+
+#jmsdelete form {
+	background-image:url(../images/jmslistbg.jpg);
+	background-repeat:no-repeat;
+}
+
+#jmsdelete table.adminform tbody tr td{
+   color:#fff;
+   font-size:11px;
+   background-color:#000;
+   border-style:none;
+   padding-left:5px;
+   padding-right:10px;
+   padding-bottom:5px;
+   padding-top:5px;
+}
+
+
+#jmsdelete .border div.header {
+   color:#000;
+   font-size:22px;
+   font-weight:bold;
+}

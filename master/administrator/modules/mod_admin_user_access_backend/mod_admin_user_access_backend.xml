@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0" method="upgrade" client="administrator">
+	<name>Admin user access (backend)</name>
+	<author>Carsten Engel</author>
+	<creationDate>march 2011</creationDate>
+	<copyright>(C) 2008 - 2011 Carsten Engel Engelweb. All rights reserved.</copyright>
+	<license>GPL</license>
+	<authorEmail>-</authorEmail>
+	<authorUrl>www.pages-and-items.com</authorUrl>
+	<version>2.1.1</version>
+	<description>This module restricts admin-user access and displays the Admin_User_Access-toolbar (optional). 1. go to extensions &gt; modules &gt; administrator &gt; 'Admin user access' 2. enabled -> 'yes' 3. position -> 'menu' 4. order -> right above 'admin menu'.</description>
+	<files>
+		<filename module="mod_admin_user_access_backend">mod_admin_user_access_backend.php</filename>	
+		<filename>mod_admin_user_access_backend2.php</filename>			
+		<filename>jquery-1_3_2.js</filename>
+		<filename>toolbar.css</filename>		
+	</files>	
+</install>

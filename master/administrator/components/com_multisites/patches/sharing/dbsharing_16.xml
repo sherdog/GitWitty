@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<params>
+		<param name="dbsh_UserSharing" type="radio" default="none" 
+		                               label="TEMPLATE_VIEW_EDT_SHR_USERSHARING" 
+		                               description="TEMPLATE_VIEW_EDT_SHR_USERSHARING_DESC" 
+		                               icon="dbsharing.gif#6" >
+				<option value="none">TEMPLATE_VIEW_EDT_SHR_NOSHARE</option>
+				<option value="Joomla" description="TEMPLATE_VIEW_EDT_SHR_JUSERS_DESCR">TEMPLATE_VIEW_EDT_SHR_JUSERS<tables>
+                  <table name="#__users"        description="Joomla users" />
+                  <table name="#__user_%"       description="Joomla user" />
+                  <table name="#__usergroups"   description="Joomla user groups" />
+                  <table name="#__usergroup_%"  description="Joomla user groups rules" />
+                  <table name="#__session" />
+                  <table name="#__access_%"     description="Access Control List" />
+            </tables></option>
+				<option value="VMUser" condition="{root}/administrator/components/com_virtuemart"
+				        description="TEMPLATE_VIEW_EDT_SHR_VMUSERS_DESCR">TEMPLATE_VIEW_EDT_SHR_VMUSERS<tables>
+                  <table name="#__users"        description="Joomla users" />
+                  <table name="#__user_%"       description="Joomla user" />
+                  <table name="#__usergroups"   description="Joomla user groups" />
+                  <table name="#__usergroup_%"  description="Joomla user groups rules" />
+                  <table name="#__session" />
+                  <table name="#__access_%"     description="Access Control List" />
+                  <table name="#__vm_user_info" description="VirtueMart Users shopping info" />
+				</tables></option>
+		</param>
+		<param name="dbsh_Kunena" type="checkbox" 
+		                      condition="{root}/administrator/components/com_kunena"
+                            icon="dbsharing.gif#41"
+		                      label="Kunena Forum"  description="Share all the Kunena Forum tables" >
+				<tables>
+                  <table name="#__users"        description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"   description="Access Control List" />
+                  <table name="#__kunena_%"     description="All the Kunena 1.6 Forum tables" />
+				</tables>
+		</param>
+		<param name="dbsh_SOBIPro" type="checkbox" 
+		                      condition="{root}/administrator/components/com_sobipro"
+                            icon="dbsharing.gif#70"
+		                      label="SOBI Pro"    description="Share all SOBI Pro" >
+				<tables>
+                  <table name="#__users"        description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"   description="Access Control List" />
+                  <table name="#__sobipro_%"    description="All the SOBI Pro tables" />
+				</tables>
+		</param>
+	</params>
+</form>

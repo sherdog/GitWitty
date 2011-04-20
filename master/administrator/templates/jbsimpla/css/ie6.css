@@ -1,0 +1,106 @@
+/* CSS Document */
+
+div#toolbar-box {
+  float: left;
+  width: 100%;
+  margin-top: 0;
+}
+
+#toolbar-box h3 {
+	float: left;
+}
+
+table.toolbar {
+	width: auto;
+}
+
+#toolbar table.toolbar td {
+	width: 100px;
+}
+
+#submenu li {
+	float: right;
+	display: block;
+	width: 150px;
+	overflow: visible;
+	text-align: center;
+}
+
+#topmenu ul li.node {
+	background:none;
+}
+
+#module-status span.preview {
+	background:transparent url(../images/icons/preview.png) no-repeat 0 5px;
+}
+#module-status span.logout {
+	background:transparent url(../images/icons/logout.png) no-repeat 0 5px;
+}
+
+input { border-width: expression(this.type=="radio"?'0px':this.type=="checkbox"?'0px':'1px'); }
+
+/* IE6 css fixer v0.7: Fri, 04 Dec 2009 17:02:08 +0100 */
+
+/* ============================================= */
+/* safe settings                                 */
+
+/* add display:inline to floated elements */
+#treecellhelp,
+#datacellhelp,
+div#toolbar-box h3,
+table.toolbar a,
+dl.tabs,
+dl.tabs dt,
+#cpanel div.icon,
+#cpanel div.icon a,
+table.adminlist td.order span,
+.pagination div.limit,
+.button1,.button1 div,
+.button1 a,
+.button2-left a,.button2-right a,.button2-left span,.button2-right span,
+.button2-left,
+.button2-right,
+.tool-tip,
+#sidebar #sidebar-wrapper #profile-links .logout,
+#sidebar #sidebar-wrapper #profile-links .preview,
+#sidebar #sidebar-wrapper #profile-links .loggedin-users,
+#sidebar #sidebar-wrapper #profile-links .no-unread-messages,#sidebar #sidebar-wrapper #profile-links .unread-messages,
+.column-left,
+.column-right,
+ul#submenu,
+ul#submenu li,
+#main-content .pagination,
+.limit,
+ul.shortcut-buttons-set li,
+#login-wrapper #login-content label,
+#login-wrapper #login-content input,#login-wrapper #login-content select,
+#login-wrapper #login-content p#remember-password,.dropdownnav,.align-right,
+#login-wrapper #login-content .button_holder,
+.col,.align-left,.button2-left,.button2-right,.button2-left div,.button2-right div,div.col,
+.width-45,
+.width-55,
+#toolbar table.toolbar a,
+#topmenu-wrap,
+#topmenu li {display:inline;}
+
+/* add zoom:1 to overflow:hidden */
+.clr,
+#treecellhelp,
+div.t,div.b,
+#menu li.node ul {zoom:1;}
+
+/* fix negative margins */
+dl.tabs,
+.tool-title {position:relative; zoom:1;}
+
+/* add zoom:1 to pos:relative elements */
+#treecellhelp,
+#system-message dd ul,
+#login-wrapper #login-content .notification,
+#login-error-message,
+#topmenu,
+#topmenu li {zoom:1;}
+
+/* add transparancy */
+div.wysiwyg ul.panel li a {filter:progid:DXImageTransform.Microsoft.Alpha(opacity=60);}
+div.wysiwyg ul.panel li a:hover,div.wysiwyg ul.panel li a.active {filter:progid:DXImageTransform.Microsoft.Alpha(opacity=99);}

@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<install version="1.5" type="plugin" group="editors" method="upgrade">
+        <name>Editor - IDOEditor</name>
+        <version>1.6.16</version>
+        <creationDate>2009</creationDate>
+        <author>Sunshine LLC</author>
+        <authorEmail>nicomashi@gmail.com</authorEmail>
+        <authorUrl>idojoomla.com</authorUrl>
+        <copyright>Sunshine LLC</copyright>
+        <license>LGPL</license>
+        <description>This is small WISIWYG-editor for Joomla! that will extend IDoBlog Community 2.0 functionality. It is based on TinyMCE WISIWYG-editor that was created by Moxiecode Systems AB</description>
+	<files>
+		<filename plugin="idoeditor">idoeditor.php</filename>
+		<folder>idoeditor</folder>
+	</files>
+	<languages>
+		<language tag="ru-RU">ru-RU.plg_editors_idoeditor.ini</language>
+	</languages>
+
+	<params>
+  		<param name="lang_mode" type="radio" default="1" label="Automatic Language Selection" description="DESCLANGMODE">
+ 			<option value="0">No</option>
+ 			<option value="1">Yes</option>
+ 		</param>
+ 		<param name="lang_code" type="text" default="en" size="2" label="Language Code" description="DESCLANGCODE"/>
+
+		<param name="max_image_wh" type="text" default="100" label="Max height\/width for image" description="">100</param>
+		<param name="video_ext" type="text" default="flv swf" label="Video ext" description="">flv swf</param>
+		<param name="audio_ext" type="text" default="mp3 wma" label="Audio ext" description="">mp3 wma</param>
+		<param name="file_ext" type="text" default="zip rar png" label="File ext" description="">zip rar png</param>
+		<param name="image_ext" type="text" default="jpg png gif" label="Image ext" description="">jpg png gif</param>
+		<param name="use_rokbox" type="radio" default="0" label="Use rokbox" description="">
+ 			<option value="0">Off</option>
+ 			<option value="1">On</option>
+ 		</param>
+		<param name="use_noindex" type="radio" default="0" label="Use noindex" description="">
+ 			<option value="0">Off</option>
+ 			<option value="1">On</option>
+ 		</param>
+
+	</params>	
+</install>

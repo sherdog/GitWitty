@@ -1,0 +1,65 @@
+/*---- link styles ----*/
+a:link, a:visited {
+color: #4E7D95; 
+text-decoration: none;
+font-weight: bold;
+}
+a:hover {
+color: #4E7D95;
+font-weight: bold;
+text-decoration: underline;
+}
+#access_buttons a {
+width:21px;
+height:21px;
+white-space: nowrap;
+}
+#path a{
+color:#808080;
+}
+a.contentpagetitle:link, a.contentpagetitle:visited {
+font: bold 1.5em/1em;
+border-bottom:1px solid #ccc;
+color:#575b66;
+margin:0 0 0.2em 0;
+width: 100%;
+padding:0 0 0.2em 0;/*both set to zero and padding in header div is used intead to deal with compound ie pc problems that are beyound summary in a simple comment.*/
+}
+a.contentpagetitle:hover {
+color: #666;
+text-decoration:underline;
+}
+img,a.img {
+border: 0;
+}
+.sectiontableentry2 a  {
+color: #73819C;
+text-decoration: none;
+font-weight: bold;
+}
+.sectiontableentry1 a  {
+color: #73819C;
+text-decoration: none;
+font-weight: bold;
+}
+.sectiontableentry2 a:hover {
+color: #333333;
+text-decoration: none;
+font-weight: bold;
+}
+.sectiontableentry1 a:hover {
+color: #333333;
+text-decoration: none;
+font-weight: bold;
+}
+a.category:hover {
+color:#FF3300;
+}
+.designer a:link, .designer a:visited{
+text-decoration:none;
+color: #CCC;
+font-size:9px;
+}
+.designer a:hover {
+color:#666;
+}

@@ -1,0 +1,35 @@
+input { border-width: expression(this.type=="radio"?'0px':this.type=="checkbox"?'0px':'1px'); }
+
+#toolbar table.toolbar td.divider, #toolbar table.toolbar td.spacer { display: none; }
+
+#toolbar table.toolbar td { }
+#toolbar table.toolbar tr { height: auto; }
+#toolbar table.toolbar { width: 100%; }
+
+#module-status span.preview {
+	background:transparent url(../images/icons/preview.png) no-repeat 0 5px;
+}
+#module-status span.logout {
+	background:transparent url(../images/icons/logout.png) no-repeat 0 5px;
+}
+
+input#modlgn_passwd.inputbox,input#modlgn_username.inputbox {margin: 0}
+
+#login-top {
+	margin-bottom: 30px;
+}
+
+.button_holder .button1 .next { float:none; }
+.button_holder .button1 { margin-right: 120px; }
+#toolbar-box .m { width: 100%; }
+#element-box .m { width: 98%; }
+
+table.adminlist td.order span,table.adminlist td.order input {
+	width: 10px;
+	margin: 0 4px 0 0;
+}
+#position {
+	padding: 1px; 
+	font-size: 12px;
+	border: none;
+}

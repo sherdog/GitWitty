@@ -1,0 +1,77 @@
+/*---- module styles ----*/
+.moduletable-left {
+padding:0;
+margin:0;
+}
+.moduletable-left h3, .moduletable-right h3 {
+margin:0;
+padding:2px 0 2px 0;
+color: #fff;
+width:100%;
+display: block;
+background: #888;
+font-size: 1em;
+text-align: left;
+text-indent: 20px;
+}
+.moduletable-right {
+padding: 1em 0 1em 0;
+margin: 0;
+border-bottom: 1px #f0f0f0 solid;
+}
+.moduletable-user6{
+padding: 5px;
+margin: 0;
+background: #ececec;
+}
+.moduletable-user7 {
+padding: 5px;
+margin: 0;
+background: #ececec url(../images/split_module_border.png) 0 0 repeat-y;
+}
+.moduletable-user6 a:link,.moduletable-user6 a:visited,.moduletable-user6 a:hover, .moduletable-user7 a:link,.moduletable-user7 a:visited,.moduletable-user7 a:hover{
+color: #C50D0B;
+font-weight: normal;
+}
+
+/*---- rounded corner boxes ----*/
+
+.module-box {
+background: url(../images/greenboxright.png) top right no-repeat;
+padding:0;
+margin:0 0 1em 0;
+position:relative;
+}
+
+#content .module-box h3 {
+padding-right:11px;
+}
+.module-box h3 {
+margin:0;
+padding:0.1em 0 0 0  !Important; padding:0 0 0 11px;
+color: #fff;
+position:absolute;
+top:0;
+left:0;
+width:100%;
+}
+.module-box div {
+background: url(../images/greenboxleft.png) top left no-repeat;
+margin:0;
+padding:2em 0 0 0;
+}
+.module-box div div{
+background: url(../images/greenboxleft.png) bottom left no-repeat;
+padding:0 0 0 11px;
+margin:0;
+
+}
+.module-box div div div{
+background: url(../images/greenboxright.png) bottom right no-repeat;
+padding:0 11px 11px 0;
+height:1%;
+}
+
+.module-box div div div div{
+background: none;
+}

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<addtomenu>
+	<name>Add to Menu Component XML - com_myblog</name>
+	<version>1.6.0</version>
+	<author>NoNumber! (Peter van Westen)</author>
+	<authorEmail>peter@nonumber.nl</authorEmail>
+	<authorUrl>http://www.nonumber.nl</authorUrl>
+	<copyright>Copyright © 2011 NoNumber! All Rights Reserved</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<description><![CDATA[
+		This template is used when viewing a My Blog page
+	]]></description>
+
+	<params>
+		<!-- Name
+		 * This is the name of the menu item type
+		-->
+		<name>My Blog</name>
+
+		<!-- Adjust height
+		 * If for some reason the height of the popup window is
+		 * not big enough (or too big), you can adjust it
+		 * (negative values are also permitted)
+		-->
+		<adjust_height>0</adjust_height>
+
+		<!-- Requirements (get/post variables)
+		 * -> Use '*' to match anything but empty
+		 * -> Use '+' to match anything but false (empty/0/false)
+		 * -> Use comma's to match any of multiple values
+		-->
+		<required>
+		</required>
+
+		<!-- Database select
+		 * Define what options to use to select the unique item
+		 * You have to define table, where, name and alias
+		 * If no db lookup is required, only define name (and alias)
+		 * -> Use '$...' to use available variables
+		-->
+		<dbselect>
+			<name>My Blog</name>
+		</dbselect>
+
+		<!-- Extra options
+		 * Define what extra options to display
+		 * For type, choose from:
+		 * text, textarea, hidden (use value)
+		 * select, radio (use values)
+		 * -> Use '$...' to use available variables
+		-->
+		<extras>
+		</extras>
+
+		<!-- URL parameters
+		 * Define what the menu item url should contain
+		 * -> Use '$...' to use available variables
+		-->
+		<urlparams>
+			<option>com_myblog</option>
+		</urlparams>
+
+		<!-- Menu item parameters
+		 * Define the extra menu item params
+		 * -> Use '$...' to use available variables
+		-->
+		<menuparams>
+		</menuparams>
+	</params>
+</addtomenu>

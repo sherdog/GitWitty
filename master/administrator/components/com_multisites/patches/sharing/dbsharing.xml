@@ -1,0 +1,883 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<params>
+		<param name="dbsh_UserSharing" type="radio" default="none" 
+		                               label="TEMPLATE_VIEW_EDT_SHR_USERSHARING" 
+		                               description="TEMPLATE_VIEW_EDT_SHR_USERSHARING_DESC" 
+		                               icon="dbsharing.gif#6" >
+				<option value="none">TEMPLATE_VIEW_EDT_SHR_NOSHARE</option>
+				<option value="Joomla" description="TEMPLATE_VIEW_EDT_SHR_JUSERS_DESCR">TEMPLATE_VIEW_EDT_SHR_JUSERS<tables>
+                  <table name="#__users"        description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"   description="Access Control List" />
+            </tables></option>
+				<option value="VMUser" condition="{root}/administrator/components/com_virtuemart"
+				        description="TEMPLATE_VIEW_EDT_SHR_VMUSERS_DESCR">TEMPLATE_VIEW_EDT_SHR_VMUSERS<tables>
+                  <table name="#__users"        description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"   description="Access Control List"/>
+                  <table name="#__vm_user_info" description="VirtueMart Users shopping info" />
+				</tables></option>
+		</param>
+
+
+		<param name="dbsh_AcyMailing" type="radio" default="none"
+		                      condition="{root}/administrator/components/com_acymailing"
+                            icon="dbsharing.gif#47"
+		                      label="AcyMailing" description="Share all the AcyMailing tables" >
+				<option value="none">TEMPLATE_VIEW_EDT_SHR_NOSHARE</option>
+				<option value="on" description="Share all the AcyMailing tables and its dependencies">Sharing all<tables>
+                  <table name="#__users"        description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"   description="Access Control List" />
+                  <table name="#__acymailing_%" description="All the AcyMailing tables" />
+                  <table name="#__comprofiler%" description="All the Community Builder tables" />
+                  <table name="#__community_%"  description="All the JomSocial tables" />
+                  <table name="#__vm%"          description="All the VirtueMart tables" />
+            </tables></option>
+				<option value="noVM" description="Share all the AcyMailing tables excuting VirtueMart">Sharing all except VirtueMart<tables>
+                  <table name="#__users"        description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"   description="Access Control List" />
+                  <table name="#__acymailing_%" description="All the AcyMailing tables" />
+                  <table name="#__comprofiler%" description="All the Community Builder tables" />
+                  <table name="#__community_%"  description="All the JomSocial tables" />
+            </tables></option>
+				<option value="VMUsers" description="Share all the AcyMailing tables excuting VirtueMart - present risks">Sharing all with limited VirtueMart (only the VM Users) - All the AcyMailing plugins that import content (except user dedtailes shoud be desactivated<tables>
+                  <table name="#__users"        description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"   description="Access Control List" />
+                  <table name="#__acymailing_%" description="All the AcyMailing tables" />
+                  <table name="#__comprofiler%" description="All the Community Builder tables" />
+                  <table name="#__community_%"  description="All the JomSocial tables" />
+                  <table name="#__vm_user_info" description="VirtueMart Users shopping info" />
+            </tables></option>
+		</param>
+
+		<param name="dbsh_AdsManager" type="checkbox" 
+		                      condition="{root}/administrator/components/com_adsmanager"
+                            icon="dbsharing.gif#30"
+		                      label="AdsManager" description="Share all the AdsManager tables" >
+				<tables>
+                  <table name="#__users"        description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"   description="Access Control List" />
+                  <table name="#__adsmanager_%" description="All the AdsManager tables" />
+				</tables>
+		</param>
+
+		<param name="dbsh_AEC" type="checkbox" 
+		                      condition="{root}/administrator/components/com_acctexp"
+                            icon="dbsharing.gif#36"
+		                      label="AEC Subscription Manager" description="Share all the AEC Subscription Manager tables" >
+				<tables>
+                  <table name="#__users"        description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"   description="Access Control List" />
+                  <table name="#__acctexp_%"    description="All the AEC Subscription Manager tables" />
+				</tables>
+		</param>
+
+		<param name="dbsh_Aftextads" type="checkbox" 
+		                      condition="{root}/administrator/components/com_affiliatetextads"
+                            icon="dbsharing.gif#30"
+		                      label="Affiliate Text Ads" description="Share all the Affiliate Text Ads tables" >
+				<tables>
+                  <table name="#__affiliate_%" description="All the Affiliate Text Ads tables" />
+				</tables>
+		</param>
+
+		<param name="dbsh_AjaxChat" type="checkbox" 
+		                      condition="{root}/administrator/components/com_ajaxchat"
+                            icon="dbsharing.gif#58"
+		                      label="Ajax Chat" description="Share all the Ajax Chat tables" >
+				<tables>
+                  <table name="#__users"        description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"   description="Access Control List" />
+                  <table name="#__chat%"        description="All the Ajax Chat tables" />
+                  <table name="#__comprofiler%" description="All the community builder tables" />
+                  <table name="#__community_%"  description="All the JomSocial tables" />
+                  <table name="#__odude%"       description="All the Odude tables" />
+				</tables>
+		</param>
+
+		<param name="dbsh_ALinkExchanger" type="checkbox" 
+		                      condition="{root}/administrator/components/com_alinkexchanger"
+                            icon="dbsharing.gif#30"
+		                      label="ALinkExchanger" description="Share all the ALinkExchanger tables" >
+				<tables>
+                  <table name="#__alinkexchanger"     description="ALinkExchanger table" />
+                  <table name="#__alinkcategory"      description="ALinkExchanger category table" />
+                  <table name="#__alinklanguage"      description="ALinkExchanger language table" />
+				</tables>
+		</param>
+
+		<param name="dbsh_AlphaUserPoints" type="checkbox" 
+		                      condition="{root}/administrator/components/com_alphauserpoints"
+                            icon="dbsharing.gif#30"
+		                      label="AlphaUserPoints"   description="Share all the Alpha User Points tables" >
+				<tables>
+                  <table name="#__users"              description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"         description="Access Control List" />
+                  <table name="#__alpha_userpoints%"  description="All the AlphaUserPoints tables" />
+				</tables>
+		</param>
+		<param name="dbsh_Annonces" type="checkbox" 
+		                      condition="{root}/administrator/components/com_annonces"
+                            icon="dbsharing.gif#30"
+		                      label="Annonces"          description="Share all the Annonces tables" >
+				<tables>
+                  <table name="#__users"              description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"         description="Access Control List" />
+                  <table name="#__annonces%"          description="All the Annonces tables" />
+				</tables>
+		</param>
+		<param name="dbsh_Auctions" type="radio" default="none"
+		                      condition="{root}/administrator/components/com_bids"
+                            icon="dbsharing.gif#62"
+		                      label="Auctions and Community Builder" description="Share all the Auctions and Community Builder tables" >
+				<option value="none">TEMPLATE_VIEW_EDT_SHR_NOSHARE</option>
+				<option value="on" description="Share all the Auctions and Community Builder">Sharing all<tables>
+                  <table name="#__users"        description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"   description="Access Control List" />
+                  <table name="#__bids%"        description="All the Auctions bids tables" />
+                  <table name="#__bid_%"        description="All the Auctions bids tables" />
+                  <table name="#__contacts_buy" description="Auctions contact buy" />
+                  <table name="#__comprofiler%" description="All the community builder tables" />
+            </tables></option>
+				<option value="AuctionsUsers" description="Share all the Auctions Users - present risks">Sharing the Auctions Users<tables>
+                  <table name="#__users"        description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"   description="Access Control List" />
+                  <table name="#__bid_user_settings"  description="Auctions users settings tables" />
+                  <table name="#__bid_users"          description="Auctions users tables" />
+            </tables></option>
+		</param>
+		<param name="dbsh_Billets" type="checkbox" 
+		                      condition="{root}/administrator/components/com_billets"
+                            icon="dbsharing.gif#43"
+		                      label="Billets"   description="Share all the Billets tables" >
+				<tables>
+                  <table name="#__users"              description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"         description="Access Control List" />
+                  <table name="#__billets_%"          description="All the Billets tables" />
+				</tables>
+		</param>
+		<param name="dbsh_civiCRM" type="checkbox" 
+		                      condition="{root}/administrator/components/com_civicrm"
+                            icon="dbsharing.gif#1"
+		                      label="civiCRM"   description="All the civiCRM tables. As this component does not create its own table using the Joomla table prefix, it is probably recommended to ALWAYS share this extension when used in several website because it refers to the Joomla users." >
+				<tables>
+                  <table name="#__users"           description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"      description="Access Control List" />
+                  <table name="civicrm_%"          description="All the civiCRM tables for cross DB sharing." />
+				</tables>
+		</param>
+		<param name="dbsh_CKForms" type="checkbox" 
+		                      condition="{root}/administrator/components/com_ckforms"
+                            icon="dbsharing.gif#45"
+		                      label="CK Forms"   description="All the CK Forms tables." >
+				<tables>
+                  <table name="#__ckforms"            description="All the CK Forms tables." />
+                  <table name="#__ckforms_%"          description="All the CK Forms data tables." />
+                  <table name="#__ckfields"           description="All the CK Forms fields tables." />
+                  <table name="#__ckprofiles"         description="All the CK Forms Profile tables." />
+                  <table name="#__ckprofilefields"    description="All the CK Forms Profile fields tables." />
+				</tables>
+		</param>
+		<param name="dbsh_CB" type="checkbox" 
+		                      condition="{root}/administrator/components/com_comprofiler"
+                            icon="dbsharing.gif#10"
+		                      label="Community Builder" description="Share all the Community Builder tables" >
+				<tables>
+                  <table name="#__users"        description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"   description="Access Control List" />
+                  <table name="#__comprofiler%" description="All the community builder tables" />
+                  <table name="#__cbsubs_%"     description="All the CBSubs tables" />
+				</tables>
+		</param>
+		<param name="dbsh_CBE" type="checkbox" 
+		                      condition="{root}/administrator/components/com_cbe"
+                            icon="dbsharing.gif#68"
+		                      label="Community Builder Enhanced" description="Share all the Community Builder Enhanced tables" >
+				<tables>
+                  <table name="#__users"        description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"   description="Access Control List" />
+                  <table name="#__cbe%"         description="All the community builder enhanced tables" />
+				</tables>
+		</param>
+		<param name="dbsh_CBProfilePro" type="checkbox" 
+		                      condition="{root}/administrator/components/com_cbprofilepro"
+                            icon="dbsharing.gif#61"
+		                      label="Community Builder Profile Pro" description="Share all the Community Builder Profile Pro tables" >
+				<tables>
+                  <table name="#__users"              description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"         description="Access Control List" />
+                  <table name="#__cbprofilepro%"      description="All the Community Builder Profile Pro tables" />
+                  <table name="#__magic_window_code%" description="All the Magic Window Code tables" />
+				</tables>
+		</param>
+		<param name="dbsh_Prop" type="checkbox" 
+		                      condition="{root}/administrator/components/com_properties"
+                            icon="dbsharing.gif#20"
+		                      label="Com-properties" description="Share all the com-properties tables" >
+				<tables>
+                  <table name="#__users"        description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"   description="Access Control List" />
+                  <table name="#__properties_%" description="All the com-properties tables" />
+				</tables>
+		</param>
+		<param name="dbsh_CustProp" type="checkbox" 
+		                      condition="{root}/administrator/components/com_customproperties"
+                            icon="dbsharing.gif#20"
+		                      label="Custom Properties" description="Share all the Custom Properties tables" >
+				<tables>
+                  <table name="#_custom_properties%"  description="All the Custom Properties tables" />
+				</tables>
+		</param>
+		<param name="dbsh_EventList" type="checkbox" 
+		                      condition="{root}/administrator/components/com_eventlist"
+                            icon="dbsharing.gif#26"
+		                      label="EventList" description="Share all the EventList tables" >
+				<tables>
+                  <table name="#__users"        description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"   description="Access Control List" />
+                  <table name="#__eventlist_%"  description="All the EventList tables" />
+				</tables>
+		</param>
+		<param name="dbsh_Glossary" type="checkbox" 
+		                      condition="{root}/administrator/components/com_glossary"
+                            icon="dbsharing.gif#30"
+		                      label="Glossary"                description="Share all the Glossary tables" >
+				<tables>
+                  <table name="#__users"                    description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"               description="Access Control List" />
+                  <table name="#__glossary"                 description="Glossary tables" />
+                  <table name="#__glossaries"               description="Glossaries tables" />
+                  <table name="#__cmsapi_configurations"    description="Configuration tables" />
+				</tables>
+		</param>
+		<param name="dbsh_hdflvplayer" type="checkbox" 
+		                      condition="{root}/administrator/components/com_hdflvplayer"
+                            icon="dbsharing.gif#49"
+		                      label="HD FLV Player"           description="Share all the HD FLV Player tables" >
+				<tables>
+                  <table name="#__hdflvplayer%"             description="All the HD FLV Player tables" />
+				</tables>
+		</param>
+
+		<param name="dbsh_hikashop" type="checkbox" 
+		                      condition="{root}/administrator/components/com_hikashop"
+                            icon="dbsharing.gif#70"
+		                      label="Hika Shop"               description="Share all the Hika Shop tables" >
+				<tables>
+                  <table name="#__users"                    description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"               description="Access Control List" />
+                  <table name="#__hikashop_%"               description="All the HikaShop tables" />
+				</tables>
+		</param>
+
+		<param name="dbsh_GroupJive" type="checkbox" 
+		                      condition="{root}/administrator/components/com_groupjive"
+                            icon="dbsharing.gif#30"
+		                      label="GroupJive" description="Share all the GroupJive tables" >
+				<tables>
+                  <table name="#__users"        description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"   description="Access Control List" />
+                  <table name="#__groups"       description="Profile types" />
+                  <table name="#__gj_%"         description="All the GroupJive tables" />
+                  <table name="#__comprofiler%" description="All the community builder tables" />
+                  <table name="#__eventlist_%"  description="All the EventList tables" />
+				</tables>
+		</param>
+
+		<param name="dbsh_HP" type="radio" default="none"
+		                      condition="{root}/administrator/components/com_hotproperty"
+                            icon="dbsharing.gif#19"
+		                      label="TEMPLATE_VIEW_EDT_SHR_HP" description="Share all the Hot Properties tables" >
+				<option value="none">TEMPLATE_VIEW_EDT_SHR_NOSHARE</option>
+				<option value="on" description="Share all the Hot Properties tables">Sharing all<tables>
+                  <table name="#__users"        description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"   description="Access Control List" />
+                  <table name="#__hp_%" description="All the hot properties tables" />
+            </tables></option>
+				<option value="HPAgents" description="Share only the Hot Properties agents and companies tables">Sharing only agents and companies<tables>
+                  <table name="#__users"        description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"   description="Access Control List" />
+                  <table name="#__hp_agents"    description="Only the HP agents table" />
+                  <table name="#__hp_companies" description="Only the HP Companies table" />
+            </tables></option>
+		</param>
+		<param name="dbsh_hwdPhotoShare" type="checkbox" 
+		                      condition="{root}/administrator/components/com_hwdphotoshare"
+                            icon="dbsharing.gif#25"
+		                      label="hwdPhotoShare"  description="Share all the hwdPhotoShare tables" >
+				<tables>
+                  <table name="#__users"        description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"   description="Access Control List" />
+                  <table name="#__hwdps%"       description="All the hwdPhotoShare tables" />
+				</tables>
+		</param>
+		<param name="dbsh_hwdRevenueManager" type="checkbox" 
+		                      condition="{root}/administrator/components/com_hwdrevenuemanager"
+                            icon="dbsharing.gif#24"
+		                      label="hwdRevenueManager"  description="Share all the hwdRevenueManager tables" >
+				<tables>
+                  <table name="#__users"        description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"   description="Access Control List" />
+                  <table name="#__hwdrm%"       description="All the hwdRevenueManager tables" />
+				</tables>
+		</param>
+		<param name="dbsh_hwdVideoShare" type="checkbox" 
+		                      condition="{root}/administrator/components/com_hwdvideoshare"
+                            icon="dbsharing.gif#13"
+		                      label="hwdVideoShare"  description="Share all the hwdVideoShare tables" >
+				<tables>
+                  <table name="#__users"        description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"   description="Access Control List" />
+                  <table name="#__hwdvids%"     description="All the hwdVideoShare tables" />
+				</tables>
+		</param>
+		<param name="dbsh_iGallery" type="checkbox" 
+		                      condition="{root}/administrator/components/com_igallery"
+                            icon="dbsharing.gif#30"
+		                      label="Ignite Gallery"  description="Share all the Ignite Gallery tables" >
+				<tables>
+                  <table name="#__users"        description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"   description="Access Control List" />
+                  <table name="#__igallery%"    description="All the Ignite Gallery tables" />
+				</tables>
+		</param>
+		<param name="dbsh_JCalPro" type="checkbox" 
+		                      condition="{root}/administrator/components/com_jcalpro"
+                            icon="dbsharing.gif#48"
+		                      label="JCal Pro"       description="Share all the JCal Pro tables" >
+				<tables>
+                  <table name="#__jcalpro2_%"      description="All the JCal Pro tables" />
+				</tables>
+		</param>
+		<param name="dbsh_JContentPlus" type="checkbox" 
+		                      condition="{root}/administrator/components/com_jcontentplus"
+                            icon="dbsharing.gif#34"
+		                      label="JContentPlus"   description="Share all the JContentPlus tables" >
+				<tables>
+                  <table name="#__users"           description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"      description="Access Control List" />
+                  <table name="#_jcontentplus_%"   description="All the JContentPlus tables" />
+				</tables>
+		</param>
+		<param name="dbsh_JEA" type="checkbox" 
+		                      condition="{root}/administrator/components/com_jea"
+                            icon="dbsharing.gif#64"
+		                      label="Joomla Estate Agency"   description="Share all the Joomla Estate Agency tables" >
+				<tables>
+                  <table name="#__users"           description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"      description="Access Control List" />
+                  <table name="#__jea_%"           description="All the Joomla Estate Agency tables" />
+				</tables>
+		</param>
+		<param name="dbsh_JEvents" type="radio" default="none"
+		                      condition="{root}/administrator/components/com_jevents"
+                            icon="dbsharing.gif#27"
+		                      label="JEvents" description="Share all the Events Calendar tables" >
+				<option value="none">TEMPLATE_VIEW_EDT_SHR_NOSHARE</option>
+				<option value="on" description="Share all the Events Calendar tables">Sharing all<tables>
+                  <table name="#__users"        description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"   description="Access Control List" />
+                  <table name="#__jev_%"        description="All the EventList tables" />
+                  <table name="#__jevents_%"    description="All the other EventList tables" />
+            </tables></option>
+				<option value="noDefault" description="Share all the Events Calendar tables except the default table used by define the layouts">Sharing all except default (layout)<tables>
+                  <table name="#__users"        description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"   description="Access Control List" />
+                  <table name="#__jev_%"        description="All the EventList tables" />
+                  <table name="#__jevents_%"    description="All the other EventList tables" />
+                  <tableexcluded name="#__jev_defaults" description="Exclude defaults" />
+            </tables></option>
+		</param>
+
+
+		<param name="dbsh_Jobs" type="checkbox" 
+		                      condition="{root}/administrator/components/com_jobs"
+                            icon="dbsharing.gif#30"
+		                      label="Jobs"   description="Share all the Jobs tables" >
+				<tables>
+                  <table name="#__users"           description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"      description="Access Control List" />
+                  <table name="#__jobs_%"          description="All the Jobs tables" />
+				</tables>
+		</param>
+		<param name="dbsh_JobGrokApp" type="checkbox" 
+		                      condition="{root}/administrator/components/com_jobgrokapp"
+                            icon="dbsharing.gif#30"
+		                      label="Jobs"   description="Share all the Job Grok Application tables" >
+				<tables>
+                  <table name="#__users"           description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"      description="Access Control List" />
+                  <table name="#__tst_jgapp_%"     description="All the Job Grok Application tables" />
+				</tables>
+		</param>
+		<param name="dbsh_JoomlaQuiz" type="checkbox" 
+		                      condition="{root}/administrator/components/com_joomlaquiz"
+                            icon="dbsharing.gif#30"
+		                      label="Joomla Quiz"   description="Share all the Joomla Quiz tables" >
+				<tables>
+                  <table name="#__users"           description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"      description="Access Control List" />
+                  <table name="#__quiz_%"          description="All the Joomla Quiz tables" />
+				</tables>
+		</param>
+		<param name="dbsh_JomSocial" type="checkbox" 
+		                      condition="{root}/administrator/components/com_community"
+                            icon="dbsharing.gif#23"
+		                      label="JomSocial"   description="Share all the JomSocial tables" >
+				<tables>
+                  <table name="#__users"        description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"   description="Access Control List" />
+                  <table name="#__community_%"  description="All the JomSocial tables" />
+				</tables>
+		</param>
+		<param name="dbsh_JoomGallery" type="checkbox" 
+		                      condition="{root}/administrator/components/com_joomgallery"
+                            icon="dbsharing.gif#40"
+		                      label="JoomGallery"   description="Share all the JoomGallery tables" >
+				<tables>
+                  <table name="#__users"           description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"      description="Access Control List" />
+                  <table name="#__joomgallery%"    description="All the JoomGallery tables" />
+				</tables>
+		</param>
+		<param name="dbsh_JoomLeague" type="checkbox" 
+		                      condition="{root}/administrator/components/com_joomleague"
+                            icon="dbsharing.gif#51"
+		                      label="JoomLeague" description="Share all the JoomLeague tables" >
+				<tables>
+                  <table name="#__users"        description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"   description="Access Control List" />
+                  <table name="#__joomleague%"  description="All the JoomLeague tables" />
+                  <table name="#__comprofiler%" description="All the community builder tables" />
+                  <table name="#__fb_%"         description="All the Fireboard and kunena tables" />
+				</tables>
+		</param>
+		<param name="dbsh_JoomLoc" type="checkbox" 
+		                      condition="{root}/administrator/components/com_joomloc"
+                            icon="dbsharing.gif#30"
+		                      label="JoomLoc"   description="Share all the JoomLoc tables" >
+				<tables>
+                  <table name="#__users"           description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"      description="Access Control List" />
+                  <table name="#__lbresa_%"        description="All the JoomLoc tables" />
+				</tables>
+		</param>
+		<param name="dbsh_JSPT" type="checkbox" 
+		                              condition="{root}/administrator/components/com_xipt"
+		                              icon="dbsharing.gif#69"
+		                              label="JomSocial Profile Types" description="Share all the JomSocial Profile Types tables" >
+				<tables>
+                  <table name="#__users"        description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"   description="Access Control List" />
+                  <table name="#__xipt_%"       description="JomSocial Profile Types"/>
+                  <table name="#__community_%"  description="All the JomSocial tables" />
+				</tables>
+		</param>
+		<param name="dbsh_JTagSlideShare" type="checkbox" 
+		                              condition="{root}/administrator/components/com_jtagpresentationforslidshare"
+		                              icon="dbsharing.gif#30"
+		                              label="JTAG Presentation for Slidshare" description="Share all the JTAG Presentation for Slidshare tables" >
+				<tables>
+                  <table name="#__users"        description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"   description="Access Control List" />
+                  <table name="#__slides"       description="JTAG Presentation for Slidshare" />
+                  <table name="#__slides_%"     description="JTAG Presentation for Slidshare - other" />
+				</tables>
+		</param>
+		<param name="dbsh_JVideo" type="checkbox" 
+		                              condition="{root}/administrator/components/com_jvideo"
+		                              icon="dbsharing.gif#56"
+		                              label="JVideo" description="Share all the JVideo for Slidshare tables" >
+				<tables>
+                  <table name="#__users"        description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"   description="Access Control List" />
+                  <table name="#__jvideo_%"     description="JVideo!" />
+				</tables>
+		</param>
+		<param name="dbsh_JVLE" type="checkbox" 
+		                      condition="{root}/administrator/components/com_jvle"
+                            icon="dbsharing.gif#30"
+		                      label="JV-LinkExchanger"  description="Share all the JV-LinkExchanger tables" >
+				<tables>
+                  <table name="#__users"        description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"   description="Access Control List" />
+                  <table name="#__jvle_%"       description="All the JV-LinkExchanger tables" />
+				</tables>
+		</param>
+		<param name="dbsh_JVSE" type="checkbox" 
+		                      condition="{root}/administrator/components/com_jvse"
+                            icon="dbsharing.gif#30"
+		                      label="JV-LinkDirectory"  description="Share all the JV-LinkDirectory tables" >
+				<tables>
+                  <table name="#__users"        description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"   description="Access Control List" />
+                  <table name="#__jvse_%"       description="All the JV-LinkDirectory tables" />
+				</tables>
+		</param>
+		<param name="dbsh_JXCatalog" type="checkbox" 
+		                              condition="{root}/administrator/components/com_catalog"
+		                              icon="dbsharing.gif#46"
+		                              label="JXtended Catalog" description="Share all the JXtended Catalog tables" >
+				<tables>
+                  <table name="#__users"        description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"   description="Access Control List" />
+                  <table name="#__jxcatalog%"   description="All the JXtended Catalog tables" />
+				</tables>
+		</param>
+		<param name="dbsh_JXLabels" type="checkbox" 
+		                              condition="{root}/administrator/components/com_labels"
+		                              icon="dbsharing.gif#46"
+		                              label="JXtended Labels" description="Share all the JXtended Labels tables" >
+				<tables>
+                  <table name="#__users"        description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"   description="Access Control List" />
+                  <table name="#__jxlabels%"    description="All the JXtended Labels tables" />
+				</tables>
+		</param>
+		<param name="dbsh_K2" type="checkbox" 
+		                      condition="{root}/administrator/components/com_k2"
+                            icon="dbsharing.gif#21"
+		                      label="K2"  description="Share all the K2 tables" >
+				<tables>
+                  <table name="#__users"        description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"   description="Access Control List" />
+                  <table name="#__k2_%"         description="All the K2 tables" />
+				</tables>
+		</param>
+		<param name="dbsh_Knowledgebase" type="checkbox" 
+		                      condition="{root}/administrator/components/com_kb"
+                            icon="dbsharing.gif#38"
+		                      label="Knowledgebase"  description="Share all the Knowledgebase tables" >
+				<tables>
+                  <table name="#__users"        description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"   description="Access Control List" />
+                  <table name="#__kb_%"         description="All the Knowledgebase tables" />
+				</tables>
+		</param>
+		<param name="dbsh_Kunena" type="checkbox" 
+		                      condition="{root}/administrator/components/com_kunena"
+                            icon="dbsharing.gif#41"
+		                      label="Kunena Forum"  description="Share all the Kunena Forum tables" >
+				<tables>
+                  <table name="#__users"        description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"   description="Access Control List" />
+                  <table name="#__fb_%"         description="All the Kunena 1.5 Forum tables" />
+                  <table name="#__kunena_%"     description="All the Kunena 1.6 Forum tables" />
+				</tables>
+		</param>
+		<param name="dbsh_LQM" type="checkbox" 
+		                      condition="{root}/administrator/components/com_lqm"
+                            icon="dbsharing.gif#30"
+		                      label="LQM"  description="Share all the Kunena Forum tables" >
+				<tables>
+                  <table name="#__lqm_%"         description="All the LQM tables" />
+				</tables>
+		</param>
+		<param name="dbsh_MisterEstate" type="checkbox" 
+		                      condition="{root}/administrator/components/com_misterestate"
+                            icon="dbsharing.gif#21"
+		                      label="MisterEstate"   description="Share all the Mister Estate tables" >
+				<tables>
+                  <table name="#__users"           description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"      description="Access Control List" />
+                  <table name="#__misterestate"    description="All the Mister Estate tables" />
+                  <table name="#__misterestate_%"  description="All the other Mister Estate tables" />
+				</tables>
+		</param>
+		<param name="dbsh_MosetsTree" type="checkbox" 
+		                      condition="{root}/administrator/components/com_mtree"
+                            icon="dbsharing.gif#30"
+		                      label="Mosets Tree"  description="Share all the Mosets Tree tables" >
+				<tables>
+                  <table name="#__users"        description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"   description="Access Control List" />
+                  <table name="#__mt_%"         description="All the Mosets Tree tables" />
+				</tables>
+		</param>
+		<param name="dbsh_NeoRecruit" type="checkbox" 
+		                      condition="{root}/administrator/components/com_neorecruit"
+                            icon="dbsharing.gif#21"
+		                      label="NeoRecruit"  description="Share all the NeoRecruit tables" >
+				<tables>
+                  <table name="#__users"        description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"   description="Access Control List" />
+                  <table name="#__neorecruit_%" description="All the NeoRecruit tables" />
+				</tables>
+		</param>
+		<param name="dbsh_NoixACL" type="checkbox" 
+		                              condition="{root}/administrator/components/com_noixacl"
+		                              icon="dbsharing.gif#29"
+		                              label="Noix ACL" description="Share all the Noix ACL tables" >
+				<tables>
+                  <table name="#__users"        description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"   description="Access Control List" />
+                  <table name="#__noixacl_%"    description="Noix ACL"/>
+				</tables>
+		</param>
+		<param name="dbsh_PUArcade" type="checkbox" 
+		                              condition="{root}/administrator/components/com_puarcade"
+		                              icon="dbsharing.gif#30"
+		                              label="PU Archade" description="Share all the PU Archade tables" >
+				<tables>
+                  <table name="#__puarcade%"   description="PU Arcade"/>
+				</tables>
+		</param>
+		<param name="dbsh_QuickFAQ" type="checkbox" 
+		                              condition="{root}/administrator/components/com_quickfaq"
+		                              icon="dbsharing.gif#37"
+		                              label="Quick FAQ" description="Share all the Quick FAQ tables" >
+				<tables>
+                  <table name="#__users"        description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"   description="Access Control List" />
+                  <table name="#__quickfaq_%"   description="Quick FAQ"/>
+				</tables>
+		</param>
+		<param name="dbsh_redEVENT" type="checkbox" 
+		                              condition="{root}/administrator/components/com_redevent"
+		                              icon="dbsharing.gif#59"
+		                              label="redEVENT and redFORM" description="Share all the redEVENT and redFORM tables" >
+				<tables>
+                  <table name="#__users"        description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"   description="Access Control List" />
+                  <table name="#__redevent_%"   description="redEVENT"/>
+                  <table name="#__rwf_%"        description="redFORM"/>
+				</tables>
+		</param>
+		<param name="dbsh_redFORM" type="checkbox" 
+		                              condition="{root}/administrator/components/com_redform"
+		                              icon="dbsharing.gif#60"
+		                              label="redFORM" description="Share all the redFORM tables" >
+				<tables>
+                  <table name="#__rwf_%"        description="redFORM"/>
+				</tables>
+		</param>
+		<param name="dbsh_Remository" type="checkbox" 
+		                              condition="{root}/administrator/components/com_remository"
+		                              icon="dbsharing.gif#30"
+		                              label="Remository" description="Share all the Remository tables" >
+				<tables>
+                  <table name="#__assignments"        description="Remository assignments" />
+                  <table name="#__downloads_%"        description="Remository downloads" />
+                  <table name="#__permissions"        description="Remository permissions" />
+				</tables>
+		</param>
+		<param name="dbsh_RestaurantGuide" type="checkbox" 
+		                      condition="{root}/administrator/components/com_restaurantguide"
+                            icon="dbsharing.gif#63"
+		                      label="Restaurant Guide"      description="Share all Restaurant Guide tables" >
+				<tables>
+                  <table name="#__users"        description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"   description="Access Control List" />
+                  <table name="#__rg_%"         description="All the Restaurant Guide tables" />
+				</tables>
+		</param>
+		<param name="dbsh_RSEvents" type="checkbox" 
+		                              condition="{root}/administrator/components/com_rsevents"
+		                              icon="dbsharing.gif#66"
+		                              label="RS Events and RS Form" description="Share all the RSEvents and RSForm tables" >
+				<tables>
+                  <table name="#__users"        description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"   description="Access Control List" />
+                  <table name="#__rsevents_%"   description="RSEvents"/>
+                  <table name="#__rsform_%"     description="RSForm"/>
+				</tables>
+		</param>
+		<param name="dbsh_RSFirewall" type="checkbox" 
+		                              condition="{root}/administrator/components/com_rsfirewall"
+		                              icon="dbsharing.gif#39"
+		                              label="RSFirewall" description="Share all the RSFirewall tables" >
+				<tables>
+                  <table name="#__rsfirewall_%"   description="RSFirewall"/>
+				</tables>
+		</param>
+		<param name="dbsh_RSform" type="checkbox" 
+		                              condition="{root}/administrator/components/com_rsform"
+		                              icon="dbsharing.gif#67"
+		                              label="RS Form" description="Share all the RSForm tables" >
+				<tables>
+                  <table name="#__rsform_%"     description="RSForm"/>
+				</tables>
+		</param>
+		<param name="dbsh_Scheduler" type="radio" default="none"
+		                      condition="{root}/administrator/components/com_scheduler"
+                            icon="dbsharing.gif#30"
+		                      label="Scheduler"    description="Share all Scheduler" >
+				<option value="none">TEMPLATE_VIEW_EDT_SHR_NOSHARE</option>
+				<option value="on" description="Share all the Scheduler tables">Sharing all<tables>
+                  <table name="#__events_rec%"        description="Scheduler event records"/>
+                  <table name="#__scheduler_options%" description="Scheduler"/>
+            </tables></option>
+				<option value="noCfg" description="Share all the Scheduler event tables except its configuration">Share the event except the the configuration<tables>
+                  <table name="#__events_rec%"        description="Scheduler event records"/>
+            </tables></option>
+		</param>
+		<param name="dbsh_Seminar" type="checkbox" 
+		                      condition="{root}/administrator/components/com_seminar"
+                            icon="dbsharing.gif#42"
+		                      label="Seminar"      description="Share all Seminar" >
+				<tables>
+                  <table name="#__users"        description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"   description="Access Control List" />
+                  <table name="#__categories"   description="Joomla content categories" />
+                  <table name="#__seminar"      description="Seminar table" />
+                  <table name="#__semnumber"    description="Seminar Number table" />
+                  <table name="#__sembookings"  description="Seminar Booking table" />
+				</tables>
+		</param>
+		<param name="dbsh_Shipseeker" type="checkbox" 
+		                      condition="{root}/administrator/components/com_shipseeker"
+                            icon="dbsharing.gif#30"
+		                      label="Shipseeker"      description="Share all Shipseeker" >
+				<tables>
+                  <table name="#__shipseeker_%"   description="Share all the Shipseeker tables" />
+				</tables>
+		</param>
+		<param name="dbsh_SimpleCaddy" type="radio" default="none"
+		                      condition="{root}/administrator/components/com_caddy"
+                            icon="dbsharing.gif#30"
+		                      label="SimpleCaddy"    description="Share all SimpleCaddy" >
+				<option value="none">TEMPLATE_VIEW_EDT_SHR_NOSHARE</option>
+				<option value="on" description="Share all the Events Calendar tables">Sharing all<tables>
+                  <table name="#__sc_%"            description="Share all the SimpleCaddy tables" />
+            </tables></option>
+				<option value="noCfg" description="Share all the SimpleCaddy tables except its configuration">Sharing all except configuration<tables>
+                  <table name="#__sc_%"               description="Share all the SimpleCaddy tables" />
+                  <tableexcluded name="#__sc_config"  description="Exclude SimpleCaddy configuration" />
+            </tables></option>
+		</param>
+		<param name="dbsh_SOBI2" type="checkbox" 
+		                      condition="{root}/administrator/components/com_sobi2"
+                            icon="dbsharing.gif#14"
+		                      label="SOBI 2"      description="Share all SOBI 2" >
+				<tables>
+                  <table name="#__users"        description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"   description="Access Control List" />
+                  <table name="#__sobi2_%"      description="All the SOBI 2 tables" />
+				</tables>
+		</param>
+		<param name="dbsh_SOBIPro" type="checkbox" 
+		                      condition="{root}/administrator/components/com_sobipro"
+                            icon="dbsharing.gif#70"
+		                      label="SOBI Pro"    description="Share all SOBI Pro" >
+				<tables>
+                  <table name="#__users"        description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"   description="Access Control List" />
+                  <table name="#__sobipro_%"    description="All the SOBI Pro tables" />
+				</tables>
+		</param>
+		<param name="dbsh_Tiendra" type="checkbox" 
+		                              condition="{root}/administrator/components/com_tienda"
+		                              icon="dbsharing.gif#65"
+		                              label="Tiendra" description="Share all the Tienda tables" >
+				<tables>
+                  <table name="#__users"        description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"   description="Access Control List" />
+                  <table name="#__tienda_%"     description="Share all the Tienda tables"/>
+				</tables>
+		</param>
+		<param name="dbsh_VirtueMart" type="checkbox" 
+		                              condition="{root}/administrator/components/com_virtuemart"
+		                              icon="dbsharing.gif#9"
+		                              label="VirtueMart" description="TEMPLATE_VIEW_EDT_SHR_VM_DESC" >
+				<tables>
+                  <table name="#__users"        description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"   description="Access Control List" />
+                  <table name="#__vm%"          description="VirtueMart"/>
+				</tables>
+		</param>
+		<param name="dbsh_Vodes" type="checkbox" 
+		                              condition="{root}/administrator/components/com_vodes"
+		                              icon="dbsharing.gif#50"
+		                              label="Vodes" description="Share all the Vodes tables" >
+				<tables>
+                  <table name="#__users"        description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"   description="Access Control List" />
+                  <table name="#__vodes_%"      description="Vodes"/>
+				</tables>
+		</param>
+		<param name="dbsh_WrdPress" type="checkbox" 
+		                              condition="{root}/administrator/components/com_wordpress"
+		                              icon="dbsharing.gif#44"
+		                              label="WordPress" description="Share all the WordPress tables" >
+				<tables>
+                  <table name="#__users"        description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"   description="Access Control List" />
+                  <table name="#__wp_%"         description="WordPress"/>
+				</tables>
+		</param>
+		<param name="dbsh_WordPress" type="checkbox" 
+		                              condition="{root}/administrator/components/com_wpmu"
+		                              icon="dbsharing.gif#44"
+		                              label="WordPress mu" description="Share all the WordPress MU tables" >
+				<tables>
+                  <table name="#__users"        description="Joomla users" />
+                  <table name="#__session" />
+                  <table name="#__core_acl_%"   description="Access Control List" />
+                  <table name="#__wpmu_%"       description="WordPress"/>
+				</tables>
+		</param>
+	</params>
+</form>

@@ -1,0 +1,488 @@
+/*
+JS Education
+Copyright 2007 Joomlashack
+*/
+
+/*--- editor body ---*/
+body.mceContentBody {
+background-color: #FFFFFF !important;
+background-image: none;
+}
+
+/* undohtml.css 
+(CC) 2004 Tantek Celik. Some Rights Reserved.
+http://creativecommons.org/licenses/by/2.0
+This style sheet is licensed under a Creative Commons License.
+Purpose: undo some of the default styling of common (X)HTML browsers */
+body.contentpane {background:#fff; margin: 20px;}
+body.contentpane .contentheading {color:#900;
+	font-size: 1.75em;
+	line-height: 1.75em;
+	font-weight: bold;
+}
+:link,:visited { text-decoration:none }
+ul,ol { }
+h1,h2,h3,h4,h5,h6,pre,code { font-size:1em; }
+ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input
+{ margin:0; padding:0 }
+.rightdes{text-indent:-5000px;text-decoration:none;}
+a img,:link img,:visited img { border:none }
+address { font-style:normal }
+a:focus {outline:0;}
+.designer {margin:14px 5px 0px 5px;color: #d6d6d6;text-align:right;}
+.designer a:link,.designer a:visited{color: #d6d6d6;font-size:0.8em;text-decoration:none;}
+.designer a:hover {color:#666;}
+
+/* $1 - Site Structure Styles ///////////////////////////////////////////////////////////////////////////////////*/
+/* @group Basic Styles */
+html, body {
+	height:100%;
+	font-family:"Tahoma", Verdana, "Tahoma", Verdana, Arial, Helvetica, Sans-Serif;
+	background-color: #fff;
+}
+
+a:focus {
+	outline: 0;
+}
+
+#mainbody ul {
+	padding-left: 20px;
+}
+
+p {
+	margin: 0px 0px 10px 0px;
+	color: #666;
+	line-height: 145%;
+}
+
+td {
+	color: #666;
+}
+
+
+ul, li {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	border: none;
+}
+
+.clear {
+	clear: both;
+}
+
+#main_content h1 {
+	font: bold 2.5em/1.5em Helvetica, Arial, Verdana, serif;
+	letter-spacing: -1px;
+	color: #670001;
+}
+
+#main_content h2 {
+	font: bold 2em/1.75em Arial, Verdana, serif;
+	letter-spacing: -1px;
+	color: #000;
+}
+
+#main_content h3 {
+	font: bold 1.5em/1.75em Arial, Verdana, serif;
+	letter-spacing: -1px;
+	color: #2d3129;
+}
+#main_content h4 {
+	font: bold 1.25em/1.5em Arial, Verdana, serif;
+	letter-spacing: -1px;
+	color: #2d3129;
+}
+
+ul#checklist li {
+	list-style: none;
+	line-height: 16px;
+	padding: 2px 0px 2px 18px;
+	background: url(../images/tick.png) no-repeat left center;
+}
+blockquote {
+	background: #fffee4;
+	color: #333;
+	border: 1px solid #d5d5d5;
+	padding: 10px;
+	margin: 10px 50px;
+}
+
+/* @end */
+
+table.table-wrapper {
+	height:100%;
+	padding:0;
+	background:#E8E3D4;
+	border-bottom:7px solid #780000;
+	}
+table.blog {width:100%;} /*1.5 bug fix*/
+#header {
+	position:relative;
+	height:144px; 
+	}
+	
+
+#site-container {	
+	background:#fff url(../images/site-bg.jpg) repeat-x;
+	}
+
+#container {
+	width:780px;
+	margin:0 auto;
+	}
+
+#content-container {
+	width:780px;
+	padding-bottom:0px;
+	font: 1em "Tahoma", Verdana, "Tahoma", Verdana, Arial, Helvetica, Sans-Serif;
+	color:#4A4537;
+}
+#leftcol {
+width:21%;
+padding:0 2%;
+}
+#maincol {
+	width:25%;
+	padding:0 2%;
+	background:url(../images/border-line.gif) 0px 40px no-repeat;
+	}
+	
+#rightcol {
+	width:42%;
+	padding:0 2%;
+	background:url(../images/border-line.gif) 0px 40px no-repeat;
+	}
+	
+#left_sidebar { width:180px; padding:5px;line-height:1.5;
+	background: #E8E3D4 url(../images/border-line_left.gif) repeat-y left;
+}
+#left_sidebar h3, #right_sidebar h3 {
+	padding: 5px;
+	margin: 0;
+	background: url(../images/lower-content-bg.gif) repeat-x;
+	margin: -5px -5px 5px -5px; 
+	font-weight: bold;
+	height: 27px;
+	line-height: 18px;
+	text-indent: 5px;
+}
+
+#main_content { padding:5px 10px; }
+#right_sidebar { width:180px; padding:5px;line-height:1.5;
+	background: #E8E3D4 url(../images/border-line_right.gif) repeat-y right;
+	}
+	
+#lower-content {
+	background: url(../images/lower-content-bg.gif) repeat-x;
+	padding-bottom:20px;
+	}
+
+.lower-content-container {
+	width:780px;
+	margin:0 auto;
+	font:1em "Tahoma", Verdana, Arial, Helvetica, Sans-Serif;
+	line-height:1.5;
+	background:url(../images/border-line.gif) 100% 40px no-repeat;
+	}
+.footer {
+	text-align:center;
+	margin-top:-23px;
+}
+/* $2 - Header Styles */
+
+.header-logo {
+	height:87px;
+	padding-top:24px;
+	}
+.header-logo h1 a {
+	color: #FFF;
+	padding:0;
+	margin: 0;
+	font: 38px/38px Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+}
+.header-logo h2 {
+	color: #8C0000;
+	font: 20px/20px Georgia, "Times New Roman", Times, serif;
+	padding:0;
+	margin: 0;
+}
+
+#header-functions {
+	position:absolute;
+	top:20px;
+	right:0;
+	width:250px;
+	}
+
+p.date {
+	padding-left:5px;
+	font:bold .75em "Tahoma", Verdana, Arial, Helvetica, Sans-Serif;
+	color:white;
+	letter-spacing:1px;
+	margin:0 0 6px 0;
+	}
+
+.moduletable-search {
+	padding-left:5px;
+	}
+
+.search-search input {
+	float:left;
+	border:none;
+	}
+
+.search-search input {
+	height:19px;
+	width:199px;
+	padding:0 3px;
+	margin-right:2px;
+	background:url(../images/search-bg.gif) no-repeat;
+	}
+
+.search-search input.button-search {
+	height:19px;
+	width:30px;
+	padding:0;
+	background:url(../images/button-search-bg.gif) no-repeat;
+	font:bold 1em "Tahoma", Verdana, Arial, Helvetica, Sans-Serif;
+	color:white;
+	cursor:pointer;
+	}
+
+
+/* $3 - Content Styles */
+
+a,
+a:link,
+a:visited {
+	color:#740000;
+	}
+
+a:hover {
+	text-decoration:underline;
+	}
+
+
+/*Content Links*/
+
+#content-container td.contentheading, #content-container .contentheading {
+	color:#780000;
+	text-align: left;
+	text-decoration:none;
+	font: normal 1.5em/1.5em "Trebuchet MS", Geneva, sans-serif;
+	padding: 0;
+	border-bottom: 1px solid #ccc;
+}
+#content-container a.contentpagetitle:link,#content-container a.contentpagetitle:visited {
+	color:#780000;
+	text-align: left;
+	text-decoration:none;
+	font: normal 1.0em/1.5em "Trebuchet MS", Geneva, sans-serif;
+}
+
+#content-container a.contentpagetitle:hover {color:#000;text-decoration:none;}
+#content-container .componentheading {color:#780000;font:bold 1.07em/1.5em Arial, Helvetica, sans-serif; border-bottom: 1px solid #ccc;}
+#content-container div.sitemap h2.componentheading {
+    color           :#780000;
+	text-align      : left;
+	text-decoration :none;
+	font            : normal 1.5em/1.5em "Trebuchet MS", Geneva, sans-serif;
+	padding         : 0;
+	border-bottom   : 1px solid #ccc;
+}	
+
+
+h1,h2,h3,h4,h5,h6 {
+	color:#740000;
+	font-family:"Tahoma", Verdana, Arial, Helvetica, Sans-Serif;
+	}
+
+.lower-content-container h3 {
+	height:35px;
+	line-height:31px;
+	font-size:13px;
+	}
+
+div#content-container ul, div#content-container ol, #lower-content ul, #lower-content ol {
+	margin-left: 20px;
+	}
+	
+div#content-container ul, #lower-content ul {
+	margin-left:0px;
+	list-style:none;
+	}
+	
+img {
+	border:none;
+	}
+
+
+.lower-content-container .moduletable {
+	padding:0 0 15px 0;
+	margin-bottom:15px;
+	background:url(../images/border-hz.gif) 0% 100% no-repeat;
+	}
+
+.clearfix:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+
+}
+
+.clearfix {display:inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+
+/* Left Column Menu Flat List */
+
+#left_sidebar ul {
+	font: normal normal 12px "Lucida Grande", Lucida, Verdana, sans-serif;
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+#left_sidebar li {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+#left_sidebar li a {
+	height: 16px;
+	display: block;
+	padding: 2px 0px 2px 5px;
+	margin-bottom: 1px;
+	color: #fff;
+	text-decoration: none;
+	border: none;
+	background: url(../images/mainlevel.png) repeat-x 0 0;
+}
+
+#left_sidebar li a:hover {
+	background: url(../images/mainlevel.png) repeat-x 0 -20px;
+}
+
+
+#left_sidebar li.latestnews a,#left_sidebar li.mostread a{
+display:inline;
+padding:0;
+	margin-bottom:0;
+	color:#000;
+	background:none;
+}
+
+#left_sidebar a.latestnews:hover,#left_sidebar a.mostread:hover {
+background:none;
+text-decoration:underline;
+}
+/* @end */
+
+
+/* $4 Header Nav Styles */
+
+
+	
+/*--- forms styles ---*/
+form {
+	padding: 0;
+	margin: 0;
+}
+
+input.button {
+	color: #740000;
+	padding: 4px;
+	margin: 10px;
+	font-size: 10px;
+	background: url(../images/but_bg.png) repeat-x center center;
+	border:1px solid #ccc;
+}
+
+div.message {
+	color: #cd2800;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.inputbox {
+	border: 1px solid #999;
+}
+
+.moduletable .inputbox {
+	border: 1px solid #999;
+	height: 14px;
+	font: 11px Arial, Helvetica, Geneva, sans-serif;
+	color: #333;
+}
+
+/*-- default Joomla styles --*/
+.article_seperator { }
+.back_button { }
+.blog { }
+.blog_more { }
+.blogsection { }
+.button {background: #666 url(../images/mainlevel.png) repeat-x left center;border: 1px solid #000;color: #fff;font-size: 11px;line-height: 16px;}
+.buttonheading { }
+.category { }
+.clr {clear:both;}
+.componentheading { }
+.contact_email { }
+.content_rating { }
+.content_vote { }
+.contentdescription { }
+.contentheading { }
+.contentpagetitle { }
+.contentpane { }
+.contentpaneopen { }   
+.contenttoc { }
+.createdate {margin:5px;color: #bbb;font-size: 10px;}
+.fase4rdf  { }
+.frontpageheader  { }
+.highlight {background-color:#FFFFCD;color:#000000;}
+.latestnews  { }
+.message  { }
+.modifydate {margin:5px;color: #bbb;font-size: 10px;}
+.module  { }
+div.moduletable {margin-bottom: 20px;} 
+div.mosimage {border: 1px solid #eaeaea;margin: 7px;}
+div.mosimage_caption {padding: 2px;background-color: #f7f7f7;border-top: 1px solid #eee;}
+.mostread  { }
+.newsfeed  { }
+.newsfeeddate {margin:5px;color: #bbb;font-size: 10px;}
+.newsfeedheading { }
+.pagenav { }
+.pagenav_next { }
+.pagenav_prev { }
+.pagenavbar { }
+.pagenavcounter { }
+.pathway { }
+.polls { }
+table.pollstableborder {text-align:left;}
+table.pollstableborder tr {padding: 2px 0;}
+table.pollstableborder td {padding: 0 2px;}
+a.readon {color: #740000;display: block;float: right;line-height: 12px;background: url(../images/readon.gif) no-repeat left center;text-indent: 16px;text-decoration: underline;}
+a.readon:hover {color: #600;display: block;float: right;line-height: 12px;background: url(../images/readon.gif) no-repeat left center;text-indent: 16px;text-decoration: none;}
+#left_sidebar a.readon {color: #740000;display: block;float: right;line-height: 12px;background: url(../images/readon_side.gif) no-repeat left center;text-indent: 16px;text-decoration: underline;}
+#left_sidebar a.readon:hover {color: #600;display: block;float: right;line-height: 12px;background: url(../images/readon_side.gif) no-repeat left center;text-indent: 16px;text-decoration: none;}
+#right_sidebar a.readon {color: #740000;display: block;float: right;line-height: 12px;background: url(../images/readon_side.gif) no-repeat left center;text-indent: 16px;text-decoration: underline;}
+#right_sidebar a.readon:hover {color: #600;display: block;float: right;line-height: 12px;background: url(../images/readon_side.gif) no-repeat left center;text-indent: 16px;text-decoration: none;}
+.search { }
+.searchintro { }
+td.sectiontableentry1 {padding: 4px;}
+td.sectiontableentry2 {background: #f2f2f2;padding: 4px;}
+td.sectiontableheader {background: #d8d8d8;color: #333;font-weight: bold;padding: 4px;}
+.sitetitle { }
+.small {margin:5px;color: #bbb;font-size: 10px;}
+.smalldark {margin:5px;color: #994;font-size: 10px;}
+.syndicate { }
+.syndicate_text { }
+.toclink { }
+.weblinks { }
+.wrapper { }

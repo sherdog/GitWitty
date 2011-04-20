@@ -1,0 +1,21 @@
+Hello
+This is the install package for a joomla 1.5.x environment. 
+Here you will find the component and some modules and a plugin to integrate your google 
+analytics statistic data into a joomla based web site.
+
+***** PREREQUISITS *****
+- joomla 1.5.x
+- google analytics account
+- mysql >= 5.0.0
+- PHP >= 5.0.0
+
+***** INSTALLATION *****
+To install extract the component, your desired modules and the plugin zip files and 
+install them with the joomla installer.
+
+***** DOCUMENTATION *****
+Check http://g4j.laoneo.net for the documentation, forum and current issues. 
+
+
+Have fun
+the g4j team

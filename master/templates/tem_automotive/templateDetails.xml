@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="template" version="4.5.2">
+  <name>tem_automotive</name>
+  <creationDate>13/09/2006</creationDate>
+  <author>cmslounge</author>
+  <copyright></copyright>
+  <authorEmail>info@cmslounge.com</authorEmail>
+  <authorUrl>www.cmslounge.com</authorUrl>
+  <version>1.4</version>
+  <description>Tableless design, lightweight and elegant.  Includes a drop-down menu. </description>
+  <files>
+    <filename>index.php</filename>
+	<filename>templateDetails.xml</filename>
+	<filename>index.html</filename>
+    <filename>overIE.js</filename>
+    <filename>template_thumbnail.png</filename>
+  </files>
+  <images>
+<filename>images/arrow.png</filename>
+<filename>images/banner.jpg</filename>
+<filename>images/logo.jpg</filename>
+<filename>images/indent1.png</filename>
+	 </images>
+  <css>
+    <filename>css/template_css.css</filename>
+    <filename>css/index.html</filename>
+  </css>
+</mosinstall>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/plugin-install.dtd">
+<install type="plugin" version="1.5" method="upgrade" group="system">
+	<name>AcyMailing : integration with your contact component</name>
+	<creationDate>August 2010</creationDate>
+	<version>1.1.0</version>
+	<author>Acyba</author>
+	<authorEmail>dev@acyba.com</authorEmail>
+	<authorUrl>http://www.acyba.com</authorUrl>
+	<copyright>Copyright (C) 2009 - 2010 ACYBA SARL - All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+	<description>Automatically subscribe the user to AcyMailing via your Joomla contact component</description>
+	<files>
+		<filename plugin="contactacymailing">contactacymailing.php</filename>
+	</files>
+	<params addpath="/components/com_acymailing/params">
+		<param name="help" type="help" label="Help" description="Click on the help button to get some help" default="plugin-contactacymailing"/>
+		<param name="autosub" type="lists" default="All" label="Subscribe to" description="AcyMailing will automatically save the user and subscribe him to the selected lists when he submits the contact form" />
+		<param name="sendconf" type="radio" default="default" label="Require a confirmation?" description="If you require a confirmation in AcyMailing but don't want to send a confirmation e-mail to your users if they come from your contact form, then you can turn this option OFF">
+			<option value="default">Follow my default configuration</option>
+			<option value="no">No</option>
+		</param>
+		<param name="dispcheck" type="list" default="1" label="Display a checkbox?" description="Do you want to display a checkbox so the user can choose to be subscribed or not to your lists?">
+			<option value="0">No, subscribe him automatically</option>
+			<option value="1">Yes, only one checkbox</option>
+			<option value="2">Yes, one checkbox per list</option>
+		</param>
+		<param name="checkcheck" type="radio" default="1" label="Check the checkbox" description="If you display a checkbox, do you want it to be checked by default?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="checkpos" type="list" default="contact_text" label="Display checkbox" description="If you display a checkbox, where do you want it to be displayed?">
+			<option value="contact_email_copy">After the receive a copy</option>
+			<option value="contact_text">After the message textarea</option>
+			<option value="contact_email">After the e-mail address input</option>
+		</param>
+		<param name="checktext" size="60" type="text" default="" label="Text" description="If you display a checkbox, this text will be displayed on the form (if you leave this field empty, the default string will be loaded from your language file)" />
+		<param name="customcss" cols="40" rows="5" type="textarea" default="" label="Custom CSS" description="You can specify here some CSS which will be added to the contact page" />
+	</params>
+	<config>
+		<fields name="params" addfieldpath="/components/com_acymailing/params">
+			<fieldset name="basic">
+				<field name="help" type="help" label="Help" description="Click on the help button to get some help" default="plugin-contactacymailing"/>
+				<field name="autosub" type="lists" default="All" label="Subscribe to" description="AcyMailing will automatically save the user and subscribe him to the selected lists when he submits the contact form" />
+				<field name="sendconf" type="radio" default="default" label="Require a confirmation?" description="If you require a confirmation in AcyMailing but don't want to send a confirmation e-mail to your users if they come from your contact form, then you can turn this option OFF">
+					<option value="default">Follow my default configuration</option>
+					<option value="no">No</option>
+				</field>
+				<field name="dispcheck" type="list" default="1" label="Display a checkbox?" description="Do you want to display a checkbox so the user can choose to be subscribed or not to your lists?">
+					<option value="0">No, subscribe him automatically</option>
+					<option value="1">Yes, only one checkbox</option>
+					<option value="2">Yes, one checkbox per list</option>
+				</field>
+				<field name="checkcheck" type="radio" default="1" label="Check the checkbox" description="If you display a checkbox, do you want it to be checked by default?">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="checkpos" type="list" default="contact_text" label="Display checkbox" description="If you display a checkbox, where do you want it to be displayed?">
+					<option value="contact_email_copy">After the receive a copy</option>
+					<option value="contact_text">After the message textarea</option>
+					<option value="contact_email">After the e-mail address input</option>
+				</field>
+				<field name="checktext" size="60" type="text" label="Text" description="If you display a checkbox, this text will be displayed on the form (if you leave this field empty, the default string will be loaded from your language file)" />
+				<field name="customcss" cols="40" rows="5" type="textarea" default="" label="Custom CSS" description="You can specify here some CSS which will be added to the contact page" />
+			</fieldset>
+		</fields>
+	</config>
+</install>

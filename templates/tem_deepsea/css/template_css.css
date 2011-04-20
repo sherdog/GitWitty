@@ -1,0 +1,339 @@
+/* Design by pmusaraj  */
+/* Get more like this at http://www.osskins.com  */
+
+BODY 
+
+{
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color:#042744;
+	background-image:url(../images/bg.jpg);
+	background-repeat:repeat-x;
+	background-position: top;
+}
+
+body,td,th, tr, p, div {
+	font-family: Tahoma, Verdana, sans-serif;
+	font-size: 11px;
+	color: #F8F8F8;
+	line-height: 18px;
+}
+
+
+/* LAYOUT AND POSITIONING */
+
+body {
+		min-width:602px;
+}
+
+#wrap {
+	margin:0 auto;
+	width:600px;
+	}
+
+#header {
+	width: 600px;
+	height: 116px;
+	background-image:url(../images/logo.jpg);
+	background-repeat:no-repeat;
+	background-position: left top;
+	}
+
+#smallmenu  {
+	position:right;
+	text-align:right;
+	padding-top:4px;
+	padding-right: 14px;
+	background-image:url(../images/menu-top.jpg);
+	background-repeat:no-repeat;
+	background-position: right top;
+	}
+	
+#bodycontainer  {
+
+	}
+
+#left {
+	float:left;
+	width:165px;
+	margin-left:0px;
+	padding-right:15px;
+	}
+	
+#left h2, #left h3, #left p {
+		padding:0 10px;
+    }
+
+#contentfront {
+width:410px;
+padding-top:10px;
+}
+
+#content {
+width:410px;
+float:right;
+padding-top:10px;
+padding-bottom:10px;
+}
+	
+#content ul {
+		margin-bottom:0;
+    }
+
+#content h3, #sidebar p {
+		padding:0 10px 0 0;
+    }
+
+#footer {
+	border-top:1px solid #144066;
+	clear:both;
+	padding-top:10px;
+	margin-top:10px;
+	height:26px;
+	text-align:center;
+	}
+
+#footer p {
+	text-align:center;
+	color:#7B9DC4;
+		padding:5px;
+		line-height:20px;
+	}
+
+#menu  {
+	text-align:right;
+	}
+
+/* OTHER TAGS */
+
+
+hr  {
+	color: #ccc;
+	background-color: #ccc;
+	height: 1px;
+	width: 100%;
+	}
+
+a:link   {
+color: #93C6EC;
+text-decoration  : underline;
+}
+
+a:hover, a:visited {
+text-decoration: underline;
+color: #FFFFFF; }
+
+a.category:link, a.category:visited {
+  color: #CCCCCC;   }
+
+
+a.category:hover {
+  color: #FFFFFF;	}
+
+.mainlevel {  }
+
+a.mainlevel:link, a.mainlevel:visited {
+	font-family: "Lucida Sans", Trebuchet MS, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	text-align: left;
+	margin-left:30px;
+	padding-top:16px;
+	padding-bottom: 4px;
+	color: #042744;
+	text-decoration: none;
+	}
+
+a.mainlevel:hover  {
+	border-bottom: 4px solid white;
+	color: #000;
+	}
+
+#active_menu, a#active_menu:link, a#active_menu:visited, a#active_menu:hover {
+	color:#042744;
+	font-weight: bold;
+	padding-bottom: 4px;
+	}
+
+
+
+table.moduletable {
+	width: 100%;
+	margin-bottom:5px;
+	font-weight: normal;
+}
+
+table.moduletable th {}
+
+#menu table.moduletable {
+	height:40px;
+	}
+
+#left table.moduletable {
+	margin-bottom:5px;
+	margin-top:12px;
+	}
+
+#left table.moduletable th {
+	text-align:left;
+	font-family: "Lucida Sans", Trebuchet MS, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: lighter;
+	color: #C9E2F5;
+	padding-top:2px;
+	padding-bottom:2px;
+	padding-left: 3px;
+	background-image:url(../images/menu-head.jpg);
+	background-repeat:no-repeat;
+	background-position: left top;
+	}
+
+.newsflash {
+  font-family      : Arial, Helvetica, sans-serif;
+  font-size        : 10px;
+  text-transform   : uppercase;  }
+
+.frameheader {
+  font             : Arial, Helvetica, sans-serif;
+  font-size        : 18px;
+  font-weight      : none; }
+
+.contentpane {
+	padding-left     : 0px;
+	padding-right    : 0px;
+}
+
+
+#content img {
+	margin:4px;
+		}
+
+ .button {}
+
+.contentpaneopen 
+{
+	color: #868C7C;
+	width:100%;
+	margin: 0px;
+	padding: 0px;
+	border: none;
+}
+
+.buttonheading
+{
+vertical-align:top;
+}
+
+.componentheading, .contentheading {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #E2F0FA;
+	font-weight: lighter;
+	font-size: 18px;	
+}
+
+.contentdescription {
+	text-align:left;
+}
+
+.category {}
+
+.sectiontableheader {
+  font-weight: bold;
+}
+
+.sectiontablefooter {}
+
+.sectiontableentry1 {
+	background-color : #ffffff;
+}
+
+.sectiontableentry2 {}
+
+.small {
+  font-family      : Arial, Helvetica, sans-serif;
+  font-size        : 10px;
+  color            : #879DA5;
+  text-decoration  : none;
+  font-weight      : normal;
+  
+}
+
+table.contenttoc {
+  border: 1px solid #cccccc;
+  padding: 2px;
+  margin-left: 2px;
+  margin-bottom: 2px;
+}
+
+table.contenttoc td {
+  padding: 2px;
+}
+
+table.contenttoc th {
+  
+    color: #666666;
+	text-align: left;
+	padding-top: 2px;
+	padding-left: 4px;
+	height: 21px;
+	font-weight: bold;
+	font-size: 10px;
+	text-transform: uppercase;
+}
+
+ul {  }
+
+li {	
+	list-style-image: url(../images/arrow.png);
+	padding-left:5px;
+	line-height:160%;
+
+	}
+
+.readon { }
+
+a.mainlevel-bottom:link, a.mainlevel-bottom:visited, a.pathway:link,  a.pathway:visited, a.pathway:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #7B9DC4;
+	text-decoration: none;
+}
+
+a.mainlevel-top:link, a.mainlevel-top:visited {
+	font-family: "Lucida Sans", Trebuchet MS, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	text-decoration: none;
+	padding-left:16px;
+}
+
+a.mainlevel-top:hover {
+	color:#042744;
+}
+
+a.mainlevel-bottom:hover {
+	color: #DDDDDD;
+
+}
+.pathway {
+color: #333333;
+font-weight: bold;
+}
+
+
+.searchfield, .inputbox {
+	border: 1px solid #9FA8A9;
+	font-family: Tahoma, Verdana, Helvetica, sans-serif;
+	font-size: 11px;
+	text-indent: 2px;
+	padding:2px;
+	color:#ccc;
+	background-color:#042744;
+	}
+
+#searchbox {
+	padding-left:10px;
+	padding-top:22px;
+	}

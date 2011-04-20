@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>jContacts Lead Module</name>
+	<author>Extreme Joomla</author>
+	<creationDate>May 2008</creationDate>
+	<authorEmail>sales@extremejoomla.com</authorEmail>
+	<authorUrl>http://anonym.to/?www.extremejoomla.com</authorUrl>
+	<version>1.0.0</version>
+	<description></description>
+	<files>
+		<filename module="mod_jcontactslead">mod_jcontactslead.php</filename>
+	</files>
+	<params>
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A suffix to be applied to the css class of the module (table.moduletable), this allows individual module styling" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="text" type="textarea" rows="3" cols="20" default="" label="Text" description="The text that appears before the form" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="company" type="radio" default="" label="Company Field" description="Display an input field for company number">
+			<option value="">No</option>
+			<option value="1">Yes</option>
+		</param>		
+		<param name="phone" type="radio" default="" label="Phone Field" description="Display an input field for phone number">
+			<option value="">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="email" type="radio" default="" label="Email Field" description="Display an input field for email address">
+			<option value="">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="comment" type="radio" default="" label="Comment Field" description="Display a text field for comment">
+			<option value="">No</option>
+			<option value="1">Yes</option>
+		</param>				
+	</params>
+</install>

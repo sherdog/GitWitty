@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.5/template-install.dtd">
+<install type="template" version="1.5.0" client="administrator">
+	<name>JB Simpla</name>
+	<creationDate>December 2009</creationDate>
+	<author>Joomla Bamboo</author>
+	<authorEmail>info@joomlabamboo.com</authorEmail>
+	<authorUrl>http://www.joomlabamboo.com</authorUrl>
+	<copyright>Copyright Joomla Bamboo, 2009.</copyright>
+	<license></license>
+	<version>1.0.4</version>
+	<description>
+		<![CDATA[<p>Administration template for Joomla! 1.5 by Joomla Bamboo</p>
+			<p style="line-height:180%"><a href="http://www.joomlabamboo.com"><img src="http://www.joomlabamboo.com/images/JB_logo.jpg" alt="joomla Bamboo" style="float:left;margin-right:20px;margin-bottom:20px;border:1px solid #ddd"/></a><br style="clear:both" /></p><p>JB Simpla takes the Joomla administrator area to the next level. Its a slick, intuitive and fast loading interface that is easy to use and visually appealing which makes navigating your Joomla site a real joy. Let this amazing Joomla administrator template change the way that you interact with your favourite content management system.</p>
+			<p>Icons from www.icojoy.com - http://www.icojoy.com/articles/44/ - http://www.icojoy.com/articles/46/</p>]]>
+	</description>
+	<languages>
+		<language tag="en-GB">en-GB.tpl_jbsimpla.ini</language>
+	</languages>
+	<administration>
+		<languages>
+			<language tag="en-GB">en-GB.tpl_jbsimpla.ini</language>
+		</languages>
+	</administration>
+	<files>
+		<filename>component.php</filename>
+		<filename>cpanel.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>login.php</filename>
+		<filename>params.ini</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>templateDetails.xml</filename>
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>html</folder>
+	</files>
+	<positions>
+		<position>menu</position>
+		<position>submenu</position>
+		<position>toolbar</position>
+		<position>title</position>
+		<position>status</position>
+		<position>icon</position>
+		<position>cp_shell</position>
+		<position>cpanel</position>
+		<position>debug</position>
+	</positions>
+	<params>
+		<param type="spacer" default="TEMPLATE DESIGN" />
+		<param name="color" type="list" default="green" label="COLOR VARIATION" description="COLOR VARIATION DESC">
+			<option value="green">GREEN</option>
+			<option value="blue">BLUE</option>
+			<option value="red">RED</option>
+			<option value="black">BLACK</option>
+			<option value="yellow">YELLOW</option>
+			<option value="orange">ORANGE</option>
+			<option value="pink">PINK</option>
+			<option value="purple">PURPLE</option>
+			<option value="teal">TEAL</option>
+			<option value="white">WHITE</option>
+		</param>
+		<param name="topMenuStyle" type="list" default="hide" label="TOP MENU COLOR" description="TOP MENU COLOR DESC">
+			<option value="green">GREEN</option>
+			<option value="blue">BLUE</option>
+			<option value="red">RED</option>
+			<option value="black">BLACK</option>
+			<option value="yellow">YELLOW</option>
+			<option value="orange">ORANGE</option>
+			<option value="pink">PINK</option>
+			<option value="purple">PURPLE</option>
+			<option value="teal">TEAL</option>
+			<option value="white">WHITE</option>
+			<option value="grey">GREY</option>
+		</param>
+		<param name="notifier" type="list" default="1" label="NOTIFIER" description="NOTIFIER DESC">
+			<option value="1">ENABLED</option>
+			<option value="0">DISABLED</option>
+		</param>
+		<param type="spacer" default="&lt;/ br&gt;" />
+		<param type="spacer" default="MENU CONTROL" />
+		<param name="menutype" type="list" default="sidebar" label="MENUS" description="MENUS DESC">
+			<option value="sidebar">SIDEBAR</option>
+			<option value="topbar">TOPBAR</option>
+			<option value="both">BOTH</option>
+		</param>
+		<param name="hidesidebar" type="list" default="hide" label="AUTOHIDE" description="AUTOHIDE DESC">
+			<option value="hide">ENABLED</option>
+			<option value="nohide">DISABLED</option>
+		</param>
+		<param type="spacer" default="&lt;/ br&gt;" />
+		<param type="spacer" default="" />
+		<param name="dropdown" type="list" default="1" label="DROPDOWN" description="DROPDOWN DESC">
+			<option value="1">ENABLED</option>
+			<option value="0">DISABLED</option>
+		</param>
+		<param type="spacer" default="&lt;/ br&gt;" />
+		<param type="spacer" default="COPYRIGHT" />
+		<param name="logo" type="list" default="text" label="LOGO" description="LOGO DESC">
+		<option value="text">TEXT</option>
+			<option value="image">IMAGE</option>
+		</param>
+		<param name="yourCopyright" type="textarea" cols="40" rows="5" default="Template designed by Joomla Bamboo" label="CREDITS" description="CREDITS DESC" />
+		<param name="joomlaText" type="list" default="text" label="JOOMLA CREDITS" description="JOOMLA CREDITS DESC">
+		<option value="1">ENABLED</option>
+			<option value="0">DISABLED</option>
+		</param>
+		<param type="spacer" default="&lt;/ br&gt;" />
+		<param type="spacer" default="SHORTCUTS" />
+		<param name="shortcuts" type="list" default="1" label="SHORTCUT LINKS" description="SHORTCUT LINKS DESC">
+			<option value="1">ENABLED</option>
+			<option value="0">DISABLED</option>
+		</param>
+		<param name="icon_size" type="list" default="48" label="ICON SIZE" description="ICON SIZE DESC">
+			<option value="48">48x48</option>
+			<option value="24">24x24</option>
+			<option value="16">16x16</option>
+			<option value="disabled">DISABLED</option>
+		</param>
+		<param name="shortcut_text" type="list" default="1" label="SHORTCUT TEXT" description="SHORTCUT TEXT DESC">
+			<option value="1">ENABLED</option>
+			<option value="0">DISABLED</option>
+		</param>
+		<param name="shortcut_tips" type="list" default="1" label="SHORTCUT TIPS" description="SHORTCUT TIPS DESC">
+			<option value="1">ENABLED</option>
+			<option value="0">DISABLED</option>
+		</param>
+		<param name="shortcut_width" type="text" default="90" label="SHORTCUT WIDTH" description="SHORTCUT WIDTH DESC" />
+		<param name="shortcut_height" type="text" default="" label="SHORTCUT HEIGHT" description="SHORTCUT HEIGHT DESC" />
+		<param type="spacer" default="LINK1" />
+		<param name="link1_enable" type="list" default="enabled" label="ENABLED" description="LINK ENABLE">
+			<option value="enabled">ENABLED</option>
+			<option value="disabled">DISABLED</option>
+		</param>
+		<param name="link1_link" type="text" default="index.php" label="LINK LINK" description="LINK LINK DESC" />
+		<param name="link1_icon" type="imagelist" default="cpanel.png" label="LINK ICON" description="LINK ICON DESC" directory="administrator/templates/jbsimpla/images/icons/shortcuts/48" hide_default="true" hide_none="true" />
+		<param name="link1_text" type="text" default="Control Panel" label="LINK TITLE" description="LINK TITLE DESC" />
+		<param name="link1_access" type="list" default="24" label="LINK ACCESS" description="LINK ACCESS DESC">
+			<option value="25">SUPER ADMINISTRATOR</option>
+			<option value="24">ADMINISTRATOR</option>
+			<option value="23">MANAGER</option>
+		</param>
+		<param type="spacer" default="LINK2" />
+		<param name="link2_enable" type="list" default="enabled" label="ENABLED" description="LINK ENABLE">
+			<option value="enabled">ENABLED</option>
+			<option value="disabled">DISABLED</option>
+		</param>
+		<param name="link2_link" type="text" default="index.php?option=com_content" label="LINK LINK" description="LINK LINK DESC" />
+		<param name="link2_icon" type="imagelist" default="articles.png" label="LINK ICON" description="LINK ICON DESC" directory="administrator/templates/jbsimpla/images/icons/shortcuts/48" hide_default="true" hide_none="true" />
+		<param name="link2_text" type="text" default="Articles" label="LINK TITLE" description="LINK TITLE DESC" />
+		<param name="link2_access" type="list" default="24" label="LINK ACCESS" description="LINK ACCESS DESC">
+			<option value="25">SUPER ADMINISTRATOR</option>
+			<option value="24">ADMINISTRATOR</option>
+			<option value="23">MANAGER</option>
+		</param>
+		<param type="spacer" default="LINK3" />
+		<param name="link3_enable" type="list" default="enabled" label="ENABLED" description="LINK ENABLE">
+			<option value="enabled">ENABLED</option>
+			<option value="disabled">DISABLED</option>
+		</param>
+		<param name="link3_link" type="text" default="index.php?option=com_content&amp;task=add" label="LINK LINK" description="LINK LINK DESC" />
+		<param name="link3_icon" type="imagelist" default="article-add.png" label="LINK ICON" description="LINK ICON DESC" directory="administrator/templates/jbsimpla/images/icons/shortcuts/48" hide_default="true" hide_none="true" />
+		<param name="link3_text" type="text" default="New Article" label="LINK TITLE" description="LINK TITLE DESC" />
+		<param name="link3_access" type="list" default="24" label="LINK ACCESS" description="LINK ACCESS DESC">
+			<option value="25">SUPER ADMINISTRATOR</option>
+			<option value="24">ADMINISTRATOR</option>
+			<option value="23">MANAGER</option>
+		</param>
+		<param type="spacer" default="LINK4" />
+		<param name="link4_enable" type="list" default="enabled" label="ENABLED" description="LINK ENABLE">
+			<option value="enabled">ENABLED</option>
+			<option value="disabled">DISABLED</option>
+		</param>
+		<param name="link4_link" type="text" default="index.php?option=com_frontpage" label="LINK LINK" description="LINK LINK DESC" />
+		<param name="link4_icon" type="imagelist" default="frontpage.png" label="LINK ICON" description="LINK ICON DESC" directory="administrator/templates/jbsimpla/images/icons/shortcuts/48" hide_default="true" hide_none="true" />
+		<param name="link4_text" type="text" default="Frontpage" label="LINK TITLE" description="LINK TITLE DESC" />
+		<param name="link4_access" type="list" default="24" label="LINK ACCESS" description="LINK ACCESS DESC">
+			<option value="25">SUPER ADMINISTRATOR</option>
+			<option value="24">ADMINISTRATOR</option>
+			<option value="23">MANAGER</option>
+		</param>
+		<param type="spacer" default="LINK5" />
+		<param name="link5_enable" type="list" default="enabled" label="ENABLED" description="LINK ENABLE">
+			<option value="enabled">ENABLED</option>
+			<option value="disabled">DISABLED</option>
+		</param>
+		<param name="link5_link" type="text" default="index.php?option=com_sections&amp;scope=content" label="LINK LINK" description="LINK LINK DESC" />
+		<param name="link5_icon" type="imagelist" default="section.png" label="LINK ICON" description="LINK ICON DESC" directory="administrator/templates/jbsimpla/images/icons/shortcuts/48" hide_default="true" hide_none="true" />
+		<param name="link5_text" type="text" default="Sections" label="LINK TITLE" description="LINK TITLE DESC" />
+		<param name="link5_access" type="list" default="24" label="LINK ACCESS" description="LINK ACCESS DESC">
+			<option value="25">SUPER ADMINISTRATOR</option>
+			<option value="24">ADMINISTRATOR</option>
+			<option value="23">MANAGER</option>
+		</param>
+		<param type="spacer" default="LINK6" />
+		<param name="link6_enable" type="list" default="enabled" label="ENABLED" description="LINK ENABLE">
+			<option value="enabled">ENABLED</option>
+			<option value="disabled">DISABLED</option>
+		</param>
+		<param name="link6_link" type="text" default="index.php?option=com_categories&amp;section=com_content" label="LINK LINK" description="LINK LINK DESC" />
+		<param name="link6_icon" type="imagelist" default="category.png" label="LINK ICON" description="LINK ICON DESC" directory="administrator/templates/jbsimpla/images/icons/shortcuts/48" hide_default="true" hide_none="true" />
+		<param name="link6_text" type="text" default="Categories" label="LINK TITLE" description="LINK TITLE DESC" />
+		<param name="link6_access" type="list" default="24" label="LINK ACCESS" description="LINK ACCESS DESC">
+			<option value="25">SUPER ADMINISTRATOR</option>
+			<option value="24">ADMINISTRATOR</option>
+			<option value="23">MANAGER</option>
+		</param>
+		<param type="spacer" default="LINK7" />
+		<param name="link7_enable" type="list" default="enabled" label="ENABLED" description="LINK ENABLE">
+			<option value="enabled">ENABLED</option>
+			<option value="disabled">DISABLED</option>
+		</param>
+		<param name="link7_link" type="text" default="index.php?option=com_categories&amp;section=com_content&amp;task=add" label="LINK LINK" description="LINK LINK DESC" />
+		<param name="link7_icon" type="imagelist" default="category-add.png" label="LINK ICON" description="LINK ICON DESC" directory="administrator/templates/jbsimpla/images/icons/shortcuts/48" hide_default="true" hide_none="true" />
+		<param name="link7_text" type="text" default="Add Category" label="LINK TITLE" description="LINK TITLE DESC" />
+		<param name="link7_access" type="list" default="24" label="LINK ACCESS" description="LINK ACCESS DESC">
+			<option value="25">SUPER ADMINISTRATOR</option>
+			<option value="24">ADMINISTRATOR</option>
+			<option value="23">MANAGER</option>
+		</param>
+		<param type="spacer" default="LINK8" />
+		<param name="link8_enable" type="list" default="enabled" label="ENABLED" description="LINK ENABLE">
+			<option value="enabled">ENABLED</option>
+			<option value="disabled">DISABLED</option>
+		</param>
+		<param name="link8_link" type="text" default="index.php?option=com_media" label="LINK LINK" description="LINK LINK DESC" />
+		<param name="link8_icon" type="imagelist" default="media.png" label="LINK ICON" description="LINK ICON DESC" directory="administrator/templates/jbsimpla/images/icons/shortcuts/48" hide_default="true" hide_none="true" />
+		<param name="link8_text" type="text" default="Media" label="LINK TITLE" description="LINK TITLE DESC" />
+		<param name="link8_access" type="list" default="24" label="LINK ACCESS" description="LINK ACCESS DESC">
+			<option value="25">SUPER ADMINISTRATOR</option>
+			<option value="24">ADMINISTRATOR</option>
+			<option value="23">MANAGER</option>
+		</param>
+		<param type="spacer" default="LINK9" />
+		<param name="link9_enable" type="list" default="enabled" label="ENABLED" description="LINK ENABLE">
+			<option value="enabled">ENABLED</option>
+			<option value="disabled">DISABLED</option>
+		</param>
+		<param name="link9_link" type="text" default="index.php?option=com_users&amp;task=view" label="LINK LINK" description="LINK LINK DESC" />
+		<param name="link9_icon" type="imagelist" default="users.png" label="LINK ICON" description="LINK ICON DESC" directory="administrator/templates/jbsimpla/images/icons/shortcuts/48" hide_default="true" hide_none="true" />
+		<param name="link9_text" type="text" default="Users" label="LINK TITLE" description="LINK TITLE DESC" />
+		<param name="link9_access" type="list" default="24" label="LINK ACCESS" description="LINK ACCESS DESC">
+			<option value="25">SUPER ADMINISTRATOR</option>
+			<option value="24">ADMINISTRATOR</option>
+			<option value="23">MANAGER</option>
+		</param>
+		<param type="spacer" default="LINK10" />
+		<param name="link10_enable" type="list" default="enabled" label="ENABLED" description="LINK ENABLE">
+			<option value="enabled">ENABLED</option>
+			<option value="disabled">DISABLED</option>
+		</param>
+		<param name="link10_link" type="text" default="index.php?option=com_users&amp;task=add" label="LINK LINK" description="LINK LINK DESC" />
+		<param name="link10_icon" type="imagelist" default="user.png" label="LINK ICON" description="LINK ICON DESC" directory="administrator/templates/jbsimpla/images/icons/shortcuts/48" hide_default="true" hide_none="true" />
+		<param name="link10_text" type="text" default="Add User" label="LINK TITLE" description="LINK TITLE DESC" />
+		<param name="link10_access" type="list" default="24" label="LINK ACCESS" description="LINK ACCESS DESC">
+			<option value="25">SUPER ADMINISTRATOR</option>
+			<option value="24">ADMINISTRATOR</option>
+			<option value="23">MANAGER</option>
+		</param>
+		<param type="spacer" default="LINK11" />
+		<param name="link11_enable" type="list" default="enabled" label="ENABLED" description="LINK ENABLE">
+			<option value="enabled">ENABLED</option>
+			<option value="disabled">DISABLED</option>
+		</param>
+		<param name="link11_link" type="text" default="index.php?option=com_installer" label="LINK LINK" description="LINK LINK DESC" />
+		<param name="link11_icon" type="imagelist" default="extensions.png" label="LINK ICON" description="LINK ICON DESC" directory="administrator/templates/jbsimpla/images/icons/shortcuts/48" hide_default="true" hide_none="true" />
+		<param name="link11_text" type="text" default="Installation" label="LINK TITLE" description="LINK TITLE DESC" />
+		<param name="link11_access" type="list" default="24" label="LINK ACCESS" description="LINK ACCESS DESC">
+			<option value="25">SUPER ADMINISTRATOR</option>
+			<option value="24">ADMINISTRATOR</option>
+			<option value="23">MANAGER</option>
+		</param>
+		<param type="spacer" default="LINK12" />
+		<param name="link12_enable" type="list" default="enabled" label="ENABLED" description="LINK ENABLE">
+			<option value="enabled">ENABLED</option>
+			<option value="disabled">DISABLED</option>
+		</param>
+		<param name="link12_link" type="text" default="index.php?option=com_modules" label="LINK LINK" description="LINK LINK DESC" />
+		<param name="link12_icon" type="imagelist" default="module.png" label="LINK ICON" description="LINK ICON DESC" directory="administrator/templates/jbsimpla/images/icons/shortcuts/48" hide_default="true" hide_none="true" />
+		<param name="link12_text" type="text" default="Modules" label="LINK TITLE" description="LINK TITLE DESC" />
+		<param name="link12_access" type="list" default="24" label="LINK ACCESS" description="LINK ACCESS DESC">
+			<option value="25">SUPER ADMINISTRATOR</option>
+			<option value="24">ADMINISTRATOR</option>
+			<option value="23">MANAGER</option>
+		</param>
+		<param type="spacer" default="LINK13" />
+		<param name="link13_enable" type="list" default="enabled" label="ENABLED" description="LINK ENABLE">
+			<option value="enabled">ENABLED</option>
+			<option value="disabled">DISABLED</option>
+		</param>
+		<param name="link13_link" type="text" default="index.php?option=com_modules&amp;task=add" label="LINK LINK" description="LINK LINK DESC" />
+		<param name="link13_icon" type="imagelist" default="module-add.png" label="LINK ICON" description="LINK ICON DESC" directory="administrator/templates/jbsimpla/images/icons/shortcuts/48" hide_default="true" hide_none="true" />
+		<param name="link13_text" type="text" default="Add Module" label="LINK TITLE" description="LINK TITLE DESC" />
+		<param name="link13_access" type="list" default="24" label="LINK ACCESS" description="LINK ACCESS DESC">
+			<option value="25">SUPER ADMINISTRATOR</option>
+			<option value="24">ADMINISTRATOR</option>
+			<option value="23">MANAGER</option>
+		</param>
+		<param type="spacer" default="LINK14" />
+		<param name="link14_enable" type="list" default="enabled" label="ENABLED" description="LINK ENABLE">
+			<option value="enabled">ENABLED</option>
+			<option value="disabled">DISABLED</option>
+		</param>
+		<param name="link14_link" type="text" default="index.php?option=com_plugins" label="LINK LINK" description="LINK LINK DESC" />
+		<param name="link14_icon" type="imagelist" default="plugin.png" label="LINK ICON" description="LINK ICON DESC" directory="administrator/templates/jbsimpla/images/icons/shortcuts/48" hide_default="true" hide_none="true" />
+		<param name="link14_text" type="text" default="Plugins" label="LINK TITLE" description="LINK TITLE DESC" />
+		<param name="link14_access" type="list" default="24" label="LINK ACCESS" description="LINK ACCESS DESC">
+			<option value="25">SUPER ADMINISTRATOR</option>
+			<option value="24">ADMINISTRATOR</option>
+			<option value="23">MANAGER</option>
+		</param>
+		<param type="spacer" default="LINK15" />
+		<param name="link15_enable" type="list" default="enabled" label="ENABLED" description="LINK ENABLE">
+			<option value="enabled">ENABLED</option>
+			<option value="disabled">DISABLED</option>
+		</param>
+		<param name="link15_link" type="text" default="index.php?option=com_templates" label="LINK LINK" description="LINK LINK DESC" />
+		<param name="link15_icon" type="imagelist" default="templates.png" label="LINK ICON" description="LINK ICON DESC" directory="administrator/templates/jbsimpla/images/icons/shortcuts/48" hide_default="true" hide_none="true" />
+		<param name="link15_text" type="text" default="Templates" label="LINK TITLE" description="LINK TITLE DESC" />
+		<param name="link15_access" type="list" default="24" label="LINK ACCESS" description="LINK ACCESS DESC">
+			<option value="25">SUPER ADMINISTRATOR</option>
+			<option value="24">ADMINISTRATOR</option>
+			<option value="23">MANAGER</option>
+		</param>
+		<param type="spacer" default="LINK16" />
+		<param name="link16_enable" type="list" default="enabled" label="ENABLED" description="LINK ENABLE">
+			<option value="enabled">ENABLED</option>
+			<option value="disabled">DISABLED</option>
+		</param>
+		<param name="link16_link" type="text" default="index.php?option=com_languages" label="LINK LINK" description="LINK LINK DESC" />
+		<param name="link16_icon" type="imagelist" default="language.png" label="LINK ICON" description="LINK ICON DESC" directory="administrator/templates/jbsimpla/images/icons/shortcuts/48" hide_default="true" hide_none="true" />
+		<param name="link16_text" type="text" default="Languages" label="LINK TITLE" description="LINK TITLE DESC" />
+		<param name="link16_access" type="list" default="24" label="LINK ACCESS" description="LINK ACCESS DESC">
+			<option value="25">SUPER ADMINISTRATOR</option>
+			<option value="24">ADMINISTRATOR</option>
+			<option value="23">MANAGER</option>
+		</param>
+		<param type="spacer" default="LINK17" />
+		<param name="link17_enable" type="list" default="enabled" label="ENABLED" description="LINK ENABLE">
+			<option value="enabled">ENABLED</option>
+			<option value="disabled">DISABLED</option>
+		</param>
+		<param name="link17_link" type="text" default="index.php?option=com_contact" label="LINK LINK" description="LINK LINK DESC" />
+		<param name="link17_icon" type="imagelist" default="groups.png" label="LINK ICON" description="LINK ICON DESC" directory="administrator/templates/jbsimpla/images/icons/shortcuts/48" hide_default="true" hide_none="true" />
+		<param name="link17_text" type="text" default="Contacts" label="LINK TITLE" description="LINK TITLE DESC" />
+		<param name="link17_access" type="list" default="24" label="LINK ACCESS" description="LINK ACCESS DESC">
+			<option value="25">SUPER ADMINISTRATOR</option>
+			<option value="24">ADMINISTRATOR</option>
+			<option value="23">MANAGER</option>
+		</param>
+		<param type="spacer" default="LINK18" />
+		<param name="link18_enable" type="list" default="enabled" label="ENABLED" description="LINK ENABLE">
+			<option value="enabled">ENABLED</option>
+			<option value="disabled">DISABLED</option>
+		</param>
+		<param name="link18_link" type="text" default="index.php?option=com_weblinks" label="LINK LINK" description="LINK LINK DESC" />
+		<param name="link18_icon" type="imagelist" default="hand.png" label="LINK ICON" description="LINK ICON DESC" directory="administrator/templates/jbsimpla/images/icons/shortcuts/48" hide_default="true" hide_none="true" />
+		<param name="link18_text" type="text" default="Web Links" label="LINK TITLE" description="LINK TITLE DESC" />
+		<param name="link18_access" type="list" default="24" label="LINK ACCESS" description="LINK ACCESS DESC">
+			<option value="25">SUPER ADMINISTRATOR</option>
+			<option value="24">ADMINISTRATOR</option>
+			<option value="23">MANAGER</option>
+		</param>		
+		<param type="spacer" default="LINK19" />
+		<param name="link19_enable" type="list" default="enabled" label="ENABLED" description="LINK ENABLE">
+			<option value="enabled">ENABLED</option>
+			<option value="disabled">DISABLED</option>
+		</param>
+		<param name="link19_link" type="text" default="index.php?option=com_admin&amp;task=help" label="Link" description="LINK LINK DESC" />
+		<param name="link19_icon" type="imagelist" default="question.png" label="LINK ICON" description="LINK ICON DESC" directory="administrator/templates/jbsimpla/images/icons/shortcuts/48" hide_default="true" hide_none="true" />
+		<param name="link19_text" type="text" default="Help" label="LINK TITLE" description="LINK TITLE DESC" />
+		<param name="link19_access" type="list" default="24" label="LINK ACCESS" description="LINK ACCESS DESC">
+			<option value="25">SUPER ADMINISTRATOR</option>
+			<option value="24">ADMINISTRATOR</option>
+			<option value="23">MANAGER</option>
+		</param>
+		<param type="spacer" default="LINK20" />
+		<param name="link20_enable" type="list" default="enabled" label="ENABLED" description="LINK ENABLE">
+			<option value="enabled">ENABLED</option>
+			<option value="disabled">DISABLED</option>
+		</param>
+		<param name="link20_link" type="text" default="index.php?option=com_config" label="Link" description="LINK LINK DESC" />
+		<param name="link20_icon" type="imagelist" default="config.png" label="LINK ICON" description="LINK ICON DESC" directory="administrator/templates/jbsimpla/images/icons/shortcuts/48" hide_default="true" hide_none="true" />
+		<param name="link20_text" type="text" default="Configuration" label="LINK TITLE" description="LINK TITLE DESC" />
+		<param name="link20_access" type="list" default="24" label="LINK ACCESS" description="LINK ACCESS DESC">
+			<option value="25">SUPER ADMINISTRATOR</option>
+			<option value="24">ADMINISTRATOR</option>
+			<option value="23">MANAGER</option>
+		</param>
+	</params>
+</install>

@@ -1,0 +1,67 @@
+/*---- text styles ----*/
+pre {/*moz 1.0/1.1/1.2.1, net 7.0/7.01 make this way too small, but i'm not going to go larger because monospace tends to run you into overflow pretty quick. prior moz and net are okay.*/
+font-family: monospace;
+font-size: 1.0em;
+}
+#header h1 {
+padding:0.5em 0 0 20px;
+font: 2em;
+color:#000;
+}
+h2 {
+font-size: 1.6em;
+line-height:1.8em;
+color:#575b66;
+margin:0 0 1em 0;
+font-weight: normal;
+}
+h3 {
+font: bold 1em/1.9em;
+text-align:center;
+margin: 1.2em 0em 1.2em 0;
+}
+h4 {
+font-size: 1.2em;
+margin: 1.2em 0em 1.2em 0;
+font-weight: bold;
+}
+h5 {
+font-size: 1.0em;
+margin: 1.2em 0em 1.2em 0;
+font-weight: bold;
+}
+h6 {
+font-size: 0.8em;
+margin: 1.2em 0em 1.2em 0;
+font-weight: bold;
+}
+p {
+font-size: 1.0em;
+line-height: 1.3em;
+margin: 1.2em 0;
+}
+li > p {
+margin-top: 0.2em;
+}
+#footer p{
+margin:0;
+padding:0;
+font-size: 1.1em;
+line-height: 1.2em;
+text-align: center;
+padding-left: 1em;
+color: #808080;
+}
+strong, b {
+font-weight: bold;
+}
+ol, ul, li {
+font-size: 1.0em;
+line-height: 1.8em;
+margin-top: 0.2em;
+margin-bottom: 0.1em; 
+}
+#content li {
+padding-left:5px;
+margin-left:15px;	
+}

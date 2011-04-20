@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0" method="upgrade">
+  <name>Simple RSS Feed Reader (by JoomlaWorks)</name>
+  <author>JoomlaWorks</author>
+  <authorEmail>contact@joomlaworks.gr</authorEmail>
+  <authorUrl>www.joomlaworks.gr</authorUrl>
+  <copyright>Copyright (c) 2006-2010 JoomlaWorks, a business unit of Nuevvo Webware Ltd. All rights reserved.</copyright>
+  <creationDate>September 22nd, 2010</creationDate>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+  <version>2.2</version>
+  <description>Simple RSS Feed Reader module for Joomla! 1.5 (by JoomlaWorks)</description>
+  <params addpath="/modules/mod_jw_srfr/includes/elements">
+  	<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+    <param name="template" type="template" default="default" label="Choose layout template" description="This module utilizes on-the-fly MVC template overrides, inspired by our flagship component K2. What this means is that you can create a new sub-template folder for this module within your Joomla template's /html/mod_jw_srfr/ folder. The module will then pickup the new sub-template auto-magically, without you editing any XML file or doing any other non-designer work!" />
+  	<param name="" type="header" default="Fetch Options" label="" description="" />
+		<param name="srfrFeeds" type="textarea" default="http://feeds.feedburner.com/joomlaworks/blog&lt;br /&gt;http://feeds.feedburner.com/joomlaworks&lt;br /&gt;http://joomlaworks.blip.tv/rss" cols="40" rows="16" label="Enter RSS feeds to fetch (one feed per line)" description="" />
+    <param name="perFeedItems" type="text" default="5" size="4" label="Maximum items to fetch per feed" description="Set the maximum number of items that will be displayed per RSS feed." />
+    <param name="totalFeedItems" type="text" default="10" size="4" label="Total items (from all feeds)" description="Set the total number of items that will be displayed from all feeds. So, even if you have 4 feeds displaying in your website, with 10 items per feed, and you have set 'Total items (from all feeds)' to 15, then no more than the last 15 items from ALL feeds will be displayed. This is a nice option to have, when you don't want the list of feeds to span a mile high in your website!" />
+    <param name="feedTimeout" type="text" default="10" size="4" label="Feed timeout (in seconds)" description="Set the time in seconds after which the module will stop requesting data from problematic RSS feeds. Such feeds can come from source sites that are either sluggish or down. It is suggested not to exceed 30 seconds." />
+  	<param name="" type="header" default="Feed Content Options" label="" description="" />
+    <param name="feedItemTitle" type="radio" default="1" label="Feed item title" description="Display the syndicated article title or not.">
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </param>
+    <param name="feedItemDate" type="radio" default="1" label="Feed item date &amp; time" description="This is usually the publication timestamp of each syndicated article, also known as 'article creation timestamp'.">
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </param>
+    <param name="feedItemDateFormat" type="text" default="j M Y \| g:i a" label="Date &amp; time format" description="" />
+    <param name="feedTitle" type="radio" default="1" label="Feed title (source site name)" description="">
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </param>
+    <param name="feedFavicon" type="radio" default="1" label="Feed favicon" description="">
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </param>
+    <param name="feedItemDescription" type="radio" default="1" label="Feed item description" description="">
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </param>
+    <param name="feedItemDescriptionWordlimit" type="text" default="40" size="4" label="Word limit for feed item description (strips HTML tags)" description="Word limit performs complete HTML tag stripping on feed item description. Set to '0' to disable." />
+    <param name="feedItemImageHandling" type="list" default="2" label="Image handling (within feed item description)" description="">
+      <option value="0">Hide all images</option>
+      <option value="1">Extract first image only, hide others</option>
+      <option value="2">Extract and resize first image only, hide others</option>
+    </param>
+    <param name="feedItemImageResizeWidth" type="text" default="200" size="4" label="Image resize width (px)" description="" />
+    <param name="feedItemImageResampleQuality" type="text" default="80" size="4" label="Image resample quality (%)" description="" />
+    <param name="feedItemReadMore" type="radio" default="1" label="'Read more...' link" description="">
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </param>
+    <param name="" type="header" default="Additional Content Options" label="" description="" />
+		<param name="feedsBlockPreText" type="textarea" default="" label="Description text at the top of the feeds block (optional)" description="" cols="40" rows="4" />
+		<param name="feedsBlockPostText" type="textarea" default="" label="Description text at the bottom of the feeds block (optional)" description="" cols="40" rows="4" />
+    <param name="feedsBlockPostLink" type="radio" default="0" label="Enable custom link at the bottom of the feeds block" description="">
+      <option value="0">no</option>
+      <option value="1">yes</option>
+    </param>
+    <param name="feedsBlockPostLinkURL" type="text" default="http://" label="Custom link URL" description="Custom link URL." />
+    <param name="feedsBlockPostLinkTitle" type="text" default="" label="Custom link Title" description="Custom link Title." />
+    <param name="" type="header" default="Feed Caching Options" label="" description="" />
+    <param name="srfrCacheTime" type="text" default="30" label="Cache time (in minutes) for feed content and remote images" description="The time before the actual remote content -both text and images- is recached. This cache option is always on." />
+  </params>
+	<params group="advanced">
+		<param name="cache" type="list" default="1" label="Caching" description="Select whether to cache the content of this module">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</param>
+		<param name="cache_time" type="text" default="900" label="Cache Time" description="The time before the module is recached" />
+	</params>
+  <files>
+    <filename module="mod_jw_srfr">mod_jw_srfr.php</filename>
+    <filename>helper.php</filename>
+    <folder>includes</folder>
+    <folder>tmpl</folder>
+  </files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_jw_srfr.ini</language>
+	</languages>
+</install>

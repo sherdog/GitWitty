@@ -1,0 +1,292 @@
+/* Design by CMS Lounge  */
+/* Get more like this at http://www.cmslounge.com  */
+
+body,td,th, tr, p, div {
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 11px;
+	color: #444;
+	line-height: 16px;
+}
+
+/* LAYOUT AND POSITIONING */
+
+body#body {
+text-align;center;
+padding:0;
+margin:0;
+margin-top:30px;
+background-color:#555;
+}
+
+#wrapper {
+position:relative;
+margin:0 auto;
+width:733px;
+background:white;
+border:6px solid white;
+}
+
+#headerheight {
+height:60px;
+}
+
+#logo {
+position:absolute;
+left:1px;
+top:0px;
+}
+
+a img {
+border:none;
+}
+
+#banner {
+background: url(../images/banner.jpg) no-repeat left bottom;
+width:733px;
+height:185px;
+}
+
+#banner .moduletable {
+width:200px;
+margin-left:510px;
+padding-top:10px;
+}
+
+#menu  {
+/*background:#8E370E;
+*/
+background:#333;
+width:463px;
+height:57px;
+position:absolute;
+top:0px;
+left:270px;
+}
+
+#menu2 {
+background:#666;
+width:463px;
+position:absolute;
+height:27px;
+top:30px;
+left:0px;
+border-top:3px solid #FFF;
+}
+
+#content {
+background:url(../images/bg1.gif) repeat-y left top;
+margin-top:15px;
+margin-bottom:15px;
+}
+
+#main {
+float:left;
+width:460px;
+}
+
+#main-padding {
+padding-left:10px;
+padding-right:10px;
+}
+
+#right {
+float:left;
+width:250px;
+}
+
+#lowerpanel {
+clear:both;
+}
+
+#lowerpanel .moduletable {
+padding-left:12px;
+padding-right:6px;
+}
+
+#block3 .moduletable {
+padding-left:20px;
+padding-right:6px;
+}
+
+
+#block1, #block2, #block3 {
+float:left;
+width:244px;
+}
+
+
+#footer {
+clear:both;
+margin-top:10px;
+padding-top:6px;
+padding-bottom:8px;
+background:#333;
+color:#333;
+}
+
+/* menu tags */
+
+#menu ul {
+margin:0;
+padding:0;
+padding-top:8px;
+padding-left:15px;
+}
+
+#menu ul li {
+list-style-type:none;
+float:left;
+margin-right:30px;
+height:22px;
+}
+
+#menu ul li ul {
+display:none;
+}
+
+#menu a, #menu a:visited {
+color:white;
+text-decoration:none;
+text-transform:uppercase;
+font-weight:bold;
+}
+
+#menu a:hover {
+color:pink;
+}
+
+
+/* OTHER TAGS */
+
+a:link, a:visited {
+color:#D3644A;
+text-decoration: underline;
+}
+
+a:hover {
+color: #333;
+}
+
+#content img {
+margin:4px;
+}
+
+.componentheading, .contentheading {
+color:#D3644A;
+font-weight:bold;
+font-size:14px;
+margin-top:6px;
+}
+
+.sectiontableheader { font-weight: bold; }
+.sectiontablefooter {}
+.sectiontableentry1 {}
+.sectiontableentry2 {}
+
+.small {
+font-size: 10px;
+}
+
+.searchfield, .inputbox {
+border: 1px solid #CCC;
+font-size: 10px;
+text-indent: 2px;
+padding:2px;
+color:#444;
+}
+
+h3 { 
+margin:0;
+font-size:11px;
+ }
+
+#right .moduletable {
+margin-left:15px;
+}
+
+#footer .moduletable-bottom {
+padding-left:10px;
+}
+
+table.blog, table.contentpaneopen, table.contentpane {
+width:430px;
+}
+
+#banner .moduletable h3 {
+color:white;
+font-size:11px;
+}
+
+#banner .moduletable ul {
+margin:0;
+padding:10px;
+}
+
+#banner .moduletable ul li {
+padding-bottom:8px;
+list-style-type:none;
+}
+
+#banner .moduletable a {
+color:#F8F8F8;
+}
+
+#banner .moduletable a:hover {
+color:#FFF;
+}
+
+/* search page styles */
+
+fieldset {
+border:none;
+}
+
+#footer a, #footer a:link, #footer a:visited {
+margin-right:10px;
+margin-left:10px;
+color:white;
+}
+
+#footer a:hover {
+color:#DDD;
+}
+
+/*  image styles */
+
+#content img {
+border:1px solid #CCC;
+padding:2px;
+margin:4px;
+}
+
+
+
+/* ----- DROP DOWN MENU ---- */
+
+ul#menulist_root li ul {
+  display:none;
+  position: absolute;
+  z-index:10;
+  padding-top:20px;
+  top:1.4em;
+  left: 0em;
+  width:460px;  
+}
+
+ul#menulist_root li ul li {
+  padding-top:2px;
+  padding-left:0px;
+}
+
+ul#menulist_root li:hover ul, 
+ul#menulist_root li.over ul { 
+display: block; 
+}
+
+ul#menulist_root li ul li:hover, 
+ul#menulist_root li ul li.over { 
+}
+
+ul#menulist_root li:hover ul li ul, 
+ul#menulist_root li.over ul li ul { 
+display: none; }

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system">
+	<name>System - Visual Website Optimizer For Joomla</name>
+	<author>Nico Kaag</author>
+	<creationDate>January 2011</creationDate>
+	<copyright>Copyright (C) 2011 Analytics For Joomla. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@analyticsforjoomla.com</authorEmail>
+	<authorUrl>www.analyticsforjoomla.com</authorUrl>
+	<version>1.0</version>
+	<description>BTBUCKETS_DESCRIPTION</description>
+	<files>
+		<filename plugin="vwo4joomla">vwo4joomla.php</filename>
+	</files>
+			<languages folder="language">
+		<language tag="en-GB">en-GB.plg_system_vwo4joomla.ini</language>
+	</languages>
+	<params>
+	
+		<param name="vwo_id" type="text" default="" label="VWO ID" description="This is the Web Property ID provided by Visual Website Optimizer." />
+	</params>
+</install>

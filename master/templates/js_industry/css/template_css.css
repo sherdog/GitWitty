@@ -1,0 +1,77 @@
+/*Copyright 2006 Joomlashack All rights reserved*/
+/*Joomlashack.com Joomla Template*/
+
+/* CSS Document */
+
+* { margin:0; padding:0; }
+body { font-family:'Trebuchet MS',Arial,Helvetica,sans-serif; color:#666666; font-size:82%; line-height:1.3em; background:#ffffff; margin:0; }
+a:link, a:visited { color:#e5a800; text-decoration:underline; }
+a:hover { text-decoration:none; }
+.rightdes{text-indent:-5000px;text-decoration:none;}
+
+div#header { height:80px; background:#242424; }
+div#header h1 a { display: block;text-indent: -5000em;text-decoration: none;float: left;
+/* Adjust this line to change the size and position of the clickable logo (hot spot) area */
+margin: 10px 0px 0px 15px;height: 59px;width: 309px;
+/* End size adjustment line */
+background: url(../images/logo.png) no-repeat center top; }
+
+div#tabmenu { position:absolute; top:25px; right:25px; z-index:100; }
+div#tabmenu ul { float:left; display:inline; margin:0 10px 0 0; }
+div#tabmenu ul li { list-style-type:none; float:left;height:29px; margin:0 0 0 4px; padding-left:5px; background:url('../images/top_tabs.png') 0 0 no-repeat; }
+div#tabmenu ul li:hover, div#tabmenu ul li.sfhover, div#tabmenu ul li.mainlevel_current { background:url('../images/top_tabs.png') 0 100% no-repeat; }
+div#tabmenu ul li a:link, div#tabmenu ul li a:visited { height:19px; display:block; background:url('../images/top_tabs.png') 100% 0 no-repeat;  padding:5px 15px 5px 10px; color:#CC9900; text-transform:uppercase; font-weight:bold; text-decoration:none; }
+div#tabmenu ul li a:hover, div#tabmenu ul li a#active_menu { color:#ffffff; background:url('../images/top_tabs.png') 100% 100% no-repeat; }
+
+div#navbar { height:34px; background:url('../images/nav_bg.png') 0 0 repeat-x; }
+div#navbar ul { float:left; display:inline; margin:0 10px 0 0; }
+div#navbar ul li { list-style-type:none; float:left; padding:1px 12px; margin-top:8px; border-right:1px solid #191919; }
+div#navbar ul li a:link, div#navbar ul li a:visited { color:#191919; font-weight:bold; text-decoration:none; }
+div#navbar ul li a:hover { text-decoration:underline; }
+div#main_content_wrapper { background:url('../images/main_content_shadow.jpg') 0 0 repeat-x; padding: 20px 0 0 0; }
+div#wrap { width:980px; margin:0 auto; }
+div#left_sidebar { width:239px; padding:5px; float:left; border-right: 1px solid #CCCCCC; }
+div#main_content { width:450px; padding:5px 10px; float:left; }
+div#main_content_no_left { width:710px; padding:5px 10px; float:left; }
+div#main_content_no_right { width:710px; padding:5px 10px; float:left; }
+div#main_content_full { width:960px; padding:5px 10px; float:left; }
+div#right_sidebar { width:239px; padding:5px; float:left; border-left: 1px solid #CCCCCC; }
+
+div#access { position:absolute; top:87px; right:25px; z-index:100; }
+
+div#footer { clear:both; height:28px; background:url('../images/footer_stripe.png') 0 0 no-repeat; padding-left:10px; margin: 30px 0 0 0; }
+div#footer div { height:18px; padding:5px 0; background:url('../images/footer_stripe.png') 100% 0 no-repeat; text-align:center; text-indent:-10px; color:#ffffff; font-size:120%; }
+	div#footer div a:link,div#footer div a:visited { color:#ffffff; text-decoration:none; }
+	div#footer div a:hover { text-decoration:underline; }
+	
+div#designer { height:20px; padding:5px 0; text-align:center; }
+	div#designer a:link,div#designer a:visited { color:#666666; text-decoration:none; font-size:110%; }
+	div#designer a:hover { text-decoration:underline; }
+	
+/* Sidebar Modules */
+div#left_sidebar div.moduletable { margin:0 40px 25px 0; }
+
+div#left_sidebar div.moduletable h3 { color:#333333; font-family:Arial,Verdana,Helvetica,sans-serif; background:url('../images/h3_icon.png') 0 3px no-repeat; text-indent:16px; border-bottom:1px #333333 dotted; padding:0 0 5px 0; margin:0 0 5px 0; }
+div#left_sidebar div.moduletable ul li { list-style-type:none; border-bottom:1px #333333 dotted; padding:5px 0; }
+div#left_sidebar div.moduletable ul li a.mainlevel:link, div#left_sidebar div.moduletable ul li a.mainlevel:visited { color:#666666; text-decoration:none; width:100%; display:block; }
+div#left_sidebar div.moduletable ul li a.mainlevel:hover { text-decoration:underline; }
+
+div#right_sidebar div.moduletable, div#right_sidebar div.moduletable-plain { margin:0 0 25px 25px; }
+div#right_sidebar div.moduletable-plain li { margin:0 0 0 25px; list-style-image: url('../images/list_bullet_orange.png'); }
+div#right_sidebar div.moduletable-plain li a { color:#666666; }
+div#right_sidebar div.moduletable-plain h3 { color:#333333; font-family:Arial,Verdana,Helvetica,sans-serif; border-bottom:1px #333333 dotted; padding:0 0 5px 0; margin:0 0 5px 0; }
+
+div#right_sidebar div.moduletable-grey { margin:0 0 25px 15px; padding:5px 0 15px; 0; background:#ececec; border-bottom:2px solid #bdbdbd; }
+div#right_sidebar div.moduletable-grey li { margin:0 0 0 35px; list-style-image: url('../images/list_bullet_orange.png'); }
+div#right_sidebar div.moduletable-grey li a { color:#666666; }
+div#right_sidebar div.moduletable-grey h3 { color:#333333; background:#bdbdbd; font-family:Arial,Verdana,Helvetica,sans-serif; padding:5px 0 5px 0; margin:0 0 15px 0; text-indent:10px; }
+
+div#right_sidebar div.moduletable-orange { margin:0 0 25px 15px; padding:5px 0 15px; 0; background:#e5a800; border-bottom:2px solid #ce9400; }
+div#right_sidebar div.moduletable-orange li { margin:0 0 0 35px; list-style-image: url('../images/list_bullet_white.png'); }
+div#right_sidebar div.moduletable-orange li a { color:#333333; }
+div#right_sidebar div.moduletable-orange h3 { color:#ffffff; background:#ce9400; font-family:Arial,Verdana,Helvetica,sans-serif; padding:5px 0 5px 0; margin:0 0 15px 0; text-indent:10px; }
+
+/* default joomla styles */
+div.componentheading, td.contentheading {  color:#333333; font-size: 200%; line-height:120%; font-family:Arial,Verdana,Helvetica,sans-serif; background:url('../images/content_heading_icon.png') 0 5px no-repeat; text-indent:32px; border-bottom:1px #333333 dotted; }
+.small, .createdate, .modifydate { color:#999999; font-family:Arial,Verdana,Helvetica,sans-serif; }
+a.readon { font-size:120%; font-family:Arial,Verdana,Helvetica,sans-serif; float:right; background:url('../images/readon.png') 0 3px no-repeat; text-indent:16px; }

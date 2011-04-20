@@ -1,0 +1,32 @@
+/******** white **********/
+body.white #menu li.node a {
+	background: url(../images/bg-menu-item-white.gif) no-repeat scroll right center;
+	color: #333;
+	font-weight: bold;
+}
+body.white #menu li.node ul li a {
+	background: none;
+	color: #aaa;
+}
+body.white #menu li.node ul li a.current { color: #fff; }
+body.white a { color: #666; }
+body.white a:hover { color: #444; }
+body.white .shortcut-button span:hover { color:#666; }
+body.white ul#submenu li a:hover { color: #666; }
+body.white a.remove-link { color: #666; }
+body.white .pagination a.number {
+	border: 1px solid #ddd;
+	background: #333 url('../images/bg-button-white.gif') top left repeat-x !important;
+	border-color: #666 !important;
+	color: #fff !important;
+}
+body.white .next a, body.white .home-page a {
+	background: #333 url('../images/bg-button-white.gif') top left repeat-x !important;
+}
+body.white .pagination a.number { color: #333 !important; }
+body.white .pagination a.current { color: #999 !important; }
+body.white button, body.white input[type=submit], body.white input.button {
+	color: #333 !important;
+	background:#ccc url(../images/bg-button-white.gif) repeat-x scroll left top !important;
+	border:1px solid #666 !important;
+}

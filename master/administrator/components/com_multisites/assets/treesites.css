@@ -1,0 +1,84 @@
+/**
+ * @file       dbsharing.css
+ * @version    1.2.0
+ * @author     Edwin CHERONT     (e.cheront@jms2win.com)
+ *             Edwin2Win sprlu   (www.jms2win.com)
+ * @copyright  Joomla Multi Sites
+ *             Single Joomla! 1.5.x installation using multiple configuration (One for each 'slave' sites).
+ *             (C) 2009 Edwin2Win sprlu - all right reserved.
+ * @license    This program is free software; you can redistribute it and/or
+ *             modify it under the terms of the GNU General Public License
+ *             as published by the Free Software Foundation; either version 2
+ *             of the License, or (at your option) any later version.
+ *             This program is distributed in the hope that it will be useful,
+ *             but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *             MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *             GNU General Public License for more details.
+ *             You should have received a copy of the GNU General Public License
+ *             along with this program; if not, write to the Free Software
+ *             Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+ *             A full text version of the GNU GPL version 2 can be found in the LICENSE.php file.
+ */ 
+#treeview {
+	padding: 10px;
+	width: 250px;
+	overflow: auto;
+	/*height: 390px;*/
+	border: 0;
+	vertical-align: top;
+}
+
+.mooTree_beforeText {
+	float: left;
+	width: 22px;
+	height: 22px;
+	overflow: hidden;
+}
+
+.mooTree_text2win {
+	padding-top: 3px;
+	height: 19px;
+	cursor: pointer;
+}
+
+.mooTree_img2win {
+	float: left;
+	width: 22px;
+	height: 22px;
+	overflow: hidden;
+}
+
+.treesite_form {
+	width: 80%;
+	border-left: 1px solid #ccc;
+	padding-left: 10px;
+	vertical-align: top;
+}
+
+select.actionlist { 
+	width: 130px;
+}
+option.define { 
+   background-image: url(../images/tocred-14px.png);
+   background-repeat: no-repeat;
+   background-color: #EF9191;
+   color : #333333;
+   font-family : Arial, Verdana, Helvetica, Sans-Serife;
+   padding-left:35px;
+}
+option.install { 
+   background-image: url(../images/table-14px.png);
+   background-repeat: no-repeat;
+   background-color: #BBDDCC;
+   color : #333333;
+   font-family : Arial, Verdana, Helvetica, Sans-Serife;
+   padding-left:35px;
+}
+option.share { 
+   background-image: url(../images/view-14px.png);
+   background-repeat: no-repeat;
+   background-color: #ffffff;
+   color : #333333;
+   font-family : Arial, Verdana, Helvetica, Sans-Serife;
+   padding-left:35px;
+}

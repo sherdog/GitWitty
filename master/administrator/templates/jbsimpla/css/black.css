@@ -1,0 +1,18 @@
+/******** Black **********/
+body.black #menu li.node a { background: url(../images/bg-menu-item-black.gif) no-repeat scroll right center; }
+body.black #menu li.node ul li a { background: none; }
+body.black a { color: #666; }
+body.black a:hover { color: #444; }
+body.black .shortcut-button span:hover { color:#666; }
+body.black a.remove-link { color: #666; }
+body.black ul#submenu li a:hover { color: #666; }
+body.black .pagination a.number {
+	background: #333 url('../images/bg-button-black.gif') top left repeat-x !important;
+	border-color: #666 !important;
+}
+body.black .pagination a.current { color: #aaa !important; }
+body.black .next a, body.black .home-page a { background: #333 url('../images/bg-button-black.gif') top left repeat-x !important; }
+body.black button, body.black input[type=submit], body.black input.button {
+	background:#333 url(../images/bg-button-black.gif) repeat-x scroll left top !important;
+	border:1px solid #666 !important;
+}

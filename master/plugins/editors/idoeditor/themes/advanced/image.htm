@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>{#advanced_dlg.image_title}</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<script type="text/javascript" src="../../tinymce_popup.js?ver=3211"></script>
+	<script type="text/javascript" src="../../utils/mctabs.js?ver=3211"></script>
+	<script type="text/javascript" src="../../utils/form_utils.js?ver=3211"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/ajaxfileupload.js"></script>
+	<script type="text/javascript" src="js/image.js?v=2"></script>
+	<link rel="stylesheet" type="text/css" href="css/image.css">
+	<link rel="stylesheet" type="text/css" href="css/form.css">
+	<base target="_self" />
+</head>
+<body>
+
+<form method="POST" enctype="multipart/form-data">
+	<p><b>{#advanced_dlg.insert_image}</b></p>
+	
+	<div id="preview">{#advanced_dlg.upload_image}</div>
+	<div id="loading"><img src="img/bar.gif"></div>
+	<p>
+		{#advanced_dlg.insert_image_from_file}&nbsp;<input type="file" name="pfile" id="pfile" onchange="ajaxFileUpload();">
+	</p>
+	
+	<p>
+		{#advanced_dlg.insert_image_from_url}&nbsp;<input type="text" name="plink" id="plink" class="text" onchange="changeLink();" onkeyup="changeLink();"><br/>
+		<input type="checkbox" id="loadOnServer" value="true"/> {#advanced_dlg.upload_to_server}<br/> 
+	</p>
+	
+	<p>
+		<input type="button" value="{#insert}" id="insert" name="insert" onclick="insertImage();">
+		<input type="button" value="{#cancel}" onclick="removeFile(); tinyMCEPopup.close();" id="cancel">
+	</p>
+	<hr/>
+	<p>{#advanced_dlg.you_can_upload_ext} <span id="exts" style="font-weight:bold"></span></p>
+	
+</form>
+
+</body>
+</html>

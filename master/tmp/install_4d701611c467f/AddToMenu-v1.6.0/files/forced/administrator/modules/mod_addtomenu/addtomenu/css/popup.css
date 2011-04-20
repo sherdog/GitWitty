@@ -1,0 +1,19 @@
+/**
+ * Add to Menu editor button popup stylesheet
+ *
+ * @package     Add to Menu
+ * @version     1.6.0
+ *
+ * @author      Peter van Westen <peter@nonumber.nl>
+ * @link        http://www.nonumber.nl
+ * @copyright   Copyright © 2011 NoNumber! All Rights Reserved
+ * @license     http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ */
+
+.button2-left .hasicon a {
+	background: transparent url() no-repeat 100% 3px;
+	padding-right: 19px !important;
+	margin-right: 3px;
+}
+.button2-left .apply a			{ background-image: url(../images/button_right_apply.png); }
+.button2-left .cancel a 		{ background-image: url(../images/button_right_cancel.png); }

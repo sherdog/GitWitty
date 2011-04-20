@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/plugin-install.dtd">
+<install type="plugin" version="1.5" method="upgrade" group="acymailing">
+	<name>AcyMailing Tag : Insert a Module</name>
+	<creationDate>October 2009</creationDate>
+	<version>1.7.2</version>
+	<author>Acyba</author>
+	<authorEmail>dev@acyba.com</authorEmail>
+	<authorUrl>http://www.acyba.com</authorUrl>
+	<copyright>Copyright (C) 2009-2011 ACYBA SARL - All rights reserved.</copyright>
+	<license>http://www.acyba.com/commercial_license.php</license>
+	<description>This plugin enables you to insert a Joomla Module in your Newsletter</description>
+	<files>
+		<filename plugin="tagmodule">tagmodule.php</filename>
+	</files>
+	<params addpath="/components/com_acymailing/params">
+		<param name="help" type="help" label="Help" description="Click on the help button to get some help" default="plugin-tagmodule"/>
+		<param name="acymailing" type="testplug" label="Test" description="This plugin requires a special PHP Configuration. Please click on this button to test if you're PHP configuration is compatible" default="tagmodule"/>
+		<param name="getmethod" type="radio" default="fileget" label="Method to load the module" description="In case of the file_get_contents method does not use, you can try the cURL method to load the module">
+			<option value="fileget">file_get_contents</option>
+			<option value="curl">cURL</option>
+		</param>
+	</params>
+	<config>
+		<fields name="params" addfieldpath="/components/com_acymailing/params">
+			<fieldset name="basic">
+				<field name="help" type="help" label="Help" description="Click on the help button to get some help" default="plugin-tagmodule"/>
+				<field name="acymailing" type="testplug" label="Test" description="This plugin requires a special PHP Configuration. Please click on this button to test if you're PHP configuration is compatible" default="tagmodule"/>
+				<field name="getmethod" type="radio" default="fileget" label="Method to load the module" description="In case of the file_get_contents method does not use, you can try the cURL method to load the module">
+					<option value="fileget">file_get_contents</option>
+					<option value="curl">cURL</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</install>

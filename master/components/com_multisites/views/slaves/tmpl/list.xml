@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="List all slave sites">
+		<message>
+			<![CDATA[List all the slave sites created by the front-end user]]>
+		</message>
+	</layout>
+	<state>
+		<name>List all the slave sites Layout</name>
+		<description>This layout allow to display the list of slave websites created by the user</description>
+		<params addpath="/administrator/components/com_multisites/elements">
+			<param name="jmslayout" type="multisiteslayouts"     label="Layouts" description="Select a layout..."
+			                        addscript="components/com_multisites/elements/multisiteslayouts/assets/layout.js"
+			                        onchange="updateLayoutParams(this.options[selectedIndex].value, 'params', 'jmslayout_params');"  />
+
+			<param name="groupname"      type="text" size="25" default="" label="Filter on group name" description="When not empty, it allows to only see template that correspond to this group name" />
+			<param name="title"          type="text" size="60" default="" label="Title" description="By default, the title is 'Websites' and defined in a language file. When present, it replaces the default value." />
+			<param name="show_del_btn" type="radio" default="1" label="Delete Button" description="Show/Hide the delete button.">
+				<option value="1">Show</option>
+				<option value="0">Hide</option>
+			</param>
+			<param name="show_edit_btn" type="radio" default="1" label="edit Button" description="Show/Hide the edit button.">
+				<option value="1">Show</option>
+				<option value="0">Hide</option>
+			</param>
+			<param name="show_new_btn" type="radio" default="1" label="New Button" description="Show/Hide the new button.">
+				<option value="1">Show</option>
+				<option value="0">Hide</option>
+			</param>
+			<param name="login_required" type="radio" default="1" label="Login" description="Require to login on the website to see the list of slave sites.">
+				<option value="1">Required</option>
+				<option value="0">Anonymous</option>
+			</param>
+			<param name="eshop_events" type="radio" default="0" label="Billable websites" description="Enable/Disable the call to the Multisites Plugins or call to the scripts defined hereafter to communicate with your eShop component (ie VirtueMart, ...). When enabled, it is required to have website quota available (see Multisites setting).">
+				<option value="1">Enable</option>
+				<option value="0">Disable</option>
+			</param>
+			<param name="redirect_onSave" type="text" size="60" default="" label="Redirect URL" description="URL where you want redirect the user once the action is performed. When empty, you redirect the user to the list of slave site. Otherwise, put the URL that must be used when the slave site is created or edited." />
+         <param name="payment_script" type="textarea" default="" rows="5" cols="35" 
+                label="Payment script"
+                description="When present, it allows to prepare the payment of the slave site. You can give here either a constant or PHP code that must be evaluate before processing the website creation. It is called just after the Multisites Plugins to give a second change to return a payment reference."   />
+         <param name="onDeploy_OK"    type="textarea" default="" rows="5" cols="35"
+                label="On deploy success"
+                description="Factulative PHP script to execute when the website is deployed with success. It is called just before the possible Multisites Plugins." />
+         <param name="onDeploy_Err"   type="textarea" default="" rows="5" cols="35"
+                label="On deploy error"
+                description="Factulative PHP script to execute when the website deployment failed. It is called just before the possible Multisites Plugins." />
+			<param name="redirect_onError" type="text" size="60" default="" label="On error redirect URL" description="URL where you want redirect the user when an error occurs. By default, the user is redirected to the list of list of slave sites." />
+		</params>
+		<advanced>
+	 		<param name="show_template" type="radio" default="1" label="Template" description="Show/Hide the template combo box.">
+	 			<option value="1">Show</option>
+	 			<option value="0">Hide</option>
+	 		</param>
+	 		<param name="show_templatedescr" type="radio" default="1" label="Template description" description="Show/Hide the template description">
+	 			<option value="1">Show</option>
+	 			<option value="0">Hide</option>
+	 		</param>
+	 		<param name="show_prefix" type="radio" default="1" label="Prefix" description="Show/Hide the Prefix field">
+	 			<option value="1">Show</option>
+	 			<option value="0">Hide</option>
+	 		</param>
+	 		<param name="show_alias" type="radio" default="1" label="Alias" description="Show/Hide the Alias field">
+	 			<option value="1">Show</option>
+	 			<option value="0">Hide</option>
+	 		</param>
+	 		<param name="show_toSiteName" type="radio" default="1" label="Site title" description="Show/Hide the Site Title field">
+	 			<option value="1">Show</option>
+	 			<option value="0">Hide</option>
+	 		</param>
+	 		<param name="show_AdminName" type="radio" default="1" label="Administrator Login" description="Show/Hide the Administrator Login field">
+	 			<option value="1">Show</option>
+	 			<option value="0">Hide</option>
+	 		</param>
+	 		<param name="show_newAdminEmail" type="radio" default="1" label="Administrator eMail" description="Show/Hide the Administrator eMail field">
+	 			<option value="1">Show</option>
+	 			<option value="0">Hide</option>
+	 		</param>
+	 		<param name="show_newAdminPsw" type="radio" default="1" label="Administrator Password" description="Show/Hide the Administrator Password field">
+	 			<option value="1">Show</option>
+	 			<option value="0">Hide</option>
+	 		</param>
+	 		<param name="show_siteComment" type="radio" default="1" label="Comment" description="Show/Hide the Comment field">
+	 			<option value="1">Show</option>
+	 			<option value="0">Hide</option>
+	 		</param>
+		</advanced>
+	</state>
+
+
+	<!-- Joomla 1.6 parameters -->
+	<!-- Add fields to the parameters object for the layout. -->
+	<fields name="params">
+
+		<!-- Basic options. -->
+		<fieldset name="basic"
+		          addfieldpath="/administrator/components/com_multisites/elements">
+
+			<field name="jmslayout" type="multisiteslayouts"     label="Layouts" description="Select a layout..."
+			                        addscript="components/com_multisites/elements/multisiteslayouts/assets/layout.js"
+			                        onchange="updateLayoutParams(this.options[selectedIndex].value, 'jformparams', 'jmslayout_params');"  />
+			<field name="groupname"      type="text" size="25" default="" label="Filter on group name" description="When not empty, it allows to only see template that correspond to this group name" />
+			<field name="title"          type="text" size="60" default="" label="Title" description="By default, the title is 'Websites' and defined in a language file. When present, it replaces the default value." />
+			<field name="show_del_btn" type="radio" default="1" label="Delete Button" description="Show/Hide the delete button.">
+				<option value="1">Show</option>
+				<option value="0">Hide</option>
+			</field>
+
+			<field name="show_edit_btn" type="radio" default="1" label="edit Button" description="Show/Hide the edit button.">
+				<option value="1">Show</option>
+				<option value="0">Hide</option>
+			</field>
+			<field name="show_new_btn" type="radio" default="1" label="New Button" description="Show/Hide the new button.">
+				<option value="1">Show</option>
+				<option value="0">Hide</option>
+			</field>
+			<field name="login_required" type="radio" default="1" label="Login" description="Require to login on the website to see the list of slave sites.">
+				<option value="1">Required</option>
+				<option value="0">Anonymous</option>
+			</field>
+			<field name="eshop_events" type="radio" default="0" label="Billable websites" description="Enable/Disable the call to the Multisites Plugins or call to the scripts defined hereafter to communicate with your eShop component (ie VirtueMart, ...). When enabled, it is required to have website quota available (see Multisites setting).">
+				<option value="1">Enable</option>
+				<option value="0">Disable</option>
+			</field>
+			<field name="redirect_onSave" type="text" size="60" default="" label="Redirect URL" description="URL where you want redirect the user once the action is performed. When empty, you redirect the user to the list of slave site. Otherwise, put the URL that must be used when the slave site is created or edited." />
+         <field name="payment_script" type="textarea" default="" rows="5" cols="35" 
+                label="Payment script"
+                description="When present, it allows to prepare the payment of the slave site. You can give here either a constant or PHP code that must be evaluate before processing the website creation. It is called just after the Multisites Plugins to give a second change to return a payment reference."   />
+         <field name="onDeploy_OK"    type="textarea" default="" rows="5" cols="35"
+                label="On deploy success"
+                description="Factulative PHP script to execute when the website is deployed with success. It is called just before the possible Multisites Plugins." />
+         <field name="onDeploy_Err"   type="textarea" default="" rows="5" cols="35"
+                label="On deploy error"
+                description="Factulative PHP script to execute when the website deployment failed. It is called just before the possible Multisites Plugins." />
+			<field name="redirect_onError" type="text" size="60" default="" label="On error redirect URL" description="URL where you want redirect the user when an error occurs. By default, the user is redirected to the list of list of slave sites." />
+		</fieldset>
+
+		<fieldset name="advanced">
+	 		<field name="show_template" type="radio" default="1" label="Template" description="Show/Hide the template combo box.">
+	 			<option value="1">Show</option>
+	 			<option value="0">Hide</option>
+	 		</field>
+	 		<field name="show_templatedescr" type="radio" default="1" label="Template description" description="Show/Hide the template description">
+	 			<option value="1">Show</option>
+	 			<option value="0">Hide</option>
+	 		</field>
+	 		<field name="show_prefix" type="radio" default="1" label="Prefix" description="Show/Hide the Prefix field">
+	 			<option value="1">Show</option>
+	 			<option value="0">Hide</option>
+	 		</field>
+	 		<field name="show_alias" type="radio" default="1" label="Alias" description="Show/Hide the Alias field">
+	 			<option value="1">Show</option>
+	 			<option value="0">Hide</option>
+	 		</field>
+	 		<field name="show_toSiteName" type="radio" default="1" label="Site title" description="Show/Hide the Site Title field">
+	 			<option value="1">Show</option>
+	 			<option value="0">Hide</option>
+	 		</field>
+	 		<field name="show_AdminName" type="radio" default="1" label="Administrator Login" description="Show/Hide the Administrator Login field">
+	 			<option value="1">Show</option>
+	 			<option value="0">Hide</option>
+	 		</field>
+	 		<field name="show_newAdminEmail" type="radio" default="1" label="Administrator eMail" description="Show/Hide the Administrator eMail field">
+	 			<option value="1">Show</option>
+	 			<option value="0">Hide</option>
+	 		</field>
+	 		<field name="show_newAdminPsw" type="radio" default="1" label="Administrator Password" description="Show/Hide the Administrator Password field">
+	 			<option value="1">Show</option>
+	 			<option value="0">Hide</option>
+	 		</field>
+	 		<field name="show_siteComment" type="radio" default="1" label="Comment" description="Show/Hide the Comment field">
+	 			<option value="1">Show</option>
+	 			<option value="0">Hide</option>
+	 		</field>
+		</fieldset>
+	</fields>
+
+
+</metadata>

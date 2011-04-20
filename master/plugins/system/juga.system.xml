@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<install version="1.0.0" type="plugin" group="system">
+	<name>System - JUGA Plugin</name>
+	<author>Dioscouri Design</author>
+	<creationDate>February 2008</creationDate>
+	<copyright>(C) 2007 Dioscouri Design. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>info@dioscouri.com</authorEmail>
+	<authorUrl>http://anonym.to/?www.dioscouri.com</authorUrl>
+	<version>1.5</version>
+	<description>This Plugin activates JUGA - Joomla User Group Access</description>
+	<files>
+		<filename plugin="juga.system">juga.system.php</filename>	
+	</files>
+	<params/>
+</install>

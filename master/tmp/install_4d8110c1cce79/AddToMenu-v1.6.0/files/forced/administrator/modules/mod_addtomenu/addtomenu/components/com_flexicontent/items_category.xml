@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<addtomenu>
+	<name>Add to Menu Component XML - com_flexicontent : Category</name>
+	<version>1.6.0</version>
+	<author>NoNumber! (Peter van Westen)</author>
+	<authorEmail>peter@nonumber.nl</authorEmail>
+	<authorUrl>http://www.nonumber.nl</authorUrl>
+	<copyright>Copyright © 2011 NoNumber! All Rights Reserved</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<description><![CDATA[
+		This template is used when viewing the FLEXIcontent items and a category is selected
+	]]></description>
+
+	<params>
+		<!-- Name
+		 * This is the name of the menu item type
+		-->
+		<name>FLEXIcontent category</name>
+
+		<!-- Adjust height
+		 * If for some reason the height of the popup window is
+		 * not big enough (or too big), you can adjust it
+		 * (negative values are also permitted)
+		-->
+		<adjust_height>0</adjust_height>
+
+		<!-- Requirements (get/post variables)
+		 * -> Use '*' to match anything but empty
+		 * -> Use '+' to match anything but false (empty/0/false)
+		 * -> Use comma's to match any of multiple values
+		-->
+		<required>
+			<view>items</view>
+			<filter_cats>+</filter_cats>
+		</required>
+
+		<!-- Database select
+		 * Define what options to use to select the unique item
+		 * You have to define table, where, name and alias
+		 * If no db lookup is required, only define name (and alias)
+		 * -> Use '$...' to use available variables
+		-->
+		<dbselect>
+			<table>#__categories</table>
+			<where>
+				<id>$filter_cats</id>
+			</where>
+			<name>title</name>
+			<alias>alias</alias>
+		</dbselect>
+
+		<!-- Extra options
+		 * Define what extra options to display
+		 * For type, choose from:
+		 * text, textarea, hidden (use value)
+		 * select, radio (use values)
+		 * -> Use '$...' to use available variables
+		-->
+		<extras>
+			<extra>
+				<name>FLEXI_ITEM_DEPTH</name>
+				<type>select</type>
+				<param>item_depth</param>
+				<values>
+					<value>
+						<name>FLEXI_ROOT</name>
+						<value></value>
+					</value>
+					<value>
+						<name>FLEXI_LEVEL_1</name>
+						<value>1</value>
+					</value>
+					<value>
+						<name>FLEXI_LEVEL_2</name>
+						<value>2</value>
+					</value>
+					<value>
+						<name>FLEXI_LEVEL_3</name>
+						<value>3</value>
+					</value>
+					<value>
+						<name>FLEXI_LEVEL_4</name>
+						<value>4</value>
+					</value>
+					<value>
+						<name>FLEXI_LEVEL_5</name>
+						<value>5</value>
+					</value>
+				</values>
+			</extra>
+			<extra>
+				<name>FLEXI_ADD_ITEM_PATHWAY</name>
+				<type>select</type>
+				<param>add_item_pathway</param>
+				<values>
+					<value>
+						<name>FLEXI_YES</name>
+						<value>1</value>
+					</value>
+					<value>
+						<name>FLEXI_NO</name>
+						<value>0</value>
+					</value>
+				</values>
+			</extra>
+		</extras>
+
+		<!-- URL parameters
+		 * Define what the menu item url should contain
+		 * -> Use '$...' to use available variables
+		-->
+		<urlparams>
+			<option>com_flexicontent</option>
+			<view>category</view>
+			<cid>$filter_cats</cid>
+		</urlparams>
+
+		<!-- Menu item parameters
+		 * Define the extra menu item params
+		 * -> Use '$...' to use available variables
+		-->
+		<menuparams>
+			<item_depth>$item_depth</item_depth>
+			<add_item_pathway>$add_item_pathway</add_item_pathway>
+		</menuparams>
+	</params>
+</addtomenu>

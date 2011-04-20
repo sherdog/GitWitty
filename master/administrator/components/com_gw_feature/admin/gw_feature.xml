@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0">
+ <name>GwFeature</name>
+ <!-- The following elements are optional and free of formatting constraints -->
+ <creationDate>2011-03-22</creationDate>
+ <author>Michael Sheridan</author>
+ <authorEmail>mike@gitwitty.com</authorEmail>
+ <authorUrl>http://www.gitwitty.com</authorUrl>
+ <copyright>Copyright Info</copyright>
+ <license>License Info</license>
+ <!--  The version string is recorded in the components table -->
+ <version>1.01</version>
+ <!-- The description is optional and defaults to the name -->
+ <description>A Feature Image/Slideshow</description>
+ 
+ <!-- Site Main File Copy Section -->
+ <!-- Note the folder attribute: This attribute describes the folder
+      to copy FROM in the package to install therefore files copied
+      in this section are copied from /site/ in the package -->
+ <files folder="site">
+  	<filename>controller.php</filename>
+  	<filename>admin.gw_feature.php</filename>
+  	<filename>views/default/view.php</filename>
+  	<filename>views/gwfeature/view.html.php</filename>
+  	<filename>views/gwfeature/tmpl/default.php</filename>
+	<filename>views/list/view.html.php</filename>
+  	<filename>views/list/tmpl/default.php</filename>
+	<filename>controllers/index.html</filename>
+	<filename>controllers/default.php</filename>
+	<filename>controllers/list.php</filename>
+ </files>
+ 
+ <administration>
+  <!-- Administration Menu Section -->
+  <menu>Banner manager</menu>
+ 
+  <!-- Administration Main File Copy Section -->
+  <files folder="admin">
+   <filename>hello.php</filename>
+   <filename>index.html</filename>
+  </files>
+ 
+ </administration>
+</install>

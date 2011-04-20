@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0" client="administrator">
+	<name>Version Notifier</name>
+	<author>Jeremy Wilken :: Gnome on the run</author>
+	<creationDate>Oct 2009</creationDate>
+	<copyright>All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>gnomation@gnomeontherun.com</authorEmail>
+	<authorUrl>www.gnomeontherun.com</authorUrl>
+	<version>1.0</version>
+	<description><![CDATA[This module should go in the Administrator template in the Status position.  Big thanks and credit to Samuel Moffatt for the jupdaterman extension, and if you don't have, its a great free easy Joomla! update manager. <a href="http://joomlacode.org/gf/project/pasamioprojects/frs/" target="_blank">Download it here.</a><p>
+	To enable the module, to go Extensions->Module Manager and click the Administrator submenu link.  From there you will see the list of admin modules, and click on Version Notifier.  Select Enable and change its position to 'status' or any other module position you wish.]]></description>
+	<files>
+		<filename module="mod_version_notifier">mod_version_notifier.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<params>
+	</params>
+</install>

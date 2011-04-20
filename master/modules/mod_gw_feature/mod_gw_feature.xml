@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+    <!-- Name of the Module -->
+        <name>Gitwitty Feature</name> 
+ 
+    <!-- Name of the Author -->
+        <author>GitWitty</author> 
+ 
+    <!-- Version Date of the Module -->
+        <creationDate>2011-02-23</creationDate> 
+ 
+    <!-- Copyright information -->
+        <copyright>All rights reserved by GitWitty 2011.</copyright> 
+ 
+    <!-- License Information -->
+        <license>GPL 2.0</license> 
+ 
+    <!-- Author's email address -->
+        <authorEmail>info@gitwitty.com</authorEmail> 
+ 
+    <!-- Author's website -->
+        <authorUrl>www.gitwitty.com</authorUrl> 
+ 
+    <!-- Module version number -->
+        <version>1.0.0</version> 
+ 
+    <!-- Description of what the module does -->
+        <description>Displays the feature image area. is also going to be expandable to display multiple with slideshow capibilities</description>
+ 
+    <!-- Listing of all files that should be installed for the module to function -->
+        <files>
+        <!-- The "module" attribute signifies that this is the main controller file -->
+                <filename module="mod_gw_feature">mod_gw_feature.php</filename>
+                <filename>index.html</filename>
+				<filename>tmpl/default.php</filename>
+				<filename>tmpl/index.html</filename>
+				<filename>helper.php</filename>
+        </files>
+ 
+    <!-- Optional parameters -->
+        <params>
+			<param name="callout_images" type="sql" default="" label="Select feature image" query="SELECT title, filename FROM gitwitty_assets.main_images i LEFT JOIN gitwitty_assets.types  t ON i.type = t.id  WHERE t.name='Health' AND t.pos='feature'" key_field="filename" value_field="title" />
+		</params>
+</install>

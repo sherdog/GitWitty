@@ -1,0 +1,25 @@
+[25-Feb-2011 16:58:56] PHP Fatal error:  Class 'JConfig' not found in /home/gitwitty/public_html/master/includes/framework.php on line 49
+[01-Mar-2011 12:38:35] PHP Parse error:  syntax error, unexpected ')' in /home/gitwitty/public_html/master/modules/mod_gw_feature/mod_gw_feature.php on line 2
+[01-Mar-2011 12:39:03] PHP Parse error:  syntax error, unexpected ')' in /home/gitwitty/public_html/master/modules/mod_gw_feature/mod_gw_feature.php on line 2
+[01-Mar-2011 12:47:05] PHP Fatal error:  Class 'modGwFeatureHelper' not found in /home/gitwitty/public_html/master/modules/mod_gw_feature/mod_gw_feature.php on line 2
+[01-Mar-2011 12:48:08] PHP Parse error:  syntax error, unexpected ')' in /home/gitwitty/public_html/master/modules/mod_gw_feature/mod_gw_feature.php on line 3
+[01-Mar-2011 12:53:17] PHP Warning:  require(/home/gitwitty/public_html/master/modules/mod_helloworld/tmpl/default.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/gitwitty/public_html/master/modules/mod_gw_feature/mod_gw_feature.php on line 4
+[01-Mar-2011 12:53:17] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required '/home/gitwitty/public_html/master/modules/mod_helloworld/tmpl/default.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/gitwitty/public_html/master/modules/mod_gw_feature/mod_gw_feature.php on line 4
+[01-Mar-2011 13:16:06] PHP Parse error:  syntax error, unexpected T_STRING in /home/gitwitty/public_html/master/modules/mod_gw_feature/mod_gw_feature.php on line 3
+[01-Mar-2011 15:41:49] PHP Fatal error:  Class 'JAddons' not found in /home/gitwitty/public_html/master/modules/mod_gw_feature/helper.php on line 19
+[01-Mar-2011 15:42:06] PHP Fatal error:  Class 'JAddons' not found in /home/gitwitty/public_html/master/modules/mod_gw_feature/helper.php on line 19
+[01-Mar-2011 15:44:15] PHP Fatal error:  Class 'JAddons' not found in /home/gitwitty/public_html/master/modules/mod_gw_feature/helper.php on line 19
+[01-Mar-2011 15:44:23] PHP Fatal error:  Class 'JAddons' not found in /home/gitwitty/public_html/master/modules/mod_gw_feature/helper.php on line 19
+[01-Mar-2011 15:48:07] PHP Fatal error:  Class 'JAddons' not found in /home/gitwitty/public_html/master/modules/mod_gw_feature/helper.php on line 19
+[01-Mar-2011 15:48:08] PHP Fatal error:  Class 'JAddons' not found in /home/gitwitty/public_html/master/modules/mod_gw_feature/helper.php on line 19
+[01-Mar-2011 15:48:09] PHP Fatal error:  Class 'JAddons' not found in /home/gitwitty/public_html/master/modules/mod_gw_feature/helper.php on line 19
+[01-Mar-2011 15:49:25] PHP Fatal error:  Class 'JAddons' not found in /home/gitwitty/public_html/master/modules/mod_gw_feature/helper.php on line 19
+[01-Mar-2011 15:50:06] PHP Fatal error:  Class 'JAddons' not found in /home/gitwitty/public_html/master/modules/mod_gw_feature/helper.php on line 19
+[02-Mar-2011 13:47:35] PHP Fatal error:  Class 'config' not found in /home/gitwitty/public_html/master/modules/mod_jcontactslead/mod_jcontactslead.php on line 10
+[02-Mar-2011 13:48:47] PHP Fatal error:  Class 'config' not found in /home/gitwitty/public_html/master/modules/mod_jcontactslead/mod_jcontactslead.php on line 11
+[02-Mar-2011 13:49:09] PHP Fatal error:  Class 'config' not found in /home/gitwitty/public_html/master/modules/mod_jcontactslead/mod_jcontactslead.php on line 11
+[02-Mar-2011 13:49:34] PHP Fatal error:  Class 'config' not found in /home/gitwitty/public_html/master/modules/mod_jcontactslead/mod_jcontactslead.php on line 11
+[02-Mar-2011 13:56:28] PHP Warning:  implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed in /home/gitwitty/public_html/master/libraries/joomla/database/database/mysql.php on line 540
+[22-Mar-2011 15:48:14] PHP Warning:  Invalid argument supplied for foreach() in /home/gitwitty/public_html/master/modules/mod_hiddenbyjuga/helper.php on line 80
+[22-Mar-2011 15:48:14] PHP Warning:  Invalid argument supplied for foreach() in /home/gitwitty/public_html/master/modules/mod_hiddenbyjuga/helper.php on line 80
+[23-Mar-2011 17:07:00] PHP Warning:  file_put_contents(/home/gitwitty/public_html/master/media/com_acymailing/logs/report581373516.log) [<a href='function.file-put-contents'>function.file-put-contents</a>]: failed to open stream: No such file or directory in /home/gitwitty/public_html/master/administrator/components/com_acymailing/helpers/cron.php on line 96

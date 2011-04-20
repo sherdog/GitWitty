@@ -1,0 +1,17 @@
+/******** purple **********/
+body.purple #menu li.node a { background: url(../images/bg-menu-item-purple.gif) no-repeat scroll right center; }
+body.purple #menu li.node ul li a { background: none; }
+body.purple a { color: #730b99; }
+body.purple a:hover { color: #AA4DCF; }
+body.purple .shortcut-button span:hover { color:#730b99; }
+body.purple a.remove-link { color: #730b99; }
+body.purple .pagination a.number {
+	background: #730b99 url('../images/bg-button-purple.gif') top left repeat-x !important;
+	border-color: #AA4DCF !important;
+}
+body.purple .pagination a.current { color: #C17DDF !important; }
+body.purple .next a, body.purple .home-page a { background: #730b99 url('../images/bg-button-purple.gif') top left repeat-x !important; }
+body.purple button, body.purple input[type=submit], body.purple input.button {
+	background:#730b99 url(../images/bg-button-purple.gif) repeat-x scroll left top !important;
+	border:1px solid #AA4DCF !important;
+}

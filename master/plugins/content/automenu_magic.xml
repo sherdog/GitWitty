@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content">
+	<name>Content - Automatic Menu Magic</name>
+	<author>DeRose Technologies, Inc.</author>
+	<creationDate>November 2009</creationDate>
+	<copyright>Copyright (C) 2009 DeRose Technologies. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@derosetechnologies.com</authorEmail>
+	<authorUrl>www.derosetechnologies.com</authorUrl>
+	<version>1.00</version>
+	<description>Automatically creates/updates joomla menu items, when an article's category matches a menu's name.</description>
+	<files>
+		<filename plugin="automenu_magic">automenu_magic.php</filename>
+	</files>
+	<params>
+      <param 
+         name="menutype_title_matches" 
+         type="text" 
+         default="^%s[ ]*(menu[ ]*)?$" 
+         label="Create where title matches" 
+         description="This regex is passed to mysql when matching menutypes against an article's category. This string is passed through sprintf on its way to mysql - use %s to indicate the location of the category substitution." 
+      />
+      <param 
+         name="menuitem_param_defaults"
+         type="text" 
+         default="show_icons=1,show_pdf_icon=1,show_print_icon=1,show_email_icon=1,show_page_title=1,menu_image=-1,secure=0" 
+         label="Item Param defaults"
+         description="A comma separated list of key=value formatted pairs. These values will be used when auto-creating menuitems." 
+      />
+      <param name="associate_modules_with_items" type="radio" default="0" label="Associate modules with items?" description="Associate new menuitems, with ther modules from item order 0 of its corresponding menu.">
+			<option value="0">No Thanks.</option>
+			<option value="1">Yes, please.</option>
+		</param>
+      <param name="@spacer" type="spacer" default="" label="" description="" />
+      <param 
+         name="create_menulinks_in" 
+         type="menu"  
+         default="" 
+         label="Also create menualias in" 
+         description="(Optional) A menutype, in which aliases should be made to a recently created menu item. For any menuitems in this menutype, which match menulinks_title_matches, a link will be created." />
+      <param 
+         name="menulinks_title_matches" 
+         type="text" 
+         default="^%s[ ]*(menu[ ]*)?$" 
+         label="Create menualias when name matches against" 
+         description="This regex is passed to mysql when matching menuitems against an article's category. This string is passed through sprintf on its way to mysql - use %s to indicate the location of the category substitution. If no create_menulinks_in has been specified, then this value has no effect." 
+      />
+      <param name="associate_modules_with_aliases" type="radio" default="0" label="Associate modules with Aliases?" description="Associate new menualiases, with modules from its parent menu. This only takes effect when create_menulinks_in is set">
+			<option value="0">No Thanks.</option>
+			<option value="1">Yes, please.</option>
+		</param>
+	</params>
+</install>

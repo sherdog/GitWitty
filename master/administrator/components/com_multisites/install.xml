@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" method="upgrade" version="1.5.0">
+	<name>Multi Sites</name>
+	<author>Edwin2Win sprlu</author>
+	<creationDate>13-Feb-2011</creationDate>
+	<copyright>Copyright 2008-2011 Edwin2Win sprlu - all right reserved</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@jms2win.com</authorEmail>
+	<authorUrl>www.jms2win.com</authorUrl>
+	<version>1.2.47</version>
+	<description><![CDATA[Jms Multi Sites and User sharing for joomla!.<br/>
+Single Joomla installation using multiple configurations.<br/>
+With benefit of multiple configuration files, it is possible to connect on multiple databases or use the same database with different table prefix.<br/>
+<br/>
+When you decide to use the same database for all the websites (master and slave sites), it is strongly recommended to never use ’jos_’ as table prefix.<br/>
+With older Joomla prior 1.5.3, we have notice that standard Joomla installation process can delete the users present in jos_users table whatever the table prefix selected.<br/>
+If you decide to use as many databases than there are websites, ’jos_’ table prefix is allowed.<br/>
+
+Ensure also that you have enought rights to create and update joomla files. This is required to install the patches in the standard joomla files.<br/>
+<br/>
+With JMS 1.1x it is now possible to create slave site from a \"template website\". This feature is particular usefull if you can to propose a \"front-end\" dynamic slave site creation.<br/>
+With this version, it is also possible to propose a \"billable\" front-end website creation and create a bridge with your eShop system (ie. VirtueMart).<br/>
+<br/>
+With JMS 1.2.x, it is now possible to replicate website into another DB, share the user and a limited number of extension.<br/>
+Starting with JMS 1.2.4, a partial compatibility with Joomla! 1.6 alpha 2 is already present. (Require more test to gauantee a full compatibility). <br/>
+Starting with JMS 1.2.32, a partial compatibility with Joomla 1.6 beta 3 is present. (It is now possible to install JMS on Joomla 1.6 beta 3).<br/>
+JMS Multisites 1.2.33 is now partially compatible with Joomla 1.6 beta 5.<br/>
+Multisites 1.2.35 is now partially compatible with Joomla 1.6 beta 6.<br />
+Multisites 1.2.36 is now partially compatible with Joomla 1.6 beta 9.<br />
+Multisites 1.2.38 is now partially compatibile with Joomla 1.6 beta 10.<br />
+Multisites 1.2.41 is now partially compatibile with Joomla 1.6 beta 12.<br />
+Multisites 1.2.42 is compatible with Joomla 1.5.22 and partially compatible with Joomla 1.6 beta 13.<br />
+Multisites 1.2.43 is now partially compatible with Joomla 1.6 beta 14.<br />
+Multisites 1.2.44 is now partially compatible with Joomla 1.6 beta 15.<br />
+Multisites 1.2.45 is now partially compatible with Joomla 1.6 RC1.<br />
+Multisites 1.2.46 is now partially compatible with Joomla 1.6.0 stable.<br />
+Does not work anymore on J1.6.0 alpha, beta and RC1.<br />
+]]></description>
+	<!-- Custom Install Script to execute -->
+	<installfile>install.multisites.php</installfile>
+
+	<!-- Custom Uninstall Script to execute -->
+	<uninstallfile>uninstall.multisites.php</uninstallfile>
+
+	<!-- Front end File Copy Section -->
+	<files folder="front">
+	   <filename>controller.php</filename>
+	   <filename>helpers/index.html</filename>
+	   <filename>helpers/slaves_helper.php</filename>
+	   <filename>index.html</filename>
+	   <filename>models/index.html</filename>
+	   <filename>models/slaves.php</filename>
+	   <filename>multisites.php</filename>
+	   <filename>templates/black/css/delete.css</filename>
+	   <filename>templates/black/css/edit.css</filename>
+	   <filename>templates/black/css/index.html</filename>
+	   <filename>templates/black/css/list.css</filename>
+	   <filename>templates/black/delete.php</filename>
+	   <filename>templates/black/edit.php</filename>
+	   <filename>templates/black/images/bg.png</filename>
+	   <filename>templates/black/images/index.html</filename>
+	   <filename>templates/black/images/jmslistbg.jpg</filename>
+	   <filename>templates/black/images/row0bg.png</filename>
+	   <filename>templates/black/images/row1bg.png</filename>
+	   <filename>templates/black/images/theadbg.jpg</filename>
+	   <filename>templates/black/index.html</filename>
+	   <filename>templates/black/list.php</filename>
+	   <filename>templates/black/templateDetails.xml</filename>
+	   <filename>templates/black/template_thumbnail.png</filename>
+	   <filename>templates/default/css/list.css</filename>
+	   <filename>templates/default/delete.php</filename>
+	   <filename>templates/default/edit.php</filename>
+	   <filename>templates/default/list.php</filename>
+	   <filename>views/index.html</filename>
+	   <filename>views/slaves/index.html</filename>
+	   <filename>views/slaves/metadata.xml</filename>
+	   <filename>views/slaves/tmpl/delete.php</filename>
+	   <filename>views/slaves/tmpl/delete.xml</filename>
+	   <filename>views/slaves/tmpl/edit.php</filename>
+	   <filename>views/slaves/tmpl/edit.xml</filename>
+	   <filename>views/slaves/tmpl/index.html</filename>
+	   <filename>views/slaves/tmpl/list.php</filename>
+	   <filename>views/slaves/tmpl/list.xml</filename>
+	   <filename>views/slaves/view.php</filename>
+	</files>
+	<!-- Front end Language File Copy Section -->
+	<languages folder="front/language">
+		<language tag="en-GB">en-GB/en-GB.com_multisites.ini</language>
+		<language tag="es-ES">es-ES/es-ES.com_multisites.ini</language>
+		<language tag="fr-FR">fr-FR/fr-FR.com_multisites.ini</language>
+		<language tag="nl-NL">nl-NL/nl-NL.com_multisites.ini</language>
+		<language tag="pt-BR">pt-BR/pt-BR.com_multisites.ini</language>
+	</languages>
+
+  	<administration>
+		<!-- Administrator menus -->
+      <menu img="components/com_multisites/images/multisites_icon.gif">Multi Sites</menu>
+      <submenu>
+         <menu task="manage">manage</menu>
+         <menu task="templates">templates</menu>
+         <menu task="tools">tools</menu>
+         <menu task="checkpatches">checkpatches</menu>
+         <menu task="usersmanual">usersmanual</menu>
+         <menu task="checkupdates">checkupdates</menu>
+         <menu task="showSettings">showSettings</menu>
+         <menu task="layouts">layouts</menu>
+         <menu task="about">about</menu>
+      </submenu>
+      
+
+		<!-- Administrator files -->
+		<files folder="admin">
+		   <filename>admin.multisites.php</filename>
+		   <filename>assets/dbsharing.css</filename>
+		   <filename>assets/dbsharing.js</filename>
+		   <filename>assets/index.html</filename>
+		   <filename>assets/inputtree.js</filename>
+		   <filename>assets/toolapply.css</filename>
+		   <filename>assets/toolapply.js</filename>
+		   <filename>assets/treesites.css</filename>
+		   <filename>assets/treesites.js</filename>
+		   <filename>CHANGELOG.php</filename>
+		   <filename>classes/dbsharing.php</filename>
+		   <filename>classes/dbtables.php</filename>
+		   <filename>classes/debug.php</filename>
+		   <filename>classes/http.php</filename>
+		   <filename>classes/index.html</filename>
+		   <filename>classes/lettertree.php</filename>
+		   <filename>classes/multisitesdb.php</filename>
+		   <filename>classes/site.php</filename>
+		   <filename>classes/template.php</filename>
+		   <filename>classes/tld2win.data.php</filename>
+		   <filename>classes/tld2win.php</filename>
+		   <filename>classes/treesearch.php</filename>
+		   <filename>classes/utils.php</filename>
+		   <filename>controller.php</filename>
+		   <filename>css/index.html</filename>
+		   <filename>css/toolbar.css</filename>
+		   <filename>css/toolbar16.css</filename>
+		   <filename>elements/compat16.php</filename>
+		   <filename>elements/index.html</filename>
+		   <filename>elements/multisiteslayouts/assets/index.html</filename>
+		   <filename>elements/multisiteslayouts/assets/layout.js</filename>
+		   <filename>elements/multisiteslayouts/index.html</filename>
+		   <filename>elements/multisiteslayouts.php</filename>
+		   <filename>elements/site.php</filename>
+		   <filename>help/en-GB/css/docbook.css</filename>
+		   <filename>help/en-GB/css/help.css</filename>
+		   <filename>help/en-GB/css/index.html</filename>
+		   <filename>help/en-GB/index.html</filename>
+		   <filename>help/en-GB/screen.patches.install.html</filename>
+		   <filename>help/en-GB/screen.settings.show.html</filename>
+		   <filename>help/en-GB/screen.sitemanager.delete.html</filename>
+		   <filename>help/en-GB/screen.sitemanager.html</filename>
+		   <filename>help/en-GB/screen.sitemanager.new.html</filename>
+		   <filename>help/en-GB/screen.templatemanager.delete.html</filename>
+		   <filename>help/en-GB/screen.templatemanager.html</filename>
+		   <filename>help/en-GB/screen.templatemanager.new.html</filename>
+		   <filename>help/en-GB/screen.toolsmanager.html</filename>
+		   <filename>help/es-ES/css/docbook.css</filename>
+		   <filename>help/es-ES/css/help.css</filename>
+		   <filename>help/es-ES/css/index.html</filename>
+		   <filename>help/es-ES/index.html</filename>
+		   <filename>help/es-ES/screen.patches.install.html</filename>
+		   <filename>help/es-ES/screen.settings.show.html</filename>
+		   <filename>help/es-ES/screen.sitemanager.delete.html</filename>
+		   <filename>help/es-ES/screen.sitemanager.html</filename>
+		   <filename>help/es-ES/screen.sitemanager.new.html</filename>
+		   <filename>help/es-ES/screen.templatemanager.delete.html</filename>
+		   <filename>help/es-ES/screen.templatemanager.html</filename>
+		   <filename>help/es-ES/screen.templatemanager.new.html</filename>
+		   <filename>help/es-ES/screen.toolsmanager.html</filename>
+		   <filename>help/fr-FR/css/docbook.css</filename>
+		   <filename>help/fr-FR/css/help.css</filename>
+		   <filename>help/fr-FR/css/index.html</filename>
+		   <filename>help/fr-FR/index.html</filename>
+		   <filename>help/fr-FR/screen.patches.install.html</filename>
+		   <filename>help/fr-FR/screen.settings.show.html</filename>
+		   <filename>help/fr-FR/screen.sitemanager.delete.html</filename>
+		   <filename>help/fr-FR/screen.sitemanager.html</filename>
+		   <filename>help/fr-FR/screen.sitemanager.new.html</filename>
+		   <filename>help/fr-FR/screen.templatemanager.delete.html</filename>
+		   <filename>help/fr-FR/screen.templatemanager.html</filename>
+		   <filename>help/fr-FR/screen.templatemanager.new.html</filename>
+		   <filename>help/fr-FR/screen.toolsmanager.html</filename>
+		   <filename>help/index.html</filename>
+		   <filename>help/pt-BR/css/docbook.css</filename>
+		   <filename>help/pt-BR/css/help.css</filename>
+		   <filename>help/pt-BR/css/index.html</filename>
+		   <filename>help/pt-BR/index.html</filename>
+		   <filename>help/pt-BR/screen.patches.install.html</filename>
+		   <filename>help/pt-BR/screen.settings.show.html</filename>
+		   <filename>help/pt-BR/screen.sitemanager.delete.html</filename>
+		   <filename>help/pt-BR/screen.sitemanager.html</filename>
+		   <filename>help/pt-BR/screen.sitemanager.new.html</filename>
+		   <filename>help/pt-BR/screen.templatemanager.delete.html</filename>
+		   <filename>help/pt-BR/screen.templatemanager.html</filename>
+		   <filename>help/pt-BR/screen.templatemanager.new.html</filename>
+		   <filename>help/pt-BR/screen.toolsmanager.html</filename>
+		   <filename>helpers/helper.php</filename>
+		   <filename>helpers/index.html</filename>
+		   <filename>helpers/installer.php</filename>
+		   <filename>images/arrow.png</filename>
+		   <filename>images/btn_donate.gif</filename>
+		   <filename>images/btn_registration.gif</filename>
+		   <filename>images/cancel.png</filename>
+		   <filename>images/extdef.gif</filename>
+		   <filename>images/icon-16-config.png</filename>
+		   <filename>images/idea.png</filename>
+		   <filename>images/index.html</filename>
+		   <filename>images/j_arrow.png</filename>
+		   <filename>images/minus.png</filename>
+		   <filename>images/missing.png</filename>
+		   <filename>images/multisites_icon.gif</filename>
+		   <filename>images/multisites_logo.jpg</filename>
+		   <filename>images/plus.png</filename>
+		   <filename>images/publish_x.png</filename>
+		   <filename>images/table-14px.png</filename>
+		   <filename>images/table.png</filename>
+		   <filename>images/tick.png</filename>
+		   <filename>images/toc.png</filename>
+		   <filename>images/tocgreen.png</filename>
+		   <filename>images/tocred-14px.png</filename>
+		   <filename>images/tocred.png</filename>
+		   <filename>images/toolbar/icon-32-cancel.png</filename>
+		   <filename>images/toolbar/icon-32-delete.png</filename>
+		   <filename>images/toolbar/icon-32-edit.png</filename>
+		   <filename>images/toolbar/icon-32-new.png</filename>
+		   <filename>images/toolbar/icon-32-save.png</filename>
+		   <filename>images/update.png</filename>
+		   <filename>images/view-14px.png</filename>
+		   <filename>images/view.png</filename>
+		   <filename>images/yes.png</filename>
+		   <filename>index.html</filename>
+		   <filename>install.multisites.php</filename>
+		   <filename>installer/index.php</filename>
+		   <filename>installer/j1.5/controller.php</filename>
+		   <filename>installer/j1.5/index.php</filename>
+		   <filename>installer/j1.5/libraries/index.html</filename>
+		   <filename>installer/j1.5/libraries/joomla/index.html</filename>
+		   <filename>installer/j1.5/libraries/joomla/installer/adapters/index.html</filename>
+		   <filename>installer/j1.5/libraries/joomla/installer/adapters/layout.php</filename>
+		   <filename>installer/j1.5/libraries/joomla/installer/index.html</filename>
+		   <filename>installer/j1.5/libraries/joomla/installer/installer.php</filename>
+		   <filename>installer/j1.5/models/extension.php</filename>
+		   <filename>installer/j1.5/models/index.html</filename>
+		   <filename>installer/j1.5/models/install.php</filename>
+		   <filename>installer/j1.5/models/layouts.php</filename>
+		   <filename>installer/j1.5/views/default/index.html</filename>
+		   <filename>installer/j1.5/views/default/tmpl/default_ftp.php</filename>
+		   <filename>installer/j1.5/views/default/tmpl/default_message.php</filename>
+		   <filename>installer/j1.5/views/default/tmpl/index.html</filename>
+		   <filename>installer/j1.5/views/default/view.php</filename>
+		   <filename>installer/j1.5/views/index.html</filename>
+		   <filename>installer/j1.5/views/install/index.html</filename>
+		   <filename>installer/j1.5/views/install/tmpl/default.php</filename>
+		   <filename>installer/j1.5/views/install/tmpl/default_form.php</filename>
+		   <filename>installer/j1.5/views/install/tmpl/index.html</filename>
+		   <filename>installer/j1.5/views/install/view.php</filename>
+		   <filename>installer/j1.5/views/layouts/index.html</filename>
+		   <filename>installer/j1.5/views/layouts/tmpl/default.php</filename>
+		   <filename>installer/j1.5/views/layouts/tmpl/default_item.php</filename>
+		   <filename>installer/j1.5/views/layouts/tmpl/index.html</filename>
+		   <filename>installer/j1.5/views/layouts/view.php</filename>
+		   <filename>installer/j1.6/controller.php</filename>
+		   <filename>installer/j1.6/helpers/installer.php</filename>
+		   <filename>installer/j1.6/index.php</filename>
+		   <filename>installer/j1.6/libraries/index.html</filename>
+		   <filename>installer/j1.6/libraries/joomla/index.html</filename>
+		   <filename>installer/j1.6/libraries/joomla/installer/adapters/index.html</filename>
+		   <filename>installer/j1.6/libraries/joomla/installer/adapters/layout.php</filename>
+		   <filename>installer/j1.6/libraries/joomla/installer/index.html</filename>
+		   <filename>installer/j1.6/libraries/joomla/installer/installer.php</filename>
+		   <filename>installer/j1.6/models/extension.php</filename>
+		   <filename>installer/j1.6/models/index.html</filename>
+		   <filename>installer/j1.6/models/install.php</filename>
+		   <filename>installer/j1.6/models/layouts.php</filename>
+		   <filename>installer/j1.6/views/default/index.html</filename>
+		   <filename>installer/j1.6/views/default/tmpl/default_ftp.php</filename>
+		   <filename>installer/j1.6/views/default/tmpl/default_message.php</filename>
+		   <filename>installer/j1.6/views/default/tmpl/index.html</filename>
+		   <filename>installer/j1.6/views/default/view.html.php</filename>
+		   <filename>installer/j1.6/views/index.html</filename>
+		   <filename>installer/j1.6/views/install/index.html</filename>
+		   <filename>installer/j1.6/views/install/tmpl/default.php</filename>
+		   <filename>installer/j1.6/views/install/tmpl/default_form.php</filename>
+		   <filename>installer/j1.6/views/install/tmpl/index.html</filename>
+		   <filename>installer/j1.6/views/install/view.html.php</filename>
+		   <filename>installer/j1.6/views/layouts/index.html</filename>
+		   <filename>installer/j1.6/views/layouts/tmpl/default.php</filename>
+		   <filename>installer/j1.6/views/layouts/tmpl/default_item.php</filename>
+		   <filename>installer/j1.6/views/layouts/tmpl/index.html</filename>
+		   <filename>installer/j1.6/views/layouts/view.html.php</filename>
+		   <filename>libraries/index.html</filename>
+		   <filename>libraries/joomla/application/component/index.html</filename>
+		   <filename>libraries/joomla/application/component/jms2winmodel.php</filename>
+		   <filename>libraries/joomla/application/component/model2win.php</filename>
+		   <filename>libraries/joomla/application/component/view2win.php</filename>
+		   <filename>libraries/joomla/application/index.html</filename>
+		   <filename>libraries/joomla/client/jms2winftp.php</filename>
+		   <filename>libraries/joomla/database/database/index.html</filename>
+		   <filename>libraries/joomla/database/database/mysql.php</filename>
+		   <filename>libraries/joomla/database/database/mysqli.php</filename>
+		   <filename>libraries/joomla/database/index.html</filename>
+		   <filename>libraries/joomla/database/jms2windatabase.php</filename>
+		   <filename>libraries/joomla/filesystem/jms2winfile.php</filename>
+		   <filename>libraries/joomla/filesystem/jms2winfolder.php</filename>
+		   <filename>libraries/joomla/filesystem/jms2winpath.php</filename>
+		   <filename>libraries/joomla/index.html</filename>
+		   <filename>libraries/joomla/installer/adapters/component.php</filename>
+		   <filename>libraries/joomla/installer/adapters/index.html</filename>
+		   <filename>libraries/joomla/installer/adapters/language.php</filename>
+		   <filename>libraries/joomla/installer/adapters/module.php</filename>
+		   <filename>libraries/joomla/installer/adapters/plugin.php</filename>
+		   <filename>libraries/joomla/installer/adapters/template.php</filename>
+		   <filename>libraries/joomla/installer/index.html</filename>
+		   <filename>libraries/joomla/installer/installer_multisites.php</filename>
+		   <filename>libraries/joomla/jms2winfactory.php</filename>
+		   <filename>libraries/joomla/multisitesfactory.php</filename>
+		   <filename>LICENSE.php</filename>
+		   <filename>models/dbsharing.php</filename>
+		   <filename>models/index.html</filename>
+		   <filename>models/layouts.php</filename>
+		   <filename>models/manage.php</filename>
+		   <filename>models/patches.php</filename>
+		   <filename>models/registration.php</filename>
+		   <filename>models/registration_inc.php</filename>
+		   <filename>models/settings.php</filename>
+		   <filename>models/templates.php</filename>
+		   <filename>models/tools.php</filename>
+		   <filename>multisites.cfg-dist.php</filename>
+		   <filename>patches/acesef/check_config.php</filename>
+		   <filename>patches/acesef/check_saveacecfg.php</filename>
+		   <filename>patches/acesef/check_savecfg.php</filename>
+		   <filename>patches/acesef/index.html</filename>
+		   <filename>patches/acesef/patch_acecfg_1.php</filename>
+		   <filename>patches/acesef/patch_acecfg_2.php</filename>
+		   <filename>patches/acesef/patch_config.php</filename>
+		   <filename>patches/acesef/patch_savecfg.php</filename>
+		   <filename>patches/acesef/patch_savecfg15.php</filename>
+		   <filename>patches/acymailing/check_saveli.php</filename>
+		   <filename>patches/acymailing/index.html</filename>
+		   <filename>patches/acymailing/patch_saveli.php</filename>
+		   <filename>patches/alphacontent/check_config.php</filename>
+		   <filename>patches/alphacontent/check_savecfg.php</filename>
+		   <filename>patches/alphacontent/index.html</filename>
+		   <filename>patches/alphacontent/patch_config.php</filename>
+		   <filename>patches/alphacontent/patch_savecfg.php</filename>
+		   <filename>patches/cbe/check_enhconfig.php</filename>
+		   <filename>patches/cbe/check_savecfg.php</filename>
+		   <filename>patches/cbe/check_ueconfig.php</filename>
+		   <filename>patches/cbe/index.html</filename>
+		   <filename>patches/cbe/patch_enhconfig.php</filename>
+		   <filename>patches/cbe/patch_savecfg_1.php</filename>
+		   <filename>patches/cbe/patch_savecfg_2.php</filename>
+		   <filename>patches/cbe/patch_ueconfig.php</filename>
+		   <filename>patches/ccboard/check_config.php</filename>
+		   <filename>patches/ccboard/check_savecfg.php</filename>
+		   <filename>patches/ccboard/index.html</filename>
+		   <filename>patches/ccboard/patch_config.php</filename>
+		   <filename>patches/ccboard/patch_savecfg.php</filename>
+		   <filename>patches/comprofiler/check_cbinstaller.php</filename>
+		   <filename>patches/comprofiler/check_cb_cntl.php</filename>
+		   <filename>patches/comprofiler/check_cb_plg_foundation.php</filename>
+		   <filename>patches/comprofiler/index.html</filename>
+		   <filename>patches/comprofiler/patch_cb_cntl.php</filename>
+		   <filename>patches/comprofiler/patch_cb_plg_foundation.php</filename>
+		   <filename>patches/CssJsCompress/check_css.php</filename>
+		   <filename>patches/CssJsCompress/check_js.php</filename>
+		   <filename>patches/CssJsCompress/index.html</filename>
+		   <filename>patches/CssJsCompress/patch_css.php</filename>
+		   <filename>patches/CssJsCompress/patch_js.php</filename>
+		   <filename>patches/docman/check_docmanclass.php</filename>
+		   <filename>patches/docman/index.html</filename>
+		   <filename>patches/docman/patch_docmanclass.php</filename>
+		   <filename>patches/events/check_savecfg.php</filename>
+		   <filename>patches/events/check_showconfig.php</filename>
+		   <filename>patches/events/index.html</filename>
+		   <filename>patches/events/patch_savecfg.php</filename>
+		   <filename>patches/events/patch_showconfig.php</filename>
+		   <filename>patches/eweather/check_config.php</filename>
+		   <filename>patches/eweather/index.html</filename>
+		   <filename>patches/eweather/patch_config.php</filename>
+		   <filename>patches/fckeditor/check_config.inc.php</filename>
+		   <filename>patches/fckeditor/index.html</filename>
+		   <filename>patches/fckeditor/patch_config.inc.php</filename>
+		   <filename>patches/fpslideshow/check_config.php</filename>
+		   <filename>patches/fpslideshow/check_savecfg.php</filename>
+		   <filename>patches/fpslideshow/index.html</filename>
+		   <filename>patches/fpslideshow/patch_config.php</filename>
+		   <filename>patches/fpslideshow/patch_savecfg.php</filename>
+		   <filename>patches/hotproperty/check_config.php</filename>
+		   <filename>patches/hotproperty/index.html</filename>
+		   <filename>patches/hotproperty/patch_config.php</filename>
+		   <filename>patches/index.html</filename>
+		   <filename>patches/installation.tar.gz</filename>
+		   <filename>patches/installation_j16.zip</filename>
+		   <filename>patches/j1.5.10/index.html</filename>
+		   <filename>patches/j1.5.10/patches_files.tar.gz</filename>
+		   <filename>patches/j1.5.10/restore_files.tar.gz</filename>
+		   <filename>patches/j1.5.11/index.html</filename>
+		   <filename>patches/j1.5.11/patches_files.tar.gz</filename>
+		   <filename>patches/j1.5.11/restore_files.tar.gz</filename>
+		   <filename>patches/j1.5.12/index.html</filename>
+		   <filename>patches/j1.5.12/patches_files.tar.gz</filename>
+		   <filename>patches/j1.5.12/restore_files.tar.gz</filename>
+		   <filename>patches/j1.5.13/index.html</filename>
+		   <filename>patches/j1.5.13/patches_files.tar.gz</filename>
+		   <filename>patches/j1.5.13/restore_files.tar.gz</filename>
+		   <filename>patches/j1.5.14/index.html</filename>
+		   <filename>patches/j1.5.14/patches_files.tar.gz</filename>
+		   <filename>patches/j1.5.14/restore_files.tar.gz</filename>
+		   <filename>patches/j1.5.15/index.html</filename>
+		   <filename>patches/j1.5.15/patches_files.tar.gz</filename>
+		   <filename>patches/j1.5.15/restore_files.tar.gz</filename>
+		   <filename>patches/j1.5.16/index.html</filename>
+		   <filename>patches/j1.5.16/patches_files.tar.gz</filename>
+		   <filename>patches/j1.5.16/restore_files.tar.gz</filename>
+		   <filename>patches/j1.5.17/index.html</filename>
+		   <filename>patches/j1.5.17/patches_files.tar.gz</filename>
+		   <filename>patches/j1.5.17/restore_files.tar.gz</filename>
+		   <filename>patches/j1.5.18/index.html</filename>
+		   <filename>patches/j1.5.18/patches_files.tar.gz</filename>
+		   <filename>patches/j1.5.18/restore_files.tar.gz</filename>
+		   <filename>patches/j1.5.19/index.html</filename>
+		   <filename>patches/j1.5.19/patches_files.tar.gz</filename>
+		   <filename>patches/j1.5.19/restore_files.tar.gz</filename>
+		   <filename>patches/j1.5.20/index.html</filename>
+		   <filename>patches/j1.5.20/patches_files.tar.gz</filename>
+		   <filename>patches/j1.5.20/restore_files.tar.gz</filename>
+		   <filename>patches/j1.6.0/index.html</filename>
+		   <filename>patches/j1.6.0/patches_files.zip</filename>
+		   <filename>patches/j1.6.0/restore_files.zip</filename>
+		   <filename>patches/jce/check_jce.php</filename>
+		   <filename>patches/jce/index.html</filename>
+		   <filename>patches/jce/patch_jce.php</filename>
+		   <filename>patches/joomla/check_admin_index.php</filename>
+		   <filename>patches/joomla/check_content_hlp_route.php</filename>
+		   <filename>patches/joomla/check_defines.php</filename>
+		   <filename>patches/joomla/check_ifdirpresent.php</filename>
+		   <filename>patches/joomla/check_ifpresent.php</filename>
+		   <filename>patches/joomla/check_instdefines.php</filename>
+		   <filename>patches/joomla/check_insthelper.php</filename>
+		   <filename>patches/joomla/check_jconfig.php</filename>
+		   <filename>patches/joomla/check_jconfig16.php</filename>
+		   <filename>patches/joomla/check_jdatabase.php</filename>
+		   <filename>patches/joomla/check_jfolder.php</filename>
+		   <filename>patches/joomla/check_jms_vers.php</filename>
+		   <filename>patches/joomla/check_legacy15getinstance.php</filename>
+		   <filename>patches/joomla/check_libapplication.php</filename>
+		   <filename>patches/joomla/check_libsession.php</filename>
+		   <filename>patches/joomla/check_libuser.php</filename>
+		   <filename>patches/joomla/check_masterconfig.php</filename>
+		   <filename>patches/joomla/check_module_tpl.php</filename>
+		   <filename>patches/joomla/check_params_ini_cntl.php</filename>
+		   <filename>patches/joomla/check_params_ini_html.php</filename>
+		   <filename>patches/joomla/check_params_ini_tpl.php</filename>
+		   <filename>patches/joomla/check_plgremember.php</filename>
+		   <filename>patches/joomla/check_tpl_basedir.php</filename>
+		   <filename>patches/joomla/index.html</filename>
+		   <filename>patches/joomla/patchloader.php</filename>
+		   <filename>patches/joomla/patch_admin_index.php</filename>
+		   <filename>patches/joomla/patch_content_hlp_route.php</filename>
+		   <filename>patches/joomla/patch_jconfig.php</filename>
+		   <filename>patches/joomla/patch_jconfig16.php</filename>
+		   <filename>patches/joomla/patch_jconfig16_1.php</filename>
+		   <filename>patches/joomla/patch_jfolder.php</filename>
+		   <filename>patches/joomla/patch_libapplication_1.php</filename>
+		   <filename>patches/joomla/patch_libapplication_2.php</filename>
+		   <filename>patches/joomla/patch_libapplication_3.php</filename>
+		   <filename>patches/joomla/patch_libapplication_4.php</filename>
+		   <filename>patches/joomla/patch_libsession_1.php</filename>
+		   <filename>patches/joomla/patch_libsession_2.php</filename>
+		   <filename>patches/joomla/patch_libuser.php</filename>
+		   <filename>patches/joomla/patch_masterconfig.php</filename>
+		   <filename>patches/joomla/patch_module_tpl.php</filename>
+		   <filename>patches/joomla/patch_params_ini_cntl_1.php</filename>
+		   <filename>patches/joomla/patch_params_ini_cntl_2.php</filename>
+		   <filename>patches/joomla/patch_params_ini_cntl_3.php</filename>
+		   <filename>patches/joomla/patch_params_ini_html.php</filename>
+		   <filename>patches/joomla/patch_params_ini_tpl.php</filename>
+		   <filename>patches/joomla/patch_plgremember.php</filename>
+		   <filename>patches/joomla/patch_tpl_basedir_1.php</filename>
+		   <filename>patches/joomla/patch_tpl_basedir_2.php</filename>
+		   <filename>patches/jrecache/check_config.php</filename>
+		   <filename>patches/jrecache/check_ctrlconfig.php</filename>
+		   <filename>patches/jrecache/check_index.php</filename>
+		   <filename>patches/jrecache/check_libconfig.php</filename>
+		   <filename>patches/jrecache/index.html</filename>
+		   <filename>patches/jrecache/patch_config.php</filename>
+		   <filename>patches/jrecache/patch_ctrlconfig.php</filename>
+		   <filename>patches/jrecache/patch_libconfig_1.php</filename>
+		   <filename>patches/jrecache/patch_libconfig_2.php</filename>
+		   <filename>patches/jw_allvideos/check_download.php</filename>
+		   <filename>patches/jw_allvideos/index.html</filename>
+		   <filename>patches/jw_allvideos/patch_download.php</filename>
+		   <filename>patches/mobilejoomla/check_config.php</filename>
+		   <filename>patches/mobilejoomla/check_savecfg.php</filename>
+		   <filename>patches/mobilejoomla/index.html</filename>
+		   <filename>patches/mobilejoomla/patch_config.php</filename>
+		   <filename>patches/mobilejoomla/patch_savecfg.php</filename>
+		   <filename>patches/patches_files.tar</filename>
+		   <filename>patches/patches_files.tar.gz</filename>
+		   <filename>patches/patch_collection.php</filename>
+		   <filename>patches/patch_installer.php</filename>
+		   <filename>patches/restore_files.tar.gz</filename>
+		   <filename>patches/rokmoduleorder/check_rokmodordoc.php</filename>
+		   <filename>patches/rokmoduleorder/index.html</filename>
+		   <filename>patches/rokmoduleorder/patch_rokmodordoc.php</filename>
+		   <filename>patches/sermonspeaker/check_castconfig.php</filename>
+		   <filename>patches/sermonspeaker/check_config.php</filename>
+		   <filename>patches/sermonspeaker/check_controller.php</filename>
+		   <filename>patches/sermonspeaker/index.html</filename>
+		   <filename>patches/sermonspeaker/patch_castconfig.php</filename>
+		   <filename>patches/sermonspeaker/patch_config.php</filename>
+		   <filename>patches/sermonspeaker/patch_controller_1.php</filename>
+		   <filename>patches/sermonspeaker/patch_controller_2.php</filename>
+		   <filename>patches/sermonspeaker/patch_controller_2b.php</filename>
+		   <filename>patches/sermonspeaker/patch_controller_3.php</filename>
+		   <filename>patches/sermonspeaker/patch_controller_4.php</filename>
+		   <filename>patches/sermonspeaker/patch_controller_4b.php</filename>
+		   <filename>patches/sh404sef/check_admin.php</filename>
+		   <filename>patches/sh404sef/check_cachecontent.php</filename>
+		   <filename>patches/sh404sef/check_class.php</filename>
+		   <filename>patches/sh404sef/check_config_sef.php</filename>
+		   <filename>patches/sh404sef/check_urls.php</filename>
+		   <filename>patches/sh404sef/index.html</filename>
+		   <filename>patches/sh404sef/patch_admin.php</filename>
+		   <filename>patches/sh404sef/patch_cachecontent_1.php</filename>
+		   <filename>patches/sh404sef/patch_cachecontent_2.php</filename>
+		   <filename>patches/sh404sef/patch_class_1.php</filename>
+		   <filename>patches/sh404sef/patch_class_2.php</filename>
+		   <filename>patches/sh404sef/patch_config_sef.php</filename>
+		   <filename>patches/sh404sef/patch_urls.php</filename>
+		   <filename>patches/sharing/dbsharing.gif</filename>
+		   <filename>patches/sharing/dbsharing.xml</filename>
+		   <filename>patches/sharing/dbsharing_16.xml</filename>
+		   <filename>patches/sharing/dbtables.xml</filename>
+		   <filename>patches/sharing/index.html</filename>
+		   <filename>patches/sharing/loading.gif</filename>
+		   <filename>patches/sharing/mootree.gif</filename>
+		   <filename>patches/virtuemart/check_config.php</filename>
+		   <filename>patches/virtuemart/check_ps_checkout.php</filename>
+		   <filename>patches/virtuemart/check_ps_order.php</filename>
+		   <filename>patches/virtuemart/check_virtuemart_cfg.php</filename>
+		   <filename>patches/virtuemart/index.html</filename>
+		   <filename>patches/virtuemart/patch_config.php</filename>
+		   <filename>patches/virtuemart/patch_config14_1.php</filename>
+		   <filename>patches/virtuemart/patch_config14_2.php</filename>
+		   <filename>patches/virtuemart/patch_ps_checkout.php</filename>
+		   <filename>patches/virtuemart/patch_ps_order.php</filename>
+		   <filename>patches/virtuemart/patch_virtuemart_cfg.php</filename>
+		   <filename>patches/yoo_vox/check_yoovoxtemplate.php</filename>
+		   <filename>patches/yoo_vox/index.html</filename>
+		   <filename>patches/yoo_vox/patch_yoovoxtemplate.php</filename>
+		   <filename>samples/index.html</filename>
+		   <filename>samples/virtuemart/checkout.jms2win_result.php</filename>
+		   <filename>samples/virtuemart/index.html</filename>
+		   <filename>samples/virtuemart/payment_extra_info.php</filename>
+		   <filename>samples/virtuemart/plgmultisitesvmslaveupdstatus_V1.1.0.zip</filename>
+		   <filename>samples/virtuemart/vm_utils.php</filename>
+		   <filename>uninstall.multisites.php</filename>
+		   <filename>views/index.html</filename>
+		   <filename>views/manage/index.html</filename>
+		   <filename>views/manage/tmpl/default.php</filename>
+		   <filename>views/manage/tmpl/delete.php</filename>
+		   <filename>views/manage/tmpl/edit.php</filename>
+		   <filename>views/manage/tmpl/index.html</filename>
+		   <filename>views/manage/view.php</filename>
+		   <filename>views/patches/index.html</filename>
+		   <filename>views/patches/tmpl/check.php</filename>
+		   <filename>views/patches/tmpl/index.html</filename>
+		   <filename>views/patches/view.php</filename>
+		   <filename>views/registration/index.html</filename>
+		   <filename>views/registration/tmpl/donate.php</filename>
+		   <filename>views/registration/tmpl/index.html</filename>
+		   <filename>views/registration/tmpl/registration.php</filename>
+		   <filename>views/registration/view.php</filename>
+		   <filename>views/settings/index.html</filename>
+		   <filename>views/settings/tmpl/index.html</filename>
+		   <filename>views/settings/tmpl/show.php</filename>
+		   <filename>views/settings/view.php</filename>
+		   <filename>views/templates/index.html</filename>
+		   <filename>views/templates/tmpl/default.php</filename>
+		   <filename>views/templates/tmpl/delete.php</filename>
+		   <filename>views/templates/tmpl/edit.php</filename>
+		   <filename>views/templates/tmpl/edit_common.php</filename>
+		   <filename>views/templates/tmpl/edit_sharing.php</filename>
+		   <filename>views/templates/tmpl/edit_unix.php</filename>
+		   <filename>views/templates/tmpl/index.html</filename>
+		   <filename>views/templates/view.php</filename>
+		   <filename>views/tools/index.html</filename>
+		   <filename>views/tools/tmpl/apply.php</filename>
+		   <filename>views/tools/tmpl/default.php</filename>
+		   <filename>views/tools/tmpl/default_site.php</filename>
+		   <filename>views/tools/tmpl/extensions.php</filename>
+		   <filename>views/tools/tmpl/extensions_components.php</filename>
+		   <filename>views/tools/tmpl/extensions_detail.php</filename>
+		   <filename>views/tools/tmpl/extensions_modules.php</filename>
+		   <filename>views/tools/tmpl/extensions_plugins.php</filename>
+		   <filename>views/tools/tmpl/extensions_tables.php</filename>
+		   <filename>views/tools/tmpl/index.html</filename>
+		   <filename>views/tools/view.php</filename>
+		</files>
+		<!-- Administration Language File Copy Section -->
+		<languages folder="admin/language">
+			<language tag="en-GB">en-GB/en-GB.com_multisites.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_multisites.menu.ini</language>
+			<language tag="es-ES">es-ES/es-ES.com_multisites.ini</language>
+			<language tag="es-ES">es-ES/es-ES.com_multisites.menu.ini</language>
+			<language tag="fr-FR">fr-FR/fr-FR.com_multisites.ini</language>
+			<language tag="fr-FR">fr-FR/fr-FR.com_multisites.menu.ini</language>
+			<language tag="nl-NL">nl-NL/nl-NL.com_multisites.ini</language>
+			<language tag="nl-NL">nl-NL/nl-NL.com_multisites.menu.ini</language>
+			<language tag="pt-BR">pt-BR/pt-BR.com_multisites.ini</language>
+			<language tag="pt-BR">pt-BR/pt-BR.com_multisites.menu.ini</language>
+		</languages>
+	</administration>
+
+</install>
+

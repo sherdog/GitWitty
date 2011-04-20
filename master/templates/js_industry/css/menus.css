@@ -1,0 +1,126 @@
+/*--- top menu ---*/
+.user1 ul { /* all lists */
+padding: 0;
+margin: 0;
+list-style: none;
+float: right;
+}
+
+.user1 li { /* all list items */
+float: left;
+padding: 0;
+margin: 0 2px 0 2px;
+width:auto; /* width needed or else Opera goes nuts */
+}
+
+.user1 a:link, .user1 a:visited{
+color: #808080;
+text-decoration:none;
+margin:0;
+padding:1.4em 1em 0 1em;
+font:1.1em/1.6 Arial, Helvetica, sans-serif;
+font-weight: normal;
+display: block;
+}
+
+.user1 a:hover {
+color: #808080;
+text-decoration:none;
+font-weight: normal;
+}
+
+.user1 a#active_menu {
+color: #808080;
+text-decoration:none;
+font-weight: normal;
+}
+
+/*---- main horizontal menu ----*/
+/*drop down menu*/
+#nav {
+border-bottom: #390 4px solid;
+border-top: #fff 2px solid;
+width:100%;
+height:1.99em;
+background:#09c;
+margin:0;
+padding:0;
+position:relative;
+z-index:900;
+}
+#nav ul { /* all lists */
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+#nav a {
+color:#fff;
+background:#09c;
+text-decoration:none;
+margin:0;
+padding:0 1.8em;
+font:1.1em/1.8 Arial, Helvetica, sans-serif;
+display: block;
+}
+
+#nav li { /* all list items */
+float: left;
+padding: 0;
+margin: 0;
+border-right:#fff 1px solid;
+width:auto; /* width needed or else Opera goes nuts */
+}
+#nav a:hover {
+background: #ffa500;
+}
+/* second-level lists */
+#nav li ul { 
+position: absolute;
+border-top:0;
+border-left:0;
+width:100px;
+left: -999em; /* using left instead of display to hide menus because display: none isn't read by screen readers */
+}
+#nav li li{
+float: left;
+border:0;
+width:100px;
+padding:0;
+background:transparent;
+	 /* width needed or else Opera goes nuts */
+}
+#nav li li a { /*2nd level link */
+background:#666;
+width:100px;
+margin:0;
+padding:5px 15px;
+display:block;
+font: 1em Arial, Helvetica, sans-serif;
+}
+#nav li li a:hover {
+background: #1B1B1B;
+}
+#nav li ul ul { /* third-and-above-level lists */
+	margin: -2em 0 0 130px;
+}
+
+#nav li:hover ul ul, #nav li:hover ul ul ul, #nav li.sfhover ul ul, #nav li.sfhover ul ul ul {
+	left: -999em;
+}
+
+#nav li:hover ul, #nav li li:hover ul, #nav li li li:hover ul, #nav li.sfhover ul, #nav li li.sfhover ul, #nav li li li.sfhover ul { /* lists nested under hovered list items */
+	left: auto;
+}
+/*---- left menus ----*/
+ul#mainlevel-leftnav  {
+padding:0.25em 0 0 0;
+margin:0;
+}
+#mainlevel-leftnav li {
+margin:0;
+padding:0;
+}
+#mainlevel-leftnav a {
+line-height:1;
+}

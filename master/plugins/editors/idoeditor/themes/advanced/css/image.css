@@ -1,0 +1,16 @@
+#preview{
+	width:120px;
+	border:1px solid #9FA5BB;
+	text-align:center;
+	padding:3px;
+	position:relative;
+}
+
+#preview #removePicture{
+	position:absolute;
+	right:6px;
+	top:6px;
+	cursor:pointer;
+}
+
+#loading{display:none;}

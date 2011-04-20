@@ -1,0 +1,67 @@
+/**
+ * @file       toolapply.css
+ * @version    1.2.0
+ * @author     Edwin CHERONT     (e.cheront@jms2win.com)
+ *             Edwin2Win sprlu   (www.jms2win.com)
+ * @copyright  Joomla Multi Sites
+ *             Single Joomla! 1.5.x installation using multiple configuration (One for each 'slave' sites).
+ *             (C) 2009 Edwin2Win sprlu - all right reserved.
+ * @license    This program is free software; you can redistribute it and/or
+ *             modify it under the terms of the GNU General Public License
+ *             as published by the Free Software Foundation; either version 2
+ *             of the License, or (at your option) any later version.
+ *             This program is distributed in the hope that it will be useful,
+ *             but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *             MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *             GNU General Public License for more details.
+ *             You should have received a copy of the GNU General Public License
+ *             along with this program; if not, write to the Free Software
+ *             Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+ *             A full text version of the GNU GPL version 2 can be found in the LICENSE.php file.
+ */ 
+
+div.toolaction { 
+   background: transparent url(../images/j_arrow.png) 5px 50% no-repeat;
+   padding-left: 20px;
+}
+
+table.adminlist tbody tr.site td { 
+   background: #E8F0E4; 
+   border-top: 1px solid #FFF;
+   font-weight: bold;
+}
+
+
+td.toolAction2 { 
+   padding: 0px 1px 0px 10px;
+   background-image: url(components/com_multisites/images/j_arrow.png);
+   background-repeat: no-repeat;
+   padding: 10px 20px 30px 40px;
+   padding-left:35px;
+}
+
+.toolApply_img {
+	float: left;
+	width: 18px;
+	height: 18px;
+	overflow: hidden;
+}
+
+div.toolApply_processing {
+   background: transparent url(../patches/sharing/loading.gif) no-repeat;
+   background-position: center;
+}
+div.toolApply_success {
+   background: transparent url(../images/tick.png) no-repeat;
+   background-position: center;
+}
+div.toolApply_fail {
+   background: transparent url(../images/publish_x.png) no-repeat;
+   background-position: center;
+}
+div.toolApply_errmsg {
+   color: #c00;
+   background-color: #E6C0C0; 
+   border-top: 3px solid #DE7A7B; 
+   border-bottom: 3px solid #DE7A7B;
+}

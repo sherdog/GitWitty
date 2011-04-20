@@ -1,0 +1,2 @@
+[03-Mar-2011 13:27:22] PHP Fatal error:  Call to a member function getCfg() on a non-object in /home/gitwitty/public_html/dev/administrator/templates/jbsimpla/index.php on line 101
+[03-Mar-2011 13:48:33] PHP Fatal error:  Call to a member function getCfg() on a non-object in /home/gitwitty/public_html/dev/administrator/templates/jbsimpla/index.php on line 101

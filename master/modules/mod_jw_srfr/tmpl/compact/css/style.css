@@ -1,0 +1,37 @@
+/*
+// JoomlaWorks "Simple RSS Feed Reader" Module for Joomla! 1.5.x - Version 2.2
+// Copyright (c) 2006 - 2010 JoomlaWorks, a business unit of Nuevvo Webware Ltd.
+// Released under the GNU/GPL license: http://www.gnu.org/copyleft/gpl.html
+// More info at http://www.joomlaworks.gr
+// Designed and developed by the JoomlaWorks team
+// ***Last update: September 22nd, 2010***
+*/
+
+/* Template: Compact */
+
+/* Common */
+a:active,
+a:focus {outline:0;}
+img {border:none;}
+.clr {clear:both;height:0;line-height:0;display:block;float:none;}
+
+/* Feed List */
+div.srfrContainer {}
+div.srfrContainer ul.srfrList {list-style:none;margin:0;padding:0 0 12px;}
+div.srfrContainer ul.srfrList li {border-top:1px solid #ccc;padding:1px 4px;}
+div.srfrContainer ul.srfrList li.srfrRow0 {background:#fff;}
+div.srfrContainer ul.srfrList li.srfrRow1 {background:#F7FAFE;}
+
+div.srfrContainer ul.srfrList li a {text-decoration:none;line-height:120%;font-family:Tahoma, Geneva, sans-serif;display:block;}
+div.srfrContainer ul.srfrList li a span {display:none;}
+div.srfrContainer ul.srfrList li a:hover {text-decoration:none;position:relative;z-index:1;font-family:Tahoma, Geneva, sans-serif;}
+div.srfrContainer ul.srfrList li a:hover span {display:block;position:absolute;background:#fff;border:4px solid #ddd;padding:8px;top:4px;left:60px;width:226px;z-index:2;overflow:hidden;}
+div.srfrContainer ul.srfrList li a:hover span b {}
+div.srfrContainer ul.srfrList li a:hover span b.srfrTitle {display:block;}
+div.srfrContainer ul.srfrList li a:hover span b.srfrFeedSourcePopup {}
+div.srfrContainer ul.srfrList li a:hover span img.srfrImage {/*float:left;*/margin:4px auto;padding:2px;border:1px solid #ccc;display:block;}
+
+div.srfrContainer ul.srfrList li div.srfrFeedDetails {color:#999;}
+div.srfrContainer ul.srfrList li div.srfrFeedDetails span.srfrFeedSource {}
+div.srfrContainer ul.srfrList li div.srfrFeedDetails span.srfrFeedSource a {display:inline;}
+div.srfrContainer ul.srfrList li div.srfrFeedDetails span.srfrFeedItemDate {}

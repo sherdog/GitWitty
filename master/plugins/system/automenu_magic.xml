@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system">
+	<name>System - Automatic Menu Magic</name>
+	<author>DeRose Technologies, Inc.</author>
+	<creationDate>November 2009</creationDate>
+	<copyright>Copyright (C) 2009 DeRose Technologies. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@derosetechnologies.com</authorEmail>
+	<authorUrl>www.derosetechnologies.com</authorUrl>
+	<version>1.00</version>
+	<description>Automatically destroys joomla menu items, when an article's category matches a menu's name.</description>
+	<files>
+		<filename plugin="automenu_magic">automenu_magic.php</filename>
+	</files>
+	<params>
+
+	</params>
+</install>

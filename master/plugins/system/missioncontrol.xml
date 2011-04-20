@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5.10" type="plugin" group="system" method="upgrade">
+	<name>System - MissionControl Support</name>
+	<creationDate>December 6, 2010</creationDate>
+	<author>RocketTheme, LLC</author>
+	<authorEmail>support@rockettheme.com</authorEmail>
+	<authorUrl>http://www.rockettheme.com</authorUrl>
+	<copyright>(C) 2005 - 2010 RocketTheme, LLC. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<version>0.1.4</version>
+	<description>MissionControl Support Plugin</description>
+	<files>
+		<filename plugin="missioncontrol">missioncontrol.php</filename>
+	</files>
+	<params>
+        <param name="patching" type="radio" default="0" label="Blacklist Patch" description="Experimental patching of Joomla required for Extensions Blacklist support">
+			<option value="0">Disable</option>
+			<option value="1">Enable</option>
+		</param>
+        <param name="blacklist" type="textarea" rows="3" cols="30" default="com_virtuemart,com_somethingelse" label="Extension Blacklist" description="Comma seperated list of extensions to NOT use MissionControl for due to rendering problems" />
+		        
+	</params>
+</install>

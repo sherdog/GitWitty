@@ -1,0 +1,99 @@
+/**
+ * Changelog
+ *
+ * @package     Add to Menu
+ * @version     1.6.0
+ *
+ * @author      Peter van Westen <peter@nonumber.nl>
+ * @link        http://www.nonumber.nl
+ * @copyright   Copyright © 2011 NoNumber! All Rights Reserved
+ * @license     http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ */
+
+/**
+ * + Added
+ * ! Removed
+ * ^ Changed
+ * # Fixed
+ */
+
+10-Feb-2011 : v1.6.0
+ ^ Changed extension icon / logo
+ # Fixed issue with public access to popup page (security fix!)
+
+11-Dec-2010 : v1.5.1
+ # Fixed issues with document being called to early
+ # Fixed some issues with loading of language strings
+ # Cleaned up some code
+
+25-Nov-2010 : v1.5.0
+ + Added checks to see if NoNumber! Elements plugin is installed/enabled
+ ^ Fixed and updated all language strings
+ ^ Changed display of menu item list
+ # Fixed issue with toggle script for extra options not working
+
+16-Nov-2010 : v1.4.0
+ ^ Made MooTools 1.2 compatible
+
+28-Sep-2010 : v1.3.0
+ + Added component files for redShop
+ + Added ability to change the text shown as link in the status bar
+ + Added a tooltip that shows some info on the link that will be added
+ + Added extra blog settings for categories / sections
+ + Added possibility to show/hide extra options depending on a fields value
+ + Also checks cookies for selected filters
+ ^ Changed component files from php to xml
+ ^ Improved overall code
+ # Fixed a few component files
+
+24-Jul-2010 : v1.2.4
+ ^ Changed way version and license information are displayed (now via ajax)
+ ^ Changed way versions and licenses are checked (no more base64)
+ # Fixed issue with button not showing when used i.c.w. some other extensions
+
+22-May-2010 : v1.2.3
+ # Fixed issue with syntax errors in xml files (causing problems in admin module manager)
+
+13-May-2010 : v1.2.2
+ # Fixed issue with button not showing on all FLEXIcontent article / category pages
+ # Fixed issue with errors about registry for php 5.0.5
+
+09-Feb-2010 : v1.2.1
+ # Fixed location of Joomla! DTD files
+ # Fixed issue with deprecated syntax for php 5.3+
+
+18-Jan-2010 : v1.2.0
+ ^ Moved elements to separate global plugin (also used by other extensions)
+ ^ Changed the License Code check (now controlled by the License Manager)
+ ^ Made requirements array smarter to match components
+ # Fixed issue with link to category not working (again)
+ # Fixed plugin options not being fully visible
+
+02-Jan-2010 : v1.1.1
+ # Fixed issue with error on plugin settings page (due to License check)
+
+01-Jan-2010 : v1.1.0
+ + Added Commercial License Code support
+ + Added link to category and section when selected in dropdown
+ # Fixed issue with link to category not working
+
+17-Dec-2009 : v1.0.2
+ + Added support for APLite admin template
+ ^ Updated parameters for new version of FlexiContent (thanks to vistamedia)
+ # Fixed issue with wrong label on extra options
+ # Fixed issue with error on sections view
+
+29-Oct-2009 : v1.0.1
+ # Fixed javascript issue with IE and Safari
+ # Fixed some style issues
+
+28-Oct-2009 : v1.0.0
+ + First stable release
+ + Added support for FLEXIcontent (thanks to vistamedia)
+ + Added option to hide icon or text in toolbar
+ ^ Changed file encoding to UTF-8
+ ^ Cleaned up code
+ # Fixed issue with javascript error in IE8
+
+09-Oct-2009 : v0.2.2
+ + First beta release

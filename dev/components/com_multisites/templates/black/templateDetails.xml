@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="layout">
+	<name>Black</name>
+	<creationDate>30-jan-20010</creationDate>
+	<author>Edwin2Win sprlu</author>
+	<copyright>Copyright 2010 Edwin2Win sprlu - all right reserved</copyright>
+	<authorEmail>info@jms2win.com</authorEmail>
+	<authorUrl>www.jms2win.com</authorUrl>
+	<version>1.0.0</version>
+	<description>JMS Multisite front-end black layout</description>
+	<files>
+		<filename>css/index.html</filename>
+		<filename>delete.php</filename>
+		<filename>edit.php</filename>
+		<filename>images/index.html</filename>
+		<filename>index.html</filename>
+		<filename>list.php</filename>
+		<filename>templateDetails.xml</filename>
+	</files>
+	<images>
+		<filename>images/bg.png</filename>
+		<filename>images/jmslistbg.jpg</filename>
+		<filename>images/row0bg.png</filename>
+		<filename>images/row1bg.png</filename>
+		<filename>images/theadbg.jpg</filename>
+	</images>
+	<css>
+		<filename>css/delete.css</filename>
+		<filename>css/edit.css</filename>
+		<filename>css/list.css</filename>
+	</css>
+</install>

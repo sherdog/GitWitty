@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.5/template-install.dtd">
+<install version="1.5" type="template">
+        <name>Orange you glad</name>
+        <creationDate>2011-02-28</creationDate>
+        <author>John Doe</author>
+        <authorEmail>mike@gitwitty.com</authorEmail>
+        <authorUrl>http://www.gitwitty.com</authorUrl>
+        <copyright>GitWitty 2011</copyright>
+        <license>GNU/GPL</license>
+        <version>1.0.2</version>
+        <description>Orange you glad Insurance template</description>
+        <files>
+                <filename>index.php</filename>
+                <filename>component.php</filename>
+                <filename>templateDetails.xml</filename>
+                <filename>template_thumbnail.png</filename>
+                <filename>images/callout.jpg</filename>
+ 				<filename>images/blue_arrow.jpg</filename>
+				<filename>images/logo.jpg</filename>
+				<filename>images/mainnav_arrow.jpg</filename>
+				<filename>images/website-bg.jpg</filename>
+				<filename>images/website-bg-sub.jpg</filename>
+                <filename>css/template.css</filename>
+				
+				
+        </files>
+        <positions>
+                <position>breadcrumb</position>
+                <position>left</position>
+				<position>feature</position>
+                <position>right</position>
+                <position>top</position>
+                <position>user1</position>
+                <position>user2</position>
+                <position>user3</position>
+                <position>user4</position>
+                <position>footer</position>
+				<position>nav</position>
+        </positions>
+		
+</install>

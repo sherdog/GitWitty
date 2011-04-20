@@ -1,0 +1,18 @@
+/******** Blue **********/
+body.blue #menu li.node a { background: url(../images/bg-menu-item-blue.gif) no-repeat scroll right center; }
+body.blue #menu li.node ul li a { background: none; }
+body.blue a { color: #007BB8; }
+body.blue a:hover { color: #00557F; }
+body.blue .shortcut-button span:hover { color:#007BB8; }
+body.blue a.remove-link { color: #007BB8; }
+body.blue ul#submenu li a:hover { color: #007BB8; }
+body.blue .pagination a.number {
+	background: #00557F url('../images/bg-button-blue.gif') top left repeat-x !important;
+	border-color: #007BB8 !important;
+}
+body.blue .next a, body.blue .home-page a { background: #00557F url('../images/bg-button-blue.gif') top left repeat-x !important; }
+body.blue .pagination a.current { color: #86CCEF !important; }
+body.blue button, body.blue input[type=submit], body.blue input.button {
+	background:#00557F url(../images/bg-button-blue.gif) repeat-x scroll left top !important;
+	border:1px solid #007BB8 !important;
+}

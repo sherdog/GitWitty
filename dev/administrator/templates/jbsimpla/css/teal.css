@@ -1,0 +1,19 @@
+/******** teal **********/
+body.teal #menu li.node a { background: url(../images/bg-menu-item-teal.gif) no-repeat scroll right center; }
+body.teal #menu li.node ul li a { background: none; }
+body.teal a { color: #066b67; }
+body.teal a:hover { color: #043F3C; }
+body.teal .shortcut-button span:hover { color:#066b67; }
+body.teal a.remove-link { color: #066b67; }
+body.teal .pagination a.number {
+	background: #066b67 url('../images/bg-button-teal.gif') top left repeat-x !important;
+	border-color: #118F8A !important;
+}
+body.teal .next a, body.teal .home-page a {
+	background: #066b67 url('../images/bg-button-teal.gif') top left repeat-x !important;
+}
+body.teal .pagination a.current { color: #78AFAD !important; }
+body.teal button, body.teal input[type=submit], body.teal input.button {
+	background:#066b67 url(../images/bg-button-teal.gif) repeat-x scroll left top !important;
+	border:1px solid #118F8A !important;
+}

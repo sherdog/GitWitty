@@ -1,0 +1,18 @@
+{
+    "missioncontrol-admin-template" : {
+        "name" : "MissionControl Admin Template",
+                "versions" : [
+                        { 
+                                "version" : "0.1.4", 
+                                "minimum_version" : "0.0.1",
+                                "md5" : "578cc73761f9aafb6085eb77a99e3d6d",
+                                "download_url" : "http://updates.rockettheme.com/joomla/templates/rt_missioncontrol_j15-0.1.4.zip"
+                        }
+                ],
+        "author" : "RocketTheme",
+        "sections" : {
+            "description" : "Cool new admin template from RocketTheme" 
+        } 
+    }
+}
+

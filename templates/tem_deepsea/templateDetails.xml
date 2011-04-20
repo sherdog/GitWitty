@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="template" version="4.5.2">
+  <name>tem_deepsea</name>
+  <creationDate>7/11/2005</creationDate>
+  <author>osskins</author>
+  <copyright>This template is copyrighted.</copyright>
+  <authorEmail>info@osskins.com</authorEmail>
+  <authorUrl>www.osskins.com</authorUrl>
+  <version>1.4</version>
+  <description>Tableless design, lightweight and elegant. Positions > user1: main menu, footer: bottom menu (apply menu class -bottom), user8: login form, user2: latest news, top: other menu (apply menu class -top). </description>
+  <files>
+    <filename>index.php</filename>
+    <filename>template_thumbnail.png</filename>
+  </files>
+  <images>
+<filename>images/arrow.png</filename>
+<filename>images/bg.jpg</filename>
+<filename>images/logo.jpg</filename>
+<filename>images/menu-head.jpg</filename>
+<filename>images/menu-top.jpg</filename>
+<filename>images/indent1.png</filename>
+	 </images>
+  <css>
+    <filename>css/template_css.css</filename>
+  </css>
+</mosinstall>

@@ -1,0 +1,88 @@
+/*---- joomla styles ----*/
+.componentheading,.contentheading {	
+padding:1px 0 0.3em 0;
+color: #575b66;
+text-align: left;
+width:99%;
+font: normal 1.6em Arial, Helvetica, sans-serif;
+}
+.createdate,.modifydate,.small {
+color:#BFBFBF;
+font-size:.75em;
+}
+table.contenttoc {
+color: #333300;
+border: 1px solid #333;
+}
+table.contenttoc td {
+font-size: 0.9em;
+font-weight: normal;
+text-align:left;
+}
+table.contenttoc {
+margin: 5px;
+border: 1px solid #ccc;
+padding: 5px;
+}
+table.contenttoc td {
+padding: 0 5px;
+}
+td.buttonheading {
+width:auto;
+padding-right: 2px;
+}
+div.mosimage {
+margin: 5px;
+}
+div.mosimage_caption {
+font-size:0.9em;
+color: #666;
+}
+.pagenav {
+line-height:3em;
+background-color: #EEEEEE;
+color: #73819C;
+padding: 3px 5px 3px 3px;
+}
+.pagenav_prev {
+line-height: 3em;
+font-weight: normal;
+}
+.pagenav_next {
+line-height: 3em;
+font-weight: normal;
+}
+div.syndicate div {
+text-align: center;
+}
+.sectiontableheader {
+color: #FFF;
+background:#666;
+font-weight: bold;
+font-family: Arial, Helvetica, sans-serif;
+padding: 4px;
+}
+tr.sectiontableentry1 td {
+padding: 4px;
+color: #333333;
+background-color: #F8F8F8;
+font-family: Arial, Helvetica, sans-serif;
+}
+tr.sectiontableentry2 td {
+padding: 4px;
+color: #333333;
+background-color: #EFEFEF;
+font-family: Arial, Helvetica, sans-serif;
+}
+td.sectiontableentry1 {
+padding: 3px;
+color: #333333;
+background-color: #F8F8F8;
+font-family: Arial, Helvetica, sans-serif;
+}
+td.sectiontableentry2{
+padding: 3px;
+color: #333333;
+background-color: #EFEFEF;
+font-family: Arial, Helvetica, sans-serif;
+}

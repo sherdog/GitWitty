@@ -1,0 +1,17 @@
+/******** pink **********/
+body.pink #menu li.node a { background: url(../images/bg-menu-item-pink.gif) no-repeat scroll right center; }
+body.pink #menu li.node ul li a { background: none; }
+body.pink a { color: #8F0876; }
+body.pink a:hover { color: #6F075C; }
+body.pink .shortcut-button span:hover { color:#8F0876; }
+body.pink a.remove-link { color: #8F0876; }
+body.pink .pagination a.number {
+	background: #6F075C url('../images/bg-button-pink.gif') top left repeat-x !important;
+	border-color: #8F0876 !important;
+}
+body.pink .next a, body.pink .home-page a { background: #6F075C url('../images/bg-button-pink.gif') top left repeat-x !important; }
+body.pink .pagination a.current { color: #6F075C !important; }
+body.pink button, body.pink input[type=submit], body.pink input.button {
+	background:#6F075C url(../images/bg-button-pink.gif) repeat-x scroll left top !important;
+	border:1px solid #8F0876 !important;
+}

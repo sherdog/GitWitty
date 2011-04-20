@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<update release="1.5.15">
+<message></message>
+<updater minimumversion="1.5.1" currentversion="1.5.1">http://joomlacode.org/gf/project/pasamioprojects/frs/</updater>
+<fullpackage url="http://joomlacode.org/gf/download/frsrelease/11396/45609/Joomla_1.5.15-Stable-Full_Package.tar.gz" filename="Joomla_1.5.15-Stable-Full_Package.tar.gz" filesize="4808762" md5="4827f357a32faa22b4a1cba20276aba2" />
+<patches>
+	<patchpackage version="1.5.9" url="http://joomlacode.org/gf/download/frsrelease/11395/45654/Joomla_1.5.9_to_1.5.15-Stable-Patch_Package.tar.gz" filename="Joomla_1.5.9_to_1.5.15-Stable-Patch_Package.tar.gz" filesize="1545615" md5="e82e8a7f5dfec7405d696e0105b6d633" />
+	<patchpackage version="1.5.8" url="http://joomlacode.org/gf/download/frsrelease/11395/45651/Joomla_1.5.8_to_1.5.15-Stable-Patch_Package.tar.gz" filename="Joomla_1.5.8_to_1.5.15-Stable-Patch_Package.tar.gz" filesize="1636704" md5="c33de13c5b08d67fa5eca64a631ac50b" />
+	<patchpackage version="1.5.7" url="http://joomlacode.org/gf/download/frsrelease/11395/45648/Joomla_1.5.7_to_1.5.15-Stable-Patch_Package.tar.gz" filename="Joomla_1.5.7_to_1.5.15-Stable-Patch_Package.tar.gz" filesize="1658402" md5="a0821a647a84410c6c355a231583f18e" />
+	<patchpackage version="1.5.6" url="http://joomlacode.org/gf/download/frsrelease/11395/45645/Joomla_1.5.6_to_1.5.15-Stable-Patch_Package.tar.gz" filename="Joomla_1.5.6_to_1.5.15-Stable-Patch_Package.tar.gz" filesize="1855007" md5="8071beaaee4222f36b15abc0de3fb690" />
+	<patchpackage version="1.5.5" url="http://joomlacode.org/gf/download/frsrelease/11395/45642/Joomla_1.5.5_to_1.5.15-Stable-Patch_Package.tar.gz" filename="Joomla_1.5.5_to_1.5.15-Stable-Patch_Package.tar.gz" filesize="1855031" md5="e199ec1903fd29b58dc8671b350df41a" />
+	<patchpackage version="1.5.4" url="http://joomlacode.org/gf/download/frsrelease/11395/45639/Joomla_1.5.4_to_1.5.15-Stable-Patch_Package.tar.gz" filename="Joomla_1.5.4_to_1.5.15-Stable-Patch_Package.tar.gz" filesize="1862356" md5="32d5450fafa3b9ca2aeec16d4aa2c194" />
+	<patchpackage version="1.5.3" url="http://joomlacode.org/gf/download/frsrelease/11395/45636/Joomla_1.5.3_to_1.5.15-Stable-Patch_Package.tar.gz" filename="Joomla_1.5.3_to_1.5.15-Stable-Patch_Package.tar.gz" filesize="2614609" md5="2250cc4c62978d6863d1131f59311849" />
+	<patchpackage version="1.5.2" url="http://joomlacode.org/gf/download/frsrelease/11395/45633/Joomla_1.5.2_to_1.5.15-Stable-Patch_Package.tar.gz" filename="Joomla_1.5.2_to_1.5.15-Stable-Patch_Package.tar.gz" filesize="2615531" md5="e95c28de00b8808b3a39df4c9cc9e02c" />
+	<patchpackage version="1.5.1" url="http://joomlacode.org/gf/download/frsrelease/11395/45630/Joomla_1.5.1_to_1.5.15-Stable-Patch_Package.tar.gz" filename="Joomla_1.5.1_to_1.5.15-Stable-Patch_Package.tar.gz" filesize="2627647" md5="aa59faca3378125b8593ac2975fba5d3" />
+	<patchpackage version="1.5.14" url="http://joomlacode.org/gf/download/frsrelease/11395/45627/Joomla_1.5.14_to_1.5.15-Stable-Patch_Package.tar.gz" filename="Joomla_1.5.14_to_1.5.15-Stable-Patch_Package.tar.gz" filesize="602356" md5="a899800c4b1cc4b4b52eefc6a39a1424" />
+	<patchpackage version="1.5.13" url="http://joomlacode.org/gf/download/frsrelease/11395/45624/Joomla_1.5.13_to_1.5.15-Stable-Patch_Package.tar.gz" filename="Joomla_1.5.13_to_1.5.15-Stable-Patch_Package.tar.gz" filesize="604791" md5="c9d359f0f227f42dd11dde5b9877f984" />
+	<patchpackage version="1.5.12" url="http://joomlacode.org/gf/download/frsrelease/11395/45621/Joomla_1.5.12_to_1.5.15-Stable-Patch_Package.tar.gz" filename="Joomla_1.5.12_to_1.5.15-Stable-Patch_Package.tar.gz" filesize="628268" md5="2f7179d4c929d89c5535be7978e5316e" />
+	<patchpackage version="1.5.11" url="http://joomlacode.org/gf/download/frsrelease/11395/45618/Joomla_1.5.11_to_1.5.15-Stable-Patch_Package.tar.gz" filename="Joomla_1.5.11_to_1.5.15-Stable-Patch_Package.tar.gz" filesize="1364456" md5="62073a7c11e1d4adb03317f46d3c12be" />
+	<patchpackage version="1.5.10" url="http://joomlacode.org/gf/download/frsrelease/11395/45615/Joomla_1.5.10_to_1.5.15-Stable-Patch_Package.tar.gz" filename="Joomla_1.5.10_to_1.5.15-Stable-Patch_Package.tar.gz" filesize="1413690" md5="0b1bd91f985fd89b1c1101505883c9b9" />
+	<patchpackage version="1.5.0" url="http://joomlacode.org/gf/download/frsrelease/11395/45612/Joomla_1.5.0_to_1.5.15-Stable-Patch_Package.tar.gz" filename="Joomla_1.5.0_to_1.5.15-Stable-Patch_Package.tar.gz" filesize="2630853" md5="27e8ef0d44c289fc15d1544320dd6060" />
+</patches>
+</update>

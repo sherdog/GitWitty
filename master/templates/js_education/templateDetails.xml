@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="template">
+	<name>js_education</name>
+	<creationDate>Feb 2007</creationDate>
+	<author>Joomlashack.com</author>
+	<copyright>(C) JoomlaShack 2007</copyright>
+	<authorEmail>team@joomlashack.com</authorEmail>
+	<authorUrl>www.joomlashack.com</authorUrl>
+	<version>1.0</version>
+	<description>Another great free template by joomlashack, designed for Schools.</description>
+	<files>
+		<filename>css/index.html</filename>
+		<filename>index.php</filename>
+		<filename>js/index.html</filename>
+		<filename>js/md_stylechanger.js</filename>
+		<filename>js/iehover.js</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>images/body_bg.png</filename>
+		<filename>images/border-hz.gif</filename>
+		<filename>images/border-line.gif</filename>
+		<filename>images/border-line_left.gif</filename>
+		<filename>images/border-line_right.gif</filename>
+		<filename>images/button-search-bg.gif</filename>
+		<filename>images/emailButton.png</filename>
+		<filename>images/larger.png</filename>
+		<filename>images/lower-content-bg.gif</filename>
+		<filename>images/mainlevel.png</filename>
+		<filename>images/pdf_button.png</filename>
+		<filename>images/printButton.png</filename>
+		<filename>images/readon.gif</filename>
+		<filename>images/readon_side.gif</filename>
+		<filename>images/reset.png</filename>
+		<filename>images/search-bg.gif</filename>
+		<filename>images/site-bg.jpg</filename>
+		<filename>images/smaller.png</filename>
+		<filename>images/tick.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>css/template_css.css</filename>
+		<filename>css/menu.css</filename>
+	</files>
+	<positions>
+		<position>inset</position>
+		<position>top</position>
+		<position>left</position>
+		<position>right</position>
+		<position>user1</position>
+		<position>user2</position>
+		<position>user3</position>
+		<position>footer</position>
+	</positions>
+</install>

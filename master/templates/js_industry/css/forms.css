@@ -1,0 +1,62 @@
+form {
+/* removes space below form elements */
+	margin: 0;
+ 	padding:0;
+}
+/*----- regular forms ---*/
+input {
+font-size: 1em;
+padding: 0.12em;
+color: #808080;
+background-color: #F0F0F0;
+border: 1px solid #CCCCCC;
+}
+textarea {
+font-size: 1em;
+color: #808080;
+background-color: #F0F0F0;
+border: 1px solid #CCCCCC;
+}
+select {
+font-size: 1em;
+color: #808080;
+background-color: #F0F0F0;
+}
+.button {
+font-size: 1em;
+padding: 0.12em;
+margin:0;
+color: #808080;
+background-color: #F0F0F0;
+border: 1px solid #CCCCCC;
+}
+/*--------- user 2 search form ----------*/
+#user2 input {
+font-size: 1em;
+padding: 0.12em;
+color: #808080;
+background-color: #F0F0F0;
+border: 1px solid #CCCCCC;
+}
+#user2 textarea {
+font-size: 1em;
+color: #808080;
+background-color: #F0F0F0;
+border: 1px solid #CCCCCC;
+}
+#user2 select {
+font-size: 1em;
+color: #808080;
+background-color: #F0F0F0;
+}
+#user2 .button {
+font-size: 1em;
+font-weight: bold;
+color: #fff;
+height:17px;
+width:54px;
+background: url(../images/search_button.png) 0 0 no-repeat;
+border: 0;
+padding: 0;
+margin: 0 0 0 5px;
+}

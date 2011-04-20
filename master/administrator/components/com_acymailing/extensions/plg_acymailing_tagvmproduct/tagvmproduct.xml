@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/plugin-install.dtd">
+<install type="plugin" version="1.5" method="upgrade" group="acymailing">
+	<name>AcyMailing Tag : insert VirtueMart products</name>
+	<creationDate>March 2010</creationDate>
+	<version>1.2.1</version>
+	<author>Acyba</author>
+	<authorEmail>dev@acyba.com</authorEmail>
+	<authorUrl>http://www.acyba.com</authorUrl>
+	<copyright>Copyright (C) 2009-2011 ACYBA SARL - All rights reserved.</copyright>
+	<license>http://www.acyba.com/commercial_license.php</license>
+	<description>This plugin enables you to insert VirtueMart product inside any e-mail sent by AcyMailing</description>
+	<files>
+		<filename plugin="tagvmproduct">tagvmproduct.php</filename>
+	</files>
+	<params addpath="/components/com_acymailing/params">
+		<param name="help" type="help" label="Help" description="Click on the help button to get some help" default="plugin-tagvmproduct"/>
+		<param name="vat" type="radio" default="1" label="Add the VAT to the price" description="Select yes or no depending if you want to add the vat to the displayed price or not">
+			<option value="0">No VAT</option>
+			<option value="1">Yes, include the VAT</option>
+		</param>
+		<param name="priceformat" type="list" default="english" label="Price Format" description="Choose the price display style">
+			<option value="english">CUR1376.23</option>
+			<option value="french">1 376,23 CUR</option>
+		</param>
+		<param name="stock" type="radio" default="0" label="Only products in stock" description="Using the products insertion via the category selection, should AcyMailing only display products in stock?">
+			<option value="0">No, display all products</option>
+			<option value="1">Yes, only in stock</option>
+		</param>
+	</params>
+	<config>
+		<fields name="params" addfieldpath="/components/com_acymailing/params">
+			<fieldset name="basic">
+				<field name="help" type="help" label="Help" description="Click on the help button to get some help" default="plugin-tagvmproduct"/>
+				<field name="vat" type="radio" default="1" label="Add the VAT to the price" description="Select yes or no depending if you want to add the vat to the displayed price or not">
+					<option value="0">No VAT</option>
+					<option value="1">Yes, include the VAT</option>
+				</field>
+				<field name="priceformat" type="list" default="english" label="Price Format" description="Choose the price display style">
+					<option value="english">CUR1376.23</option>
+					<option value="french">1 376,23 CUR</option>
+				</field>
+				<field name="stock" type="radio" default="0" label="Only products in stock" description="Using the products insertion via the category selection, should AcyMailing only display products in stock?">
+					<option value="0">No, display all products</option>
+					<option value="1">Yes, only in stock</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</install>
